@@ -1,0 +1,24 @@
+{
+  "name": "@ui/design",
+  "version": "1.0.1",
+  "homepage": "https://seeren.github.io/@ui-design/",
+  "description": "Sass files for @ui components",
+  "keywords": ["@ui","sass", "css"],
+  "main": "./sass/index.js",
+  "scripts": {
+    "dev": "npm run sync | npm run sassify",
+    "sassify": "./node_modules/.bin/node-sass --watch ./sass/index.scss ./dist/@ui.css",
+    "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/@ui.css\""
+  },
+  "author": "Cyril Ichti",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "node-sass": "latest",
+    "watchify": "latest"
+  },
+  "repository" : {
+    "type" : "git",
+	"url" : "https://github.com/seeren/@ui-design"
+  }
+}
