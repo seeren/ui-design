@@ -1,0 +1,13 @@
+
+@import "n-dp";
+
+@mixin card () {
+    background: #ffffff;
+    border-radius: .125em;
+    transition: all .28s cubic-bezier(0.4, 0, 0.2, 1);
+    @each $n, $dp in $n-dp {
+        &.card-#{$n} {
+            box-shadow: $dp;
+        }
+    }
+}

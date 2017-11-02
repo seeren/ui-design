@@ -1,0 +1,16 @@
+
+@import "btn/btn";
+@import "card/card";
+@import "cross/cross";
+
+.ui {
+    &.btn {
+        @include btn();
+    }
+    &.card {
+        @include card();
+    }
+    &.cross {
+        @include cross();
+    }
+}
