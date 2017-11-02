@@ -1,6 +1,6 @@
 {
   "name": "ui-design",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Sass files for ui components",
   "keywords": ["@ui","sass", "css"],
   "main": "./sass/index.js",
