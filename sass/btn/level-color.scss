@@ -1,11 +1,13 @@
 
+@import "../color/font";
+
 $level-color: (
-    emergency: #ef2929,
-    alert: #212121,
-    critical: #ef5229,
-    error: #f5b722,
-    warning: #dedc00,
-    notice: #8bc34b,
-    info: #25d4f3,
-    debug: #2597f3
+    emergency: $color_font_emergency,
+    alert: $color_font_alert,
+    critical: $color_font_critical,
+    error: $color_font_error,
+    warning: $color_font_warning,
+    notice: $color_font_notice,
+    info: $color_font_info,
+    debug: $color_font_debug
 )

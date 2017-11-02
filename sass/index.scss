@@ -2,6 +2,7 @@
 @import "btn/btn";
 @import "card/card";
 @import "cross/cross";
+@import "dialog/dialog";
 
 .ui {
     &.btn {
@@ -13,4 +14,8 @@
     &.cross {
         @include cross();
     }
+    &.dialog {
+        @include dialog();
+    }
+
 }

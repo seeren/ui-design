@@ -1,14 +1,20 @@
 .ui.btn {
   background: #ffffff;
   border: none;
+  border-radius: .125em;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   cursor: pointer;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: .9em;
   font-variant: small-caps;
   font-weight: 500;
   line-height: 1em;
-  padding: .5em 1em;
-  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
+  padding: .5em 1em; }
+  .ui.btn:hover {
+    opacity: .6; }
+  .ui.btn:active {
+    opacity: .4; }
   .ui.btn.btn-emergency {
     color: #ef2929; }
   .ui.btn.btn-alert {
@@ -28,6 +34,7 @@
 
 .ui.card {
   background: #ffffff;
+  border: none;
   border-radius: .125em;
   transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
   .ui.card.card-1 {
@@ -57,6 +64,51 @@
     font-size: 1em;
     line-height: .5em;
     position: absolute;
-    right: .5em;
-    top: .5em;
+    right: .25em;
+    top: .25em;
     transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.ui.dialog {
+  bottom: 1em;
+  color: #0d0d0d;
+  cursor: default;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  max-width: 60%;
+  min-width: 12em;
+  opacity: 1;
+  position: fixed;
+  right: 2em;
+  z-index: 9; }
+  @media all and (orientation: portrait) {
+    .ui.dialog {
+      right: 7.5% !important;
+      max-width: 100% !important;
+      width: 85% !important; } }
+  .ui.dialog .btn {
+    margin-left: .5em; }
+  .ui.dialog.card {
+    box-sizing: border-box;
+    padding: 1em 1em .5em;
+    margin: 0;
+    text-align: right; }
+  .ui.dialog .cross {
+    position: absolute;
+    top: .25em;
+    right: .25em; }
+  .ui.dialog .message {
+    color: #4d4d4d;
+    font-size: .8em;
+    font-weight: 300;
+    hyphens: auto;
+    letter-spacing: .04em;
+    line-height: 1.9em;
+    max-width: 100%;
+    margin: 0 0 1.75em;
+    text-align: left; }
+  .ui.dialog .title {
+    color: #0d0d0d;
+    font-size: 1em;
+    font-weight: 500;
+    margin: .5em 0 1em;
+    text-align: left; }
