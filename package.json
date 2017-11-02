@@ -6,8 +6,8 @@
   "main": "./sass/index.js",
   "scripts": {
     "dev": "npm run sync | npm run sassify",
-    "sassify": "./node_modules/.bin/node-sass --watch ./sass/index.scss ./dist/@ui.css",
-    "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/@ui.css\""
+    "sassify": "./node_modules/.bin/node-sass --watch ./sass/index.scss ./dist/@ui-design.css",
+    "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/@ui-design.css\""
   },
   "author": "Cyril Ichti",
   "license": "MIT",
