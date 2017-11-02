@@ -9,6 +9,7 @@ Compatible with bootstrap class, this package override some component design to 
 * `ui btn btn-{level}`
 * `ui card card-{n-depth}`
 * `ui cross`
+* `ui dialog`
 
 
 ## Installation
