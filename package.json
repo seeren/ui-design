@@ -1,7 +1,6 @@
 {
   "name": "@ui/design",
   "version": "1.0.1",
-  "homepage": "https://seeren.github.io/@ui-design/",
   "description": "Sass files for @ui components",
   "keywords": ["@ui","sass", "css"],
   "main": "./sass/index.js",
