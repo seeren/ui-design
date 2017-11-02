@@ -1,5 +1,5 @@
-np{
-  "name": "@ui-design",
+{
+  "name": "@uidesign",
   "version": "1.0.1",
   "description": "Sass files for @ui components",
   "keywords": ["@ui","sass", "css"],
