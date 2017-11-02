@@ -2,7 +2,7 @@
 
 # @ui/design
 **Override ui design for JavaScript @ui components**
-Compatible with bootstrap class, this package override some component design and work without dependencies to provide light material css
+Compatible with bootstrap class, this package override some component design to provide light material css
 
 ## Features
 * `ui`
