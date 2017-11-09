@@ -2,7 +2,7 @@
   "name": "ui-design",
   "version": "1.0.4",
   "description": "Sass files for ui components",
-  "keywords": ["@ui","sass", "css"],
+  "keywords": ["ui","javascript", "sass", "css"],
   "main": "./sass/index.js",
   "scripts": {
     "dev": "npm run sync | npm run sassify",
@@ -11,6 +11,9 @@
   },
   "author": "Cyril Ichti",
   "license": "MIT",
+  "dependencies": {
+	"ui-dialog": "latest"
+  },
   "devDependencies": {
     "browser-sync": "latest",
     "node-sass": "latest",
