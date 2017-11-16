@@ -1,13 +1,13 @@
 
-@import "../color/font";
+@import "../color/$color";
 
 @mixin cross () {
     &:hover:after {
-        color: $color_font_strong !important;
+        color: $color_gray2 !important;
     }
     &:after {
         content: "\d7";
-        color: $color_font_midle !important;
+        color: $color_gray4 !important;
         cursor: pointer;
         font-size: 1em;
         line-height: .5em;
