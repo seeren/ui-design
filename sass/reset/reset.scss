@@ -1,0 +1,22 @@
+
+@import "title";
+@import "../color/$color";
+@import "../font/$roboto";
+
+@mixin reset () {
+  @include title();
+  html {
+        color: $color_gray1;
+        font-size: 0.9em;
+        font-family: $font_roboto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
