@@ -1,12 +1,10 @@
 
-@import "../color/font";
+@import "../color/$color";
 
 @mixin dialog () {
     bottom: 1em;
-    color: $color_font_dark;
+    color: $color_gray1;
     cursor: default;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
     max-width: 60%;
     min-width: 12em;
     opacity: 1;
@@ -33,7 +31,7 @@
         right: .25em;
     }
     & .message {
-        color: $color_font_grey;
+        color: $color_gray3;
         font-size: .8em;
         font-weight: 300;
         hyphens: auto;
@@ -44,10 +42,11 @@
         text-align: left;
     }
     & .title {
-        color: $color_font_dark;
+        color: $color_gray1;
         font-size: 1em;
         font-weight: 500;
         margin: .5em 0 1em;
+        padding: 0;
         text-align: left;
     }
 }
