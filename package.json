@@ -1,26 +1,44 @@
 {
   "name": "ui-design",
   "version": "1.0.4",
-  "description": "Sass files for ui components",
+  "description": "ui components design",
   "keywords": ["ui","javascript", "sass", "css"],
   "main": "./sass/index.js",
   "scripts": {
     "dev": "npm run sync | npm run sassify",
+    "babelify": "./node_modules/.bin/watchify ./src/index.js -t [babelify] -o ./dist/ui-design.js",
+    "coverage": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit",
+    "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "dev": "npm run sync | npm run babelify | npm run sassify",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "sassify": "./node_modules/.bin/node-sass --watch ./sass/index.scss ./dist/ui-design.css",
-    "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/ui-design.css\""
+    "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/ui-design.*\"",
+    "test": "./node_modules/.bin/mocha --require babel-register --recursive test/unit"
   },
   "author": "Cyril Ichti",
   "license": "MIT",
   "dependencies": {
-	"ui-dialog": "latest"
+    "ui-dialog": "latest"
   },
   "devDependencies": {
+    "babelify": "latest",
+    "babel-plugin-istanbul": "latest",
+    "babel-preset-env": "latest",
+    "babel-register": "latest",
     "browser-sync": "latest",
+    "chai": "latest",
+    "cross-env": "latest",
+    "coveralls": "latest",
+    "jsdom": "latest",
+    "mocha": "latest",
+    "mocha-lcov-reporter": "latest",
     "node-sass": "latest",
+    "nyc": "latest",
+    "sinon": "latest",
     "watchify": "latest"
   },
   "repository" : {
     "type" : "git",
-	"url" : "https://github.com/seeren/ui-design"
+    "url" : "https://github.com/seeren/ui-design"
   }
 }
