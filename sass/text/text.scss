@@ -1,0 +1,69 @@
+
+@import "../text/font/$font";
+
+@mixin text () {
+
+    &.monospace {
+        font-family: $font_monospace;
+    }
+
+    &.bigger {
+        font-size: 1.4em;
+    }
+    &.smaller {
+        font-size: .7em;
+    }
+
+    &.thin {
+        font-weight: 100;
+    }
+    &.light {
+        font-weight: 200;
+    }
+    &.lighter {
+        font-weight: 300;
+    }
+    &.normal {
+        font-weight: 400;
+    }
+    &.bolder {
+        font-weight: 600;
+    }
+    &.bold {
+        font-weight: 900;
+    }
+
+
+    &.center {
+        text-align: center;
+    }
+    &.left {
+        text-align: left;
+    }
+    &.justify {
+        text-align: justify;
+    }
+    &.right {
+        text-align: right;
+    }
+
+    &.hyphens {
+        hyphens: auto;
+    }
+
+    &.txt-scroll {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    &.v-center {
+        vertical-align: middle;
+    }
+    &.v-bottom {
+        vertical-align: bottom;
+    }
+    &.v-top {
+        vertical-align: top;
+    }
+
+}
