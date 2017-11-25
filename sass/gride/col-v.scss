@@ -1,0 +1,30 @@
+
+@import "$size-px";
+@import "col";
+
+@mixin col-v ($type: "") {
+
+  @for $n from 1 through $ncol {
+    &.col-v-#{$type}#{$n},
+    &.col-v-min-#{$type}#{$n}
+    &.col-v-max-#{$type}#{$n} {
+      @include col();
+    }
+    &.col-v-#{$type}#{$n} {
+      height: getpercentage($ncol, $n);
+    }
+    &.col-v-min-#{$type}#{$n},
+    &.col-v-max-#{$type}#{$n} {
+      height: auto;
+    }
+    &.col-v-min-#{$type}#{$n} {
+      min-height: getpercentage($ncol, $n);
+      min-height: getvh($ncol, $n);
+    }
+    &.col-v-max-#{$type}#{$n} {
+      max-height: getpercentage($ncol, $n);
+      max-height: getvh($ncol, $n);
+    }
+  }
+
+}

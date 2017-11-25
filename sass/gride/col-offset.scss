@@ -1,0 +1,19 @@
+
+@import "$size-px";
+@import "col";
+
+@mixin col-offset ($type: "") {
+
+  $n: 0;
+
+  &.col-offset-#{$type}#{$n} {
+    margin-left: 0;
+  }
+
+  @for $n from 1 through $ncol {
+    &.col-offset-#{$type}#{$n} {
+      margin-left: getpercentage($ncol, $n);
+    }
+  }
+
+}

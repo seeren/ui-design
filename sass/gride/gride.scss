@@ -1,0 +1,27 @@
+
+@import "$size-px";
+@import "col-h";
+@import "col-v";
+@import "col-offset";
+
+@mixin gride () {
+
+  @include col-h();
+  @include col-v();
+  @include col-offset();
+
+  @each $size, $px in $size-px  {
+    @if ($px > 0) {
+      @media all and (min-width: #{$px}px) {
+        @include col-h(#{$size}-);
+        @include col-v(#{$size}-);
+        @include col-offset(#{$size}-);
+      }
+    } @else {
+        @include col-h(#{$size}-);
+        @include col-v(#{$size}-);
+        @include col-offset(#{$size}-);
+    }
+  }
+
+}

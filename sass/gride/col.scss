@@ -1,0 +1,20 @@
+
+@function getpercentage($ncol, $n) {
+  @return percentage(floor(100 / $ncol * $n * 100) / 100 / 100);
+}
+
+@function getvh($ncol, $n) {
+  @return #{(floor(100 / $ncol * $n * 100) / 100)}vh;
+}
+
+@mixin col () {
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  float: none;
+  margin-right: -.25rem;
+  overflow: hidden;
+  padding-left: .6rem;
+  padding-right: .6rem;
+  vertical-align: top;
+}

@@ -1,0 +1,54 @@
+
+@import "$size-px";
+@import "col";
+
+@mixin col-h ($type: "") {
+
+  $n: 0;
+
+  &.col-#{$type}#{$n} {
+    display: none;
+  }
+
+  @for $n from 1 through $ncol {
+    &.col-#{$type}#{$n},
+    &.col-min-#{$type}#{$n},
+    &.col-max-#{$type}#{$n},
+    &.col-#{$type}#{$n}-center,
+    &.col-#{$type}#{$n}-left,
+    &.col-#{$type}#{$n}-justify,
+    &.col-#{$type}#{$n}-right {
+      @include col();
+    }
+    &.col-#{$type}#{$n}-center {
+      text-align: center;
+    }
+    &.col-#{$type}#{$n}-left {
+        text-align: left;
+    }
+    &.col-#{$type}#{$n}-justify {
+        text-align: justify;
+    }
+    &.col-#{$type}#{$n}-right {
+        text-align: right;
+    }
+    &.col-#{$type}#{$n},
+    &.col-#{$type}#{$n}-center,
+    &.col-#{$type}#{$n}-left,
+    &.col-#{$type}#{$n}-justify,
+    &.col-#{$type}#{$n}-right {
+      width:getpercentage($ncol, $n);
+    }
+    &.col-min-#{$type}#{$n},
+    &.col-max-#{$type}#{$n} {
+      width: auto;
+    }
+    &.col-min-#{$type}#{$n} {
+      min-width: getpercentage($ncol, $n);
+    }
+    &.col-max-#{$type}#{$n} {
+      max-width: getpercentage($ncol, $n);
+    }
+  }
+
+}
