@@ -5,7 +5,6 @@
   "keywords": ["ui","javascript", "sass", "css"],
   "main": "./sass/index.js",
   "scripts": {
-    "dev": "npm run sync | npm run sassify",
     "babelify": "./node_modules/.bin/watchify ./src/index.js -t [babelify] -o ./dist/ui-design.js",
     "coverage": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit",
     "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
