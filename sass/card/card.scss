@@ -1,18 +1,26 @@
 
-@import "$n-dp";
+@import "./../dp/$n-dp";
 
 @mixin cardTransition () {
-    background: #ffffff;
+
     border: none;
-    border-radius: .125em;
+    border-radius: .1em;
     transition: all .28s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 @mixin card () {
-    @include cardTransition();
+
+    &.card {
+        @include cardTransition();
+    }
+
     @each $n, $dp in $n-dp {
         &.card-#{$n} {
             box-shadow: $dp;
+            position: relative;
+            z-index: $n;
         }
     }
+
 }
