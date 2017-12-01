@@ -1,14 +1,14 @@
 
 @import "title";
-@import "../color/$color";
-@import "../text/font/$font";
+@import "../color/$color-material";
+@import "../text/$font";
 
 @mixin reset () {
 
   @include title();
 
   html {
-  color: $color_black_1;
+  color: map-get($color-material, "grey-900");
   font-size: 0.9em;
   font-family: $font_roboto;
   }
