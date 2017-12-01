@@ -1,0 +1,20 @@
+
+@import "../color/$color-material";
+
+$btn-color: (
+    emergency: "pink",
+    alert: "red",
+    critical: "deep-orange",
+    error: "orange",
+    warning: "yellow",
+    notice: "lime",
+    info: "light-green",
+    success: "green",
+    debug: "teal",
+    cure: "cyan",
+    restore: "light-blue",
+    reset: "indigo",
+    hazard: "deep-purple",
+    poison: "purple"
+
+)

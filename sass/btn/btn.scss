@@ -1,24 +1,40 @@
 
 @import "../card/card";
-@import "$level-color";
+@import "../dp/$n-dp";
+@import "../color/$color-material";
+@import "$btn-color";
+@import "btn-raised";
+@import "btn-floating";
 
 @mixin btn () {
-    &:hover {
-        opacity: .6;
-    }
-    &:active {
-        opacity: .4;
-    }
+
+    @include btn-raised();
+    @include btn-floating();
     @include cardTransition();
+
+    border-radius: .05em;
+    color: map-get($color-material, "blue-500");
+    cursor: pointer;
     display: inline-block;
-    font-size: .9em;
+    font-size: 1.05rem;
     font-variant: small-caps;
     font-weight: 500;
     line-height: 1em;
-    padding: .5em 1em;
-    @each $level, $color in $level-color {
-        &.btn-#{$level} {
-            color: $color;
-        }
+    padding: .4em 1.2em .6em;
+    margin: .5em;
+    letter-spacing: .05em;
+
+    &:hover {
+        filter: grayscale(12%);
     }
+    &:active,
+    &.active,
+    &.disabled {
+        filter: grayscale(0%);
+    }
+    &.disabled {
+        cursor: default;
+        opacity: .5;
+    }
+
 }
