@@ -4,7 +4,6 @@
 @mixin cardTransition () {
 
     border: none;
-    border-radius: .1em;
     transition: all .28s cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -13,6 +12,7 @@
 
     &.card {
         @include cardTransition();
+        border-radius: .1em;
     }
 
     @each $n, $dp in $n-dp {
