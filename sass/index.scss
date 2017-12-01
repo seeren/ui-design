@@ -1,23 +1,30 @@
 
-
-@import "reset/reset";
 @import "btn/btn";
 @import "card/card";
+@import "color/color";
 @import "cross/cross";
 @import "dialog/dialog";
+@import "gride/gride";
+@import "reset/reset";
+@import "text/text";
 
 @include reset();
 
 .ui {
+
+    @include card();
+    @include color();
+    @include gride();
+    @include text();
+
     &.btn {
         @include btn();
     }
-    &.card {
-        @include card();
-    }
+
     &.cross {
         @include cross();
     }
+
     &.dialog {
         @include dialog();
     }
