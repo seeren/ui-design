@@ -1,12 +1,13 @@
 
 @import "../color/$color-material";
 @import "../dp/$n-dp";
-@import "$btn-action";
 @import "../card/card";
+@import "$btn-action";
 
 @mixin btn-floating () {
 
     @include cardTransition();
+
     &.btn-floating {
         background: $color_dodger;
         border-radius: 100%;
