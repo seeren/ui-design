@@ -3,11 +3,13 @@
 @import "../dp/$n-dp";
 @import "../color/$color-material";
 @import "$btn-color";
+@import "btn-flat";
 @import "btn-raised";
 @import "btn-floating";
 
 @mixin btn () {
 
+    @include btn-flat();
     @include btn-raised();
     @include btn-floating();
     @include cardTransition();
@@ -23,18 +25,20 @@
     padding: .4em 1.2em .6em;
     margin: .5em;
     letter-spacing: .05em;
-
-    &:hover {
-        filter: grayscale(12%);
-    }
-    &:active,
-    &.active,
-    &.disabled {
-        filter: grayscale(0%);
-    }
-    &.disabled {
+    &.disabled,
+    &.disabled:active,
+    &.disabled:hover {
+        cursor: default;
+        opacity: .5;
+        background:  map-get($color-material, "grey-300") !important;
         cursor: default;
         opacity: .5;
     }
-
+    &:hover {
+        background:  map-get($color-material, "grey-200") !important;
+    }
+    &:active,
+    &.active {
+        background:  map-get($color-material, "grey-300") !important;
+    }
 }
