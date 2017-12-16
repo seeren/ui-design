@@ -1,7 +1,7 @@
 {
   "name": "ui-design",
-  "version": "1.0.5",
-  "description": "ui components design",
+  "version": "1.0.6",
+  "description": "ui component design",
   "keywords": ["ui","javascript", "sass", "css"],
   "main": "./sass/index.js",
   "scripts": {
