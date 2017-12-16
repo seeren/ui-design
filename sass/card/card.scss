@@ -1,6 +1,4 @@
 
-@import "./../dp/$n-dp";
-
 @mixin cardTransition () {
 
     border: none;
@@ -12,7 +10,10 @@
 
     &.card {
         @include cardTransition();
+
         border-radius: .1em;
+        background:  map-get($color-material, "grey-100");
+        
     }
 
     @each $n, $dp in $n-dp {
