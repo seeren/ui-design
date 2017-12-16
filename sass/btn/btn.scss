@@ -1,7 +1,5 @@
 
 @import "../card/card";
-@import "../dp/$n-dp";
-@import "../color/$color-material";
 @import "$btn-color";
 @import "btn-flat";
 @import "btn-raised";
@@ -14,6 +12,11 @@
     @include btn-floating();
     @include cardTransition();
 
+    &.btn-lg {
+        font-size: 1.3rem;
+    }
+
+    min-width: 4em;
     border-radius: .05em;
     color: map-get($color-material, "blue-500");
     cursor: pointer;
@@ -24,6 +27,7 @@
     line-height: 1em;
     padding: .4em 1.2em .6em;
     margin: .5em;
+    text-align: center;
     letter-spacing: .05em;
     &.disabled,
     &.disabled:active,

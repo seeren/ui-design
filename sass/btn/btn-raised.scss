@@ -1,8 +1,4 @@
 
-@import "../color/$color-material";
-@import "../dp/$n-dp";
-@import "$btn-color";
-
 @mixin btn-raised () {
 
     &.btn-raised {
