@@ -1,6 +1,4 @@
 
-@import "$color-material";
-
 @mixin color () {
 
     @each $color, $material in $color-material {
