@@ -52,13 +52,16 @@ Dp
 ui card-{[0,24]}
 ```
 ## Color
-Colors from material [color palette](https://material.io/guidelines/style/color.html#color-color-palette) is present for color and background-color.
-```html
-class="ui purple-50 bg-purple-900"
+
+ * [@see material color palette](https://material.io/guidelines/style/color.html#color-color-palette)
+
+Color & Background
+```
+ui [bg-]{red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|ambre|orange|deep-orange|brown|grey|blue-gray}-{[0-900]}
 ```
 
 ## Dialog
-* @see https://seeren.github.io/ui-design/#dialog
+ * [@see #dialog](https://seeren.github.io/ui-design/#dialog)
 
 Level
 ```
@@ -66,7 +69,7 @@ ui.dialog.{emergency|alert|critical|error|warning|notice|info|debug}([title, ]me
 ```
 Event
 ```
-`ui.dialog.onabort([callback])
+ui.dialog.onabort([callback])
          .onconfirm([btn_text, ]callback)
          .oncancel([btn_text, ]callback);
 ```
