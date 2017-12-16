@@ -5,7 +5,7 @@
 
 ## Demo
 
-[https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
+* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
 
 
 ## Installation
@@ -21,23 +21,48 @@ Add link and script tag
 <script type="text/javascript" src="./node_modules/ui-dialog/dist/ui-dialog.js"></script>
 ```
 
-## UI
+# Usage
 ui provide class modifiers
 
-### Btn
- @see https://seeren.github.io/ui-design/#button
+## Bouton
+ * [@see #button](https://seeren.github.io/ui-design/#button)
 
-### Card
- @see https://seeren.github.io/ui-design/#card
+Types
+```
+ui btn [btn-{raised|floating}] [disabled]
+```
+Level
+```
+ui btn [btn-flat|btn-floating] btn-{primary|link}
+```
+Colors
+```
+ui btn [btn-flat|btn-floating] btn-{emergency|alert|critical|error|warning|notice|info|debug|cure|restore|reset|hazard|poison}
+```
+Action
+```
+ui btn tn-floating btn-{add|less|close|right|left|refresh|nav|v-elipsis|elipsis|pencil|mail|position|clock}
+```
 
-### Color
+## Card
+ * [@see #card](https://seeren.github.io/ui-design/#card)
+
+Dp
+```
+ui card-{[0,24]}
+```
+## Color
 Colors from material [color palette](https://material.io/guidelines/style/color.html#color-color-palette) is present for color and background-color.
 ```html
 class="ui purple-50 bg-purple-900"
 ```
 
-### Dialog
+## Dialog
  @see https://seeren.github.io/ui-design/#dialog
+ 
+ `ui.dialog.emergency|alert|critical|error|warning|notice|info|debug([title, ]message);`
+`ui.dialog.onabort([callback]);`
+`ui.dialog.onconfirm([btn_text, ]callback); ` `ui.dialog.oncancel([btn_text, ]callback);`
 
 ## Tests
 Run `npm test`
