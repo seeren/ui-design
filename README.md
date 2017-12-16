@@ -1,15 +1,7 @@
- [![npm](https://img.shields.io/npm/dt/ui-design.svg)](https://www.npmjs.com/package/ui-design) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e933f03e70a34c7bbd45a31f521f3b02)](https://www.codacy.com/app/seeren/ui-design?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=seeren/ui-design&amp;utm_campaign=Badge_Grade) [![npm](https://img.shields.io/npm/v/ui-design.svg)](https://www.npmjs.com/package/ui-design) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+ [![Build Status](https://travis-ci.org/seeren/ui-design.svg?branch=master)](https://travis-ci.org/seeren/ui-design)  [![Coverage Status](https://coveralls.io/repos/github/seeren/ui-design/badge.svg?branch=master)](https://coveralls.io/github/seeren/ui-design?branch=master) [![npm](https://img.shields.io/npm/dt/ui-design.svg)](https://www.npmjs.com/package/ui-design) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e933f03e70a34c7bbd45a31f521f3b02)](https://www.codacy.com/app/seeren/ui-design?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=seeren/ui-design&amp;utm_campaign=Badge_Grade) [![npm](https://img.shields.io/npm/v/ui-design.svg)](https://www.npmjs.com/package/ui-design) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 # ui-design
-**Build material and mobile first interface with a simple toolkit.**
-
-## Features
-* [ui](#ui)
-* [`btn`](#btn)
-* [`card`](#cardui)
-* [`color`](#color)
-* [`dialog`](#dialog)
-* [`gride`](#gride)
+**Build material and mobile first interface with a simple toolkit**
 
 ## Demo
 
@@ -52,15 +44,13 @@ Run `npm test`
 ```
 ./node_modules/.bin/mocha --require babel-register --recursive test/unit
 ```
-
-## Coverage
 Run `npm run coverage`
 ```
 ./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit
 ```
 
 ##  Contributors
-* **Cyril Ichti** - *Initial work* - [seeren](https://github.com/seeren)
+* [@seeren](https://github.com/seeren) - *Initial work*
 
 ## License
 This project is licensed under the **MIT License** - see the [license](LICENSE) file for details.
