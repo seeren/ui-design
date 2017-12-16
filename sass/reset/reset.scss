@@ -23,7 +23,7 @@
   }
   a {
     cursor: default;
-    text-decoration: none;
+    text-decoration: none !important;
     &:link {
       cursor: pointer;
     }
