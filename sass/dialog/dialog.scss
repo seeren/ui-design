@@ -1,52 +1,10 @@
 
-@import "../color/$color";
-
 @mixin dialog () {
+
     bottom: 1em;
-    color: $color_gray1;
     cursor: default;
-    max-width: 60%;
-    min-width: 12em;
     opacity: 1;
     position: fixed;
-    right: 2em;
-    z-index: 9;
-    @media all and (orientation: portrait) {
-        right: 7.5% !important;
-        max-width: 100% !important;
-        width: 85% !important;
-    }
-    & .btn {
-        margin-left: .5em;
-    }
-    &.card {
-        box-sizing: border-box;
-        padding: 1em 1em .5em;
-        margin: 0;
-        text-align: right;
-    }
-    & .cross {
-        position: absolute;
-        top: .25em;
-        right: .25em;
-    }
-    & .message {
-        color: $color_gray3;
-        font-size: .8em;
-        font-weight: 300;
-        hyphens: auto;
-        letter-spacing: .04em;
-        line-height: 1.9em;
-        max-width: 100%;
-        margin: 0 0 1.75em;
-        text-align: left;
-    }
-    & .title {
-        color: $color_gray1;
-        font-size: 1em;
-        font-weight: 500;
-        margin: .5em 0 1em;
-        padding: 0;
-        text-align: left;
-    }
+    padding-bottom: 1em;
+
 }
