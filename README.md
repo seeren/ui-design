@@ -24,10 +24,10 @@ Add link and script tag
 # Usage
 ui provide class modifiers
 
-## Bouton
+## Button
  * [@see #button](https://seeren.github.io/ui-design/#button)
 
-Types
+Type
 ```
 ui btn [btn-{raised|floating}] [disabled]
 ```
@@ -35,7 +35,7 @@ Level
 ```
 ui btn [btn-flat|btn-floating] btn-{primary|link}
 ```
-Colors
+Color
 ```
 ui btn [btn-flat|btn-floating] btn-{emergency|alert|critical|error|warning|notice|info|debug|cure|restore|reset|hazard|poison}
 ```
@@ -58,11 +58,18 @@ class="ui purple-50 bg-purple-900"
 ```
 
 ## Dialog
- @see https://seeren.github.io/ui-design/#dialog
- 
- `ui.dialog.emergency|alert|critical|error|warning|notice|info|debug([title, ]message);`
-`ui.dialog.onabort([callback]);`
-`ui.dialog.onconfirm([btn_text, ]callback); ` `ui.dialog.oncancel([btn_text, ]callback);`
+* @see https://seeren.github.io/ui-design/#dialog
+
+Level
+```
+ui.dialog.{emergency|alert|critical|error|warning|notice|info|debug}([title, ]message);
+```
+Event
+```
+`ui.dialog.onabort([callback])
+         .onconfirm([btn_text, ]callback)
+         .oncancel([btn_text, ]callback);
+```
 
 ## Tests
 Run `npm test`
