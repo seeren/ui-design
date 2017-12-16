@@ -21,6 +21,10 @@
     position: absolute;
     width: 100%;
   }
+  main,
+  section {
+    width: 100%;
+  }
   a {
     cursor: default;
     text-decoration: none !important;
