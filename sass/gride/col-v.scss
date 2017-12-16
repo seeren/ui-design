@@ -4,6 +4,7 @@
 @mixin col-v ($type: "") {
 
   @for $n from 1 through $ncol {
+
     &.col-v-#{$type}#{$n} {
       height: getpercentage($ncol, $n);
       height: getvh($ncol, $n);
