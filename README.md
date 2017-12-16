@@ -73,6 +73,17 @@ ui.dialog.onabort([callback])
          .onconfirm([btn_text, ]callback)
          .oncancel([btn_text, ]callback);
 ```
+## Gride
+ * [@see #gride](https://seeren.github.io/ui-design/#gride)
+
+Column
+```
+ui col-[{min|max}-][{xs|sm|md|lg|xl}-]{[0-12]}
+```
+Vertical
+```
+ui col-v-[{min|max}-][{xs|sm|md|lg|xl}-]{[0-12]}
+```
 
 ## Tests
 Run `npm test`
