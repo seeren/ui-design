@@ -10,7 +10,7 @@
  * @version 1.1.0
  */
 
-import { dialog } from "./../../dev.ui-dialog/src/index";
+import { dialog } from "./dialog/index";
 
 export let ui = ((() => {
 
