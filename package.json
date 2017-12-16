@@ -1,6 +1,6 @@
 {
   "name": "ui-design",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ui components design",
   "keywords": ["ui","javascript", "sass", "css"],
   "main": "./sass/index.js",
@@ -16,9 +16,6 @@
   },
   "author": "Cyril Ichti",
   "license": "MIT",
-  "dependencies": {
-    "ui-dialog": "latest"
-  },
   "devDependencies": {
     "babelify": "latest",
     "babel-plugin-istanbul": "latest",
