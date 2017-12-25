@@ -1,18 +1,16 @@
-
-@import "title";
 @import "../color/$color-material";
 @import "../text/$font";
+@import "title";
 
 @mixin reset () {
 
   @include title();
 
   html {
-  color: map-get($color-material, "grey-900");
-  font-size: 0.9em;
-  font-family: $font_roboto;
+    color: map-get($color-material, "grey-900");
+    font-size: 0.9em;
+    font-family: $font_roboto;
   }
-
   body {
     height: 100%;
     margin: 0;
@@ -22,7 +20,9 @@
     width: 100%;
   }
   main,
-  section {
+  article,
+  section,
+  footer {
     width: 100%;
   }
   a {
@@ -35,7 +35,8 @@
   p {
     line-height: 1.6em;
   }
-  p, hr {
+  p,
+  hr {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
