@@ -1,10 +1,11 @@
-
 @mixin dialog () {
+
+    @include cardTransition();
 
     bottom: 1em;
     cursor: default;
     opacity: 1;
-    position: fixed;
     padding-bottom: 1em;
+    position: fixed;
 
 }
