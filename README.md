@@ -3,13 +3,15 @@
 # ui-design
 **Build material and mobile first interface**
 
+Open source library for developing with HTML, SASS and JavaScript. Fix your design with classes, variables and mixins, program components with grid system, material colors, elevations and buttons.
+
 ## Documentation
 @see [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
 
 ## Installation
 Install with [npm](https://www.npmjs.com/package/ui-design).
 ```
-npm i ui-design -S
+npm install ui-design
 ```
 ```html
 <link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
@@ -19,9 +21,10 @@ npm i ui-design -S
 ```
 
 ## Usage
-> Features are provided by HTMLElement class attribut value or script instruction.
+> Features use HTMLElement class attribute value or script instruction.
 
 ### [Button](https://seeren.github.io/ui-design/#button)
+Button type can be flat, raisin or floating. Each type can be disabled, primary, link or colored whereas floating button can have action with icons.
 
 ```js
 ui btn [btn-{raised|floating}] [btn-{primary|link}] [disabled]
@@ -36,17 +39,20 @@ ui btn btn-floating btn-{add|less|close|right|left|refresh|nav|v-elipsis|elipsis
 ```
 
 ### [Card](https://seeren.github.io/ui-design/#card)
+Card represent a container that can be elevated for 24 depth.
 
 ```js
-ui card-{[0,24]}
+ui card card-{[0,24]}
 ```
 ### [Color](https://seeren.github.io/ui-design/#color)
+About 200 color and background-color available.
 
 ```js
 ui [bg-]{red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|ambre|orange|deep-orange|brown|grey|blue-gray}-{50|100|200|300|400|500|600|700|800|900}
 ```
 
 ### [Dialog](https://seeren.github.io/ui-design/#dialog)
+Component for display simple message, confirmation, cancellation or different combinaison allow to dialog and listen user choices.
 
 ```js
 ui.dialog.{emergency|alert|critical|error|warning|notice|info|debug}([title, ]message);
@@ -59,7 +65,7 @@ ui.dialog
   .oncancel([[btn_text, ]callback]);
 ```
 ### [Gride](https://seeren.github.io/ui-design/#gride)
-
+Gride system on classique verbose to display inline and align on vertice. Width, min, max, offset and height can be applied for breakpoints.
 
 ```js
 // Column
