@@ -3,17 +3,14 @@
 # ui-design
 **Build material and mobile first interface with a simple toolkit**
 
-## Demo
-
-* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
-
+## Documentation
+@see [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
 
 ## Installation
-Install with [npm](https://www.npmjs.com/package/ui-design)
+Install with [npm](https://www.npmjs.com/package/ui-design).
 ```
-npm install ui-design
+npm i ui-design -S
 ```
-Add link and script tag
 ```html
 <link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
 ```
@@ -21,68 +18,60 @@ Add link and script tag
 <script type="text/javascript" src="./node_modules/ui-dialog/dist/ui-dialog.js"></script>
 ```
 
-# Usage
-ui provide class modifiers
+## Usage
+> Features are provided by HTMLElement class attribut value or script instruction.
 
-## Button
- * [@see #button](https://seeren.github.io/ui-design/#button)
+### [Button](https://seeren.github.io/ui-design/#button)
 
-Type
+```js
+ui btn [btn-{raised|floating}] [btn-{primary|link}] [disabled]
 ```
-ui btn [btn-{raised|floating}] [disabled]
+```js
+// Color
+ui btn btn-{emergency|alert|critical|error|warning|notice|info|debug|cure|restore|reset|hazard|tilt}
 ```
-Level
-```
-ui btn [btn-flat|btn-floating] btn-{primary|link}
-```
-Color
-```
-ui btn [btn-flat|btn-floating] btn-{emergency|alert|critical|error|warning|notice|info|debug|cure|restore|reset|hazard|poison}
-```
-Action
-```
-ui btn tn-floating btn-{add|less|close|right|left|refresh|nav|v-elipsis|elipsis|pencil|mail|position|clock}
+```js
+// Action
+ui btn btn-floating btn-{add|less|close|right|left|refresh|nav|v-elipsis|elipsis|pencil|mail|position|clock}
 ```
 
-## Card
- * [@see #card](https://seeren.github.io/ui-design/#card)
+### [Card](https://seeren.github.io/ui-design/#card)
 
-Dp
-```
+```js
 ui card-{[0,24]}
 ```
-## Color
+### [Color](https://seeren.github.io/ui-design/#color)
 
- * [@see material color palette](https://material.io/guidelines/style/color.html#color-color-palette)
-
-Color & Background
 ```
-ui [bg-]{red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|ambre|orange|deep-orange|brown|grey|blue-gray}-{[0-900]}
+ui [bg-]{red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|ambre|orange|deep-orange|brown|grey|blue-gray}-{50|100|200|300|400|500|600|700|800|900}
 ```
 
-## Dialog
- * [@see #dialog](https://seeren.github.io/ui-design/#dialog)
+### [Dialog](https://seeren.github.io/ui-design/#dialog)
 
-Level
-```
+```js
 ui.dialog.{emergency|alert|critical|error|warning|notice|info|debug}([title, ]message);
 ```
-Event
+```js
+// Event
+ui.dialog
+  .onabort([callback])
+  .onconfirm([[btn_text, ]callback])
+  .oncancel([[btn_text, ]callback]);
 ```
-ui.dialog.onabort([callback])
-         .onconfirm([btn_text, ]callback)
-         .oncancel([btn_text, ]callback);
-```
-## Gride
- * [@see #gride](https://seeren.github.io/ui-design/#gride)
+### [Gride](https://seeren.github.io/ui-design/#gride)
 
-Column
+
+```js
+// Column
+ui col-[{min|max}-][{xs|sm|md|lg|xl}-]{[0,12]}
 ```
-ui col-[{min|max}-][{xs|sm|md|lg|xl}-]{[0-12]}
+```js
+// Offset
+ui col-offset-[{xs|sm|md|lg|xl}-]{[0,12]}
 ```
-Vertical
-```
-ui col-v-[{min|max}-][{xs|sm|md|lg|xl}-]{[0-12]}
+```js
+// Vertical
+ui col-v-[{min|max}-][{xs|sm|md|lg|xl}-]{[0,12]}
 ```
 
 ## Tests
@@ -96,7 +85,7 @@ Run `npm run coverage`
 ```
 
 ##  Contributors
-* [@seeren](https://github.com/seeren) - *Initial work*
+[@seeren](https://github.com/seeren)
 
 ## License
-This project is licensed under the **MIT License** - see the [license](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE).
