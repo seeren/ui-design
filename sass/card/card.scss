@@ -1,27 +1,35 @@
+@import "../dp/$n-dp";
 
 @mixin cardTransition () {
 
-    border: none;
     transition: all .28s cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
 @mixin card () {
 
-    &.card {
-        @include cardTransition();
+    $card_selector: null;
 
+    &.card {
         border-radius: .1em;
-        background:  map-get($color-material, "grey-0");
-        
+        background: map-get($color-material, "grey-0");
     }
 
     @each $n, $dp in $n-dp {
+        $card_selectors: "&.card-#{$n}";
+        @if (not $card_selector) {
+          $card_selector: $card_selectors;
+        } @else {
+          $card_selector: "#{$card_selector}, #{$card_selectors}";
+        }
+
         &.card-#{$n} {
             box-shadow: $dp;
-            position: relative;
             z-index: $n;
         }
+    }
+
+    #{$card_selector} {
+        position: relative;
     }
 
 }
