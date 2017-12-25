@@ -1,63 +1,60 @@
-
 @mixin btn-flat () {
 
     &.btn-flat {
-
-        box-shadow: 0px 0px 0px 0px transparent !important;
-        background:  transparent !important;
-
-        &.btn-basic {
-            color: map-get($color-material, "grey-900");
-            &.disabled,
-            &.disabled:active,
-            &.disabled:hover {
-                background:  map-get($color-material, "grey-300") !important;
-                
-            }
-            &:hover {
-                background:  map-get($color-material, "grey-200") !important;
-            }
-            &:active,
-            &.active {
-                background:  map-get($color-material, "grey-300") !important;
-            }
+        box-shadow: none !important;
+        box-shadow: 0px 0px 0px 0px transparent;
+        &.btn-basic:hover,
+        &.btn-link:hover {
+            background:  map-get($color-material, "grey-200") !important;            
         }
-
+        &.btn-basic.disabled,
+        &.btn-basic.disabled:active,
+        &.btn-basic.disabled:hover,
+        &.btn-basic:active,
+        &.btn-basic.active,
+        &.btn-link.disabled,
+        &.btn-link.disabled:active,
+        &.btn-link.disabled:hover,
+        &.btn-link:active,
+        &.btn-link.active {
+            background:  map-get($color-material, "grey-300") !important;            
+        }
+        &.btn-basic {
+            color: map-get($color-material, "grey-900") !important;
+            background:  transparent !important; 
+        }
         &.btn-link {
             background:  transparent !important;
-            color:  map-get($color-material, "grey-0");
+            color: map-get($color-material, "grey-0") !important;
             &.disabled,
             &.disabled:active,
             &.disabled:hover {
-                color:  map-get($color-material, "blue-500");
-                background:  map-get($color-material, "grey-300") !important;
-            }
-            &:hover {
-                background:  map-get($color-material, "grey-200") !important;
-            }
-            &:active,
-            &.active {
-                background:  map-get($color-material, "grey-300") !important;
+                color:  map-get($color-material, "blue-500") !important;
             }
         }
-
         @each $btn, $color in $btn-color {
+            &.btn-#{$btn},
+            &.btn-#{$btn}.disabled,
+            &.btn-#{$btn}.disabled:active,
+            &.btn-#{$btn}.disabled:hover {
+                color: map-get($color-material,  #{$color}-500); 
+                background: transparent;
+            }
             &.btn-#{$btn} {
-                color:  map-get($color-material,  #{$color}-500) !important;
+                &:hover {
+                    color: map-get($color-material,  #{$color}-600);
+                    background: map-get($color-material, #{$color}-50);
+                }
                 &.disabled,
                 &.disabled:active,
-                &.disabled:hover {
-                    color:  map-get($color-material,  #{$color}-500) !important;
-                    background:  map-get($color-material, #{$color}-100) !important;
-                }
-                &:hover {
-                    color:  map-get($color-material,  #{$color}-600) !important;
-                    background:  map-get($color-material, #{$color}-50) !important;
+                &.disabled:hover,
+                &:active,
+                &.active {
+                    background: map-get($color-material, #{$color}-100);
                 }
                 &:active,
                 &.active {
-                    color:  map-get($color-material,  #{$color}-700) !important;
-                    background:  map-get($color-material, #{$color}-100) !important;
+                    color: map-get($color-material,  #{$color}-700);
                 }
             }
         }

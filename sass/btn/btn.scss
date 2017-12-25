@@ -1,5 +1,3 @@
-
-@import "../card/card";
 @import "$btn-color";
 @import "btn-flat";
 @import "btn-raised";
@@ -15,8 +13,8 @@
     &.btn-lg {
         font-size: 1.3rem;
     }
-
     min-width: 4em;
+    border: none;
     border-radius: .05em;
     color: map-get($color-material, "blue-500");
     cursor: pointer;
@@ -34,15 +32,18 @@
     &.disabled:hover {
         cursor: default;
         opacity: .5;
-        background:  map-get($color-material, "grey-300") !important;
         cursor: default;
         opacity: .5;
     }
     &:hover {
-        background:  map-get($color-material, "grey-200") !important;
+        background: map-get($color-material, "grey-200") ;
     }
+    &.disabled,
+    &.disabled:active,
+    &.disabled:hover,
     &:active,
     &.active {
-        background:  map-get($color-material, "grey-300") !important;
+        background: map-get($color-material, "grey-300") ;
     }
+
 }
