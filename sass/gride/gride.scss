@@ -1,8 +1,16 @@
-
 @import "$size-px";
+@import "col";
 @import "col-h";
 @import "col-v";
 @import "col-offset";
+
+@function getpercentage($ncol, $n) {
+  @return percentage(floor(100 / $ncol * $n * 100) / 100 / 100);
+}
+
+@function getvh($ncol, $n) {
+  @return #{(floor(100 / $ncol * $n * 100) / 100)}vh;
+}
 
 @mixin gride () {
 

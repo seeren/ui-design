@@ -1,7 +1,3 @@
-
-@import "$size-px";
-@import "col";
-
 @mixin col-offset ($type: "") {
 
   $n: 0;

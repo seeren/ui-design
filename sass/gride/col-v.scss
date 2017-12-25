@@ -1,17 +1,18 @@
-
-@import "$size-px";
-
 @mixin col-v ($type: "") {
 
-  @for $n from 1 through $ncol {
+  $n: 0;
+  $col_min_max_selector: null;
 
+  @for $n from 1 through $ncol {
+    $col_min_max_selectors: "&.col-v-min-#{$type}#{$n}, &.col-v-max-#{$type}#{$n}";
+    @if (not $col_min_max_selector) {
+      $col_min_max_selector: $col_min_max_selectors;
+    } @else {
+      $col_min_max_selector: "#{$col_min_max_selector}, #{$col_min_max_selectors}";
+    }
     &.col-v-#{$type}#{$n} {
       height: getpercentage($ncol, $n);
       height: getvh($ncol, $n);
-    }
-    &.col-v-min-#{$type}#{$n},
-    &.col-v-max-#{$type}#{$n} {
-      height: auto;
     }
     &.col-v-min-#{$type}#{$n} {
       min-height: getpercentage($ncol, $n);
@@ -21,6 +22,10 @@
       max-height: getpercentage($ncol, $n);
       max-height: getvh($ncol, $n);
     }
+  }
+
+  #{$col_min_max_selector} {
+    height: auto;
   }
 
 }

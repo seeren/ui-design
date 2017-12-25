@@ -1,19 +1,10 @@
-
-@function getpercentage($ncol, $n) {
-  @return percentage(floor(100 / $ncol * $n * 100) / 100 / 100);
-}
-
-@function getvh($ncol, $n) {
-  @return #{(floor(100 / $ncol * $n * 100) / 100)}vh;
-}
-
 @mixin col () {
   border: none;
   box-sizing: border-box;
   display: inline-block;
   float: none;
-  margin-right: -.25rem;
-  padding-left: .8rem;
-  padding-right: .8rem;
+  margin-right: -.25em;
+  padding-left: .5rem;
+  padding-right: .5rem;
   vertical-align: top;
 }
