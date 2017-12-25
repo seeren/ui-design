@@ -1,19 +1,16 @@
-
 @mixin cross () {
 
-    top: .5em;
-    right: -.5em;
+    cursor: pointer;
     position: relative;
     padding-right: 1.3em;
-
+    right: -.5em;
+    top: .5em;
     &:hover:after {
         color: map-get($color-material, "grey-900");
     }
-
     &:after {
-        content: "\d7";
         color: map-get($color-material, "grey-700");
-        cursor: pointer;
+        content: "\d7";
         font-size: 1.6em;
         line-height: .5em;
         position: absolute;
