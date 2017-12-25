@@ -1,7 +1,3 @@
-
-@import "color/$color-material";
-@import "dp/$n-dp";
-
 @import "btn/btn";
 @import "card/card";
 @import "color/color";
@@ -15,19 +11,17 @@
 
 .ui {
 
-    @include card();
     @include color();
+    @include card();
     @include gride();
     @include text();
 
     &.btn {
         @include btn();
     }
-
     &.cross {
         @include cross();
     }
-
     &.dialog {
         @include dialog();
     }
