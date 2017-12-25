@@ -42,7 +42,7 @@ ui card-{[0,24]}
 ```
 ### [Color](https://seeren.github.io/ui-design/#color)
 
-```
+```js
 ui [bg-]{red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|ambre|orange|deep-orange|brown|grey|blue-gray}-{50|100|200|300|400|500|600|700|800|900}
 ```
 
