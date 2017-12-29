@@ -17,14 +17,14 @@ npm install ui-design
 <link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
 ```
 ```html
-<script type="text/javascript" src="./node_modules/ui-dialog/dist/ui-dialog.js"></script>
+<script type="text/javascript" src="./node_modules/ui-dialog/dist/ui-design.js"></script>
 ```
 
 ## Usage
 > Features use HTMLElement class attribute value or script instruction.
 
 ### [Button](https://seeren.github.io/ui-design/#button)
-Button type can be flat, raisin or floating. Each type can be disabled, primary, link or colored whereas floating button can have action with icons.
+Button type can be flat, raised or floating. Each type can be disabled, primary, link or colored whereas floating button can have action with icons.
 
 ```js
 ui btn [btn-{raised|floating}] [btn-{primary|link}] [disabled]
@@ -45,7 +45,7 @@ Card represent a container that can be elevated for 24 depth.
 ui card card-{[0,24]}
 ```
 ### [Color](https://seeren.github.io/ui-design/#color)
-About 200 color and background-color available.
+About 19*10 color and background-color available.
 
 ```js
 ui [bg-]{red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|ambre|orange|deep-orange|brown|grey|blue-gray}-{50|100|200|300|400|500|600|700|800|900}
@@ -78,6 +78,13 @@ ui col-offset-[{xs|sm|md|lg|xl}-]{[0,12]}
 ```js
 // Vertical
 ui col-v-[{min|max}-][{xs|sm|md|lg|xl}-]{[0,12]}
+```
+
+### [Wave](https://seeren.github.io/ui-design/#wave)
+Elements can have a wave background on mousedown based on the targeted rules.
+
+```js
+ui btn wave [wave-{right|left}}
 ```
 
 ## Tests
