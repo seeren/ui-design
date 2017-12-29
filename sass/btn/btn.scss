@@ -36,14 +36,14 @@
         opacity: .5;
     }
     &:hover {
-        background: map-get($color-material, "grey-200") ;
+        background-color: map-get($color-material, "grey-200") ;
     }
     &.disabled,
     &.disabled:active,
     &.disabled:hover,
     &:active,
-    &.active {
-        background: map-get($color-material, "grey-300") ;
+    &.targeted {
+        background-color: map-get($color-material, "grey-300") ;
     }
 
 }

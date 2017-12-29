@@ -23,7 +23,7 @@
             box-shadow: map-get($n-dp, 8);
         }
         &:active,
-        &.active {
+        &.targeted {
             box-shadow: map-get($n-dp, 12);
         }
         @each $btn, $action in $btn-action {
