@@ -3,7 +3,7 @@
     cursor: pointer;
     position: relative;
     padding-right: 1.3em;
-    right: -.5em;
+    right: -.25em;
     top: .5em;
     &:hover:after {
         color: map-get($color-material, "grey-900");
