@@ -1078,17 +1078,19 @@ var Waver = exports.Waver = function () {
     function Waver() {
         _classCallCheck(this, Waver);
 
-        var waveable = window.document.querySelectorAll(".ui.wave");
-        for (var i = 0, l = waveable.length; i < l; i++) {
-            var color = this.getColor(waveable[i]);
-            var targetedColor = this.getTargetedColor(waveable[i]);
-            if (/wave-left/.test(waveable[i].className)) {
-                new _LeftWave.LeftWave(waveable[i], color, targetedColor);
-            } else if (/wave-right/.test(waveable[i].className)) {
-                new _RightWave.RightWave(waveable[i], color, targetedColor);
-            } else {
-                new _CenterWave.CenterWave(waveable[i], color, targetedColor);
+        var waveables = window.document.querySelectorAll(".ui.wave");
+        for (var i = 0, l = waveables.length; i < l; i++) {
+            var waveable = waveables[i];
+            var color = this.getColor(waveable);
+            var targetedColor = this.getTargetedColor(waveable);
+            if (/wave-left/.test(waveable.className)) {
+                new _LeftWave.LeftWave(waveable, color, targetedColor);
+                continue;
+            } else if (/wave-right/.test(waveable.className)) {
+                new _RightWave.RightWave(waveable, color, targetedColor);
+                continue;
             }
+            new _CenterWave.CenterWave(waveable, color, targetedColor);
         }
     }
 

@@ -11,17 +11,19 @@ export class Waver {
      * @constructor
      */
     constructor () {
-        let waveable = window.document.querySelectorAll(".ui.wave");
-        for (let i = 0, l = waveable.length; i < l; i++) {
-            let color = this.getColor(waveable[i]);
-            let targetedColor = this.getTargetedColor(waveable[i]);
-            if (/wave-left/.test(waveable[i].className)) {
-                new LeftWave(waveable[i], color, targetedColor);
-            } else if (/wave-right/.test(waveable[i].className)) {
-                new RightWave(waveable[i], color, targetedColor);
-            } else {
-                new CenterWave(waveable[i], color, targetedColor);
+        let waveables = window.document.querySelectorAll(".ui.wave");
+        for (let i = 0, l = waveables.length; i < l; i++) {
+            let waveable = waveables[i];
+            let color = this.getColor(waveable);
+            let targetedColor = this.getTargetedColor(waveable);
+            if (/wave-left/.test(waveable.className)) {
+                new LeftWave(waveable, color, targetedColor);
+                continue;
+            } else if (/wave-right/.test(waveable.className)) {
+                new RightWave(waveable, color, targetedColor);
+                continue;
             }
+            new CenterWave(waveable, color, targetedColor);
         }
     }
 
