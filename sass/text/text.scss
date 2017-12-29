@@ -40,6 +40,9 @@
     &.normal {
         font-weight: 400;
     }
+    &.pointer {
+        cursor: pointer;
+    }
     &.right {
         text-align: right;
     }
