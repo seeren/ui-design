@@ -1,4 +1,3 @@
-
 import jsdom from "jsdom";
 
 export let window = ((() => {
@@ -7,6 +6,7 @@ export let window = ((() => {
     global.window = new JSDOM("<!doctype html>").window;
     global.window.Error = Error;
     global.window.Function = Function;
+    global.window.JSON = JSON;
     global.window.Object = Object;
     global.window.RegExp = RegExp;
     global.window.parseInt = parseInt;
