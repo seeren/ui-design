@@ -746,13 +746,46 @@ exports.ui = undefined;
 
 var _index = require("./dialog/index");
 
+var _index2 = require("./wave/index");
+
+/**
+ * This file contain ui-design
+ *     __
+ *    / /__ __ __ __ __ __
+ *   / // // // // // // /
+ *  /_// // // // // // /
+ *    /_//_//_//_//_//_/
+ *
+ * @author Cyril <consultant@seeren.fr>
+ * @version 1.3.0
+ */
+
 var ui = exports.ui = function () {
 
     return global.ui = {
-        dialog: _index.dialog
+        dialog: _index.dialog,
+        wave: _index2.wave
     };
+}();
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./dialog/index":3,"./wave/index":9}],9:[function(require,module,exports){
+(function (global){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.wave = undefined;
+
+var _Waver = require("./wave/Waver");
+
+var wave = exports.wave = function () {
+
+  global.ui = global.ui || {};
+  return global.ui.wave = new _Waver.Waver();
 }(); /**
-      * This file contain ui-design
+      * This file contain ui-wave
       *     __
       *    / /__ __ __ __ __ __
       *   / // // // // // // /
@@ -760,8 +793,340 @@ var ui = exports.ui = function () {
       *    /_//_//_//_//_//_/
       *
       * @author Cyril <consultant@seeren.fr>
-      * @version 1.1.0
+      * @version 0.0.1
       */
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./dialog/index":3}]},{},[8]);
+},{"./wave/Waver":15}],10:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function (color, x, y, size, colorFrom, colorTo) {
+
+    return color + " radial-gradient(circle at " + x + "% " + y + "%, " + colorFrom + " " + size + "%, " + colorTo + " " + size + "%)";
+};
+
+},{}],11:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CenterWave = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _Wave2 = require("./Wave");
+
+var _radial = require("./../template/radial");
+
+var _radial2 = _interopRequireDefault(_radial);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * @type {CenterWave}
+ */
+var CenterWave = exports.CenterWave = function (_Wave) {
+  _inherits(CenterWave, _Wave);
+
+  function CenterWave() {
+    _classCallCheck(this, CenterWave);
+
+    return _possibleConstructorReturn(this, (CenterWave.__proto__ || Object.getPrototypeOf(CenterWave)).apply(this, arguments));
+  }
+
+  _createClass(CenterWave, [{
+    key: "render",
+
+
+    /**
+     * Render
+     * 
+     * @param {MouseEvent} e 
+     */
+    value: function render(e) {
+      var shape = this.waveable.getBoundingClientRect();
+      this.x = window.parseInt((e.clientX - shape.left) / shape.width * 100, 10);
+      this.y = window.parseInt((e.clientY - shape.top) / shape.height * 100, 10);
+      this.size = 0;
+      this.renderWave();
+    }
+  }]);
+
+  return CenterWave;
+}(_Wave2.Wave);
+
+},{"./../template/radial":10,"./Wave":14}],12:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.LeftWave = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _Wave2 = require("./Wave");
+
+var _radial = require("./../template/radial");
+
+var _radial2 = _interopRequireDefault(_radial);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * @type {LeftWave}
+ */
+var LeftWave = exports.LeftWave = function (_Wave) {
+  _inherits(LeftWave, _Wave);
+
+  function LeftWave() {
+    _classCallCheck(this, LeftWave);
+
+    return _possibleConstructorReturn(this, (LeftWave.__proto__ || Object.getPrototypeOf(LeftWave)).apply(this, arguments));
+  }
+
+  _createClass(LeftWave, [{
+    key: "render",
+
+
+    /**
+     * Render
+     * 
+     * @param {MouseEvent} e 
+     */
+    value: function render(e) {
+      this.x = 0;
+      this.y = 50;
+      this.size = 0;
+      this.renderWave();
+    }
+  }]);
+
+  return LeftWave;
+}(_Wave2.Wave);
+
+},{"./../template/radial":10,"./Wave":14}],13:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.RightWave = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _Wave2 = require("./Wave");
+
+var _radial = require("./../template/radial");
+
+var _radial2 = _interopRequireDefault(_radial);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * @type {RightWave}
+ */
+var RightWave = exports.RightWave = function (_Wave) {
+  _inherits(RightWave, _Wave);
+
+  function RightWave() {
+    _classCallCheck(this, RightWave);
+
+    return _possibleConstructorReturn(this, (RightWave.__proto__ || Object.getPrototypeOf(RightWave)).apply(this, arguments));
+  }
+
+  _createClass(RightWave, [{
+    key: "render",
+
+
+    /**
+     * Render
+     * 
+     * @param {MouseEvent} e 
+     */
+    value: function render(e) {
+      this.x = 100;
+      this.y = 50;
+      this.size = 0;
+      this.renderWave();
+    }
+  }]);
+
+  return RightWave;
+}(_Wave2.Wave);
+
+},{"./../template/radial":10,"./Wave":14}],14:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Wave = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _radial = require("./../template/radial");
+
+var _radial2 = _interopRequireDefault(_radial);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @type {Wave}
+ */
+var Wave = exports.Wave = function () {
+
+    /**
+     * @constructor
+     * 
+     * @param {HTMLElement} waveable
+     * @param {String} color
+     * @param {String} targetedColor
+     */
+    function Wave(waveable, color, targetedColor) {
+        _classCallCheck(this, Wave);
+
+        this.waveable = waveable;
+        this.color = color;
+        this.targetedColor = targetedColor;
+        this.timeout = 0;
+        this.x = 0;
+        this.y = 0;
+        this.size = 0;
+        waveable.onmousedown = this.render.bind(this);
+    }
+
+    /**
+     * Render wave
+     */
+
+
+    _createClass(Wave, [{
+        key: "renderWave",
+        value: function renderWave() {
+            var _this = this;
+
+            this.timeout = window.clearTimeout(this.timeout);
+            this.waveable.style.background = (0, _radial2.default)(this.color, this.x, this.y, this.size, this.targetedColor, this.color);
+            if (100 < this.size) {
+                this.waveable.style.background = (0, _radial2.default)(this.targetedColor, this.x, this.y, this.size, this.targetedColor, this.color);
+                this.timeout = window.setTimeout(function () {
+                    _this.waveable.removeAttribute("style");
+                    _this.size = 0;
+                }.bind(this), 300);
+                return;
+            }
+            this.size += 8;
+            this.timeout = window.setTimeout(this.renderWave.bind(this), 15);
+        }
+    }]);
+
+    return Wave;
+}();
+
+},{"./../template/radial":10}],15:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Waver = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _CenterWave = require("./../view/CenterWave");
+
+var _LeftWave = require("./../view/LeftWave");
+
+var _RightWave = require("./../view/RightWave");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @type {Waver}
+ */
+var Waver = exports.Waver = function () {
+
+    /**
+     * @constructor
+     */
+    function Waver() {
+        _classCallCheck(this, Waver);
+
+        var waveable = window.document.querySelectorAll('.ui.wave');
+        for (var i = 0, l = waveable.length; i < l; i++) {
+            var color = this.getColor(waveable[i]);
+            var targetedColor = this.getTargetedColor(waveable[i]);
+            if (/wave-left/.test(waveable[i].className)) {
+                new _LeftWave.LeftWave(waveable[i], color, targetedColor);
+            } else if (/wave-right/.test(waveable[i].className)) {
+                new _RightWave.RightWave(waveable[i], color, targetedColor);
+            } else {
+                new _CenterWave.CenterWave(waveable[i], color, targetedColor);
+            }
+        }
+    }
+
+    /**
+     * Get color
+     * 
+     * @param {HTMLElement} waveable
+     * @returns {String}
+     */
+
+
+    _createClass(Waver, [{
+        key: "getColor",
+        value: function getColor(waveable) {
+            return window.getComputedStyle(waveable).getPropertyValue("background-color");
+        }
+
+        /**
+         * Get targeted
+         * 
+         * @param {HTMLElement} waveable
+         * @returns {HTMLElement}
+         */
+
+    }, {
+        key: "getTargetedColor",
+        value: function getTargetedColor(waveable) {
+            var target = window.document.createElement("div");
+            target.setAttribute("class", waveable.className + " targeted");
+            target.style.display = "none";
+            waveable.parentNode.insertBefore(target, waveable);
+            var color = this.getColor(target);
+            target.parentNode.removeChild(target);
+            return color;
+        }
+    }]);
+
+    return Waver;
+}();
+
+},{"./../view/CenterWave":11,"./../view/LeftWave":12,"./../view/RightWave":13}]},{},[8]);
