@@ -1083,14 +1083,7 @@ var Waver = exports.Waver = function () {
             var waveable = waveables[i];
             var color = this.getColor(waveable);
             var targetedColor = this.getTargetedColor(waveable);
-            if (/wave-left/.test(waveable.className)) {
-                new _LeftWave.LeftWave(waveable, color, targetedColor);
-                continue;
-            } else if (/wave-right/.test(waveable.className)) {
-                new _RightWave.RightWave(waveable, color, targetedColor);
-                continue;
-            }
-            new _CenterWave.CenterWave(waveable, color, targetedColor);
+            var wave = /wave-left/.test(waveable.className) ? new _LeftWave.LeftWave(waveable, color, targetedColor) : /wave-right/.test(waveable.className) ? new _RightWave.RightWave(waveable, color, targetedColor) : new _CenterWave.CenterWave(waveable, color, targetedColor);
         }
     }
 

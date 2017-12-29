@@ -16,14 +16,11 @@ export class Waver {
             let waveable = waveables[i];
             let color = this.getColor(waveable);
             let targetedColor = this.getTargetedColor(waveable);
-            if (/wave-left/.test(waveable.className)) {
-                new LeftWave(waveable, color, targetedColor);
-                continue;
-            } else if (/wave-right/.test(waveable.className)) {
-                new RightWave(waveable, color, targetedColor);
-                continue;
-            }
-            new CenterWave(waveable, color, targetedColor);
+            let wave = /wave-left/.test(waveable.className)
+                     ? new LeftWave(waveable, color, targetedColor)
+                     : (/wave-right/.test(waveable.className)
+                     ? new RightWave(waveable, color, targetedColor)
+                     : new CenterWave(waveable, color, targetedColor));
         }
     }
 
