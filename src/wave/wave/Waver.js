@@ -11,7 +11,7 @@ export class Waver {
      * @constructor
      */
     constructor () {
-        let waveable = window.document.querySelectorAll('.ui.wave');
+        let waveable = window.document.querySelectorAll(".ui.wave");
         for (let i = 0, l = waveable.length; i < l; i++) {
             let color = this.getColor(waveable[i]);
             let targetedColor = this.getTargetedColor(waveable[i]);

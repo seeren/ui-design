@@ -740,7 +740,7 @@ var View = exports.View = function () {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.ui = undefined;
 
@@ -762,10 +762,10 @@ var _index2 = require("./wave/index");
 
 var ui = exports.ui = function () {
 
-    return global.ui = {
-        dialog: _index.dialog,
-        wave: _index2.wave
-    };
+  global.ui = {};
+  global.ui.dialog = _index.dialog;
+  global.ui.wave = _index2.wave;
+  return global.ui;
 }();
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
@@ -1078,7 +1078,7 @@ var Waver = exports.Waver = function () {
     function Waver() {
         _classCallCheck(this, Waver);
 
-        var waveable = window.document.querySelectorAll('.ui.wave');
+        var waveable = window.document.querySelectorAll(".ui.wave");
         for (var i = 0, l = waveable.length; i < l; i++) {
             var color = this.getColor(waveable[i]);
             var targetedColor = this.getTargetedColor(waveable[i]);

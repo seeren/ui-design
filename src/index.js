@@ -15,9 +15,9 @@ import { wave } from "./wave/index";
 
 export let ui = ((() => {
 
-    return global.ui = {
-        dialog: dialog,
-        wave: wave
-    };
+    global.ui = {};
+    global.ui.dialog = dialog;
+    global.ui.wave = wave;
+    return global.ui;
 
 })());
