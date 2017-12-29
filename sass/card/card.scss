@@ -10,8 +10,9 @@
     $card_selector: null;
 
     &.card {
+        @include cardTransition();
         border-radius: .1em;
-        background: map-get($color-material, "grey-0");
+        background-color: map-get($color-material, "grey-0");
     }
 
     @each $n, $dp in $n-dp {
