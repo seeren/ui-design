@@ -14,7 +14,6 @@ export  class LeftWave extends Wave {
     render (e) {
         this.x = 0;
         this.y = 50;
-        this.size = 0;
         this.renderWave();
     }
 
