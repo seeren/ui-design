@@ -11,37 +11,25 @@
   &.col-#{$type}#{$n} {
     display: none;
   }
+  &.col-#{$type}center {
+    text-align: center;
+  }
+  &.col-#{$type}left {
+    text-align: left;
+  }
+  &.col-#{$type}right {
+    text-align: right;
+  }
+  &.col-#{$type}justify {
+    text-align: justify;
+  }
 
   @for $n from 1 through $ncol {
-    $col_selectors: "&.col-#{$type}#{$n}, &.col-min-#{$type}#{$n}, &.col-max-#{$type}#{$n}, &.col-#{$type}#{$n}-center, &.col-#{$type}#{$n}-left, &.col-#{$type}#{$n}-right, &.col-#{$type}#{$n}-justify";
+    $col_selectors: "&.col-#{$type}#{$n}, &.col-min-#{$type}#{$n}, &.col-max-#{$type}#{$n}";
     @if (not $col_selector) {
       $col_selector: $col_selectors;
     } @else {
       $col_selector: "#{$col_selector}, #{$col_selectors}";
-    }
-    $col_center_selectors: "&.col-#{$type}#{$n}-center";
-    @if (not $col_center_selector) {
-      $col_center_selector: $col_center_selectors;
-    } @else {
-      $col_center_selector: "#{$col_center_selector}, #{$col_center_selectors}";
-    }
-    $col_left_selectors: "&.col-#{$type}#{$n}-left";
-    @if (not $col_left_selector) {
-      $col_left_selector: $col_left_selectors;
-    } @else {
-      $col_left_selector: "#{$col_left_selector}, #{$col_left_selectors}";
-    }
-    $col_right_selectors: "&.col-#{$type}#{$n}-right";
-    @if (not $col_right_selector) {
-      $col_right_selector: $col_right_selectors;
-    } @else {
-      $col_right_selector: "#{$col_right_selector}, #{$col_right_selectors}";
-    }
-    $col_justify_selectors: "&.col-#{$type}#{$n}-justify";
-    @if (not $col_justify_selector) {
-      $col_justify_selector: $col_justify_selectors;
-    } @else {
-      $col_justify_selector: "#{$col_justify_selector}, #{$col_justify_selectors}";
     }
     $col_min_max_selectors: "&.col-min-#{$type}#{$n}, &.col-max-#{$type}#{$n}";
     @if (not $col_min_max_selector) {
@@ -49,11 +37,7 @@
     } @else {
       $col_min_max_selector: "#{$col_min_max_selector}, #{$col_min_max_selectors}";
     }
-    &.col-#{$type}#{$n},
-    &.col-#{$type}#{$n}-center,
-    &.col-#{$type}#{$n}-left,
-    &.col-#{$type}#{$n}-justify,
-    &.col-#{$type}#{$n}-right {
+    &.col-#{$type}#{$n} {
       width:getpercentage($ncol, $n);
     }
     &.col-min-#{$type}#{$n} {
@@ -64,21 +48,13 @@
     }
   }
 
-  #{$col_selector} {
+  &.col-#{$type}auto,
+  #{$col_selector},
+  #{$col_min_max_selector}  {
     @include col();
   }
-  #{$col_center_selector} {
-    text-align: center;
-  }
-  #{$col_left_selector} {
-    text-align: left;
-  }
-  #{$col_right_selector} {
-    text-align: right;
-  }
-  #{$col_justify_selector} {
-    text-align: justify;
-  }
+
+  &.col-#{$type}auto,
   #{$col_min_max_selector} {
     width: auto;
   }

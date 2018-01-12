@@ -11,19 +11,17 @@
       $col_min_max_selector: "#{$col_min_max_selector}, #{$col_min_max_selectors}";
     }
     &.col-v-#{$type}#{$n} {
-      height: getpercentage($ncol, $n);
       height: getvh($ncol, $n);
     }
     &.col-v-min-#{$type}#{$n} {
-      min-height: getpercentage($ncol, $n);
       min-height: getvh($ncol, $n);
     }
     &.col-v-max-#{$type}#{$n} {
-      max-height: getpercentage($ncol, $n);
       max-height: getvh($ncol, $n);
     }
   }
 
+  &.col-v-#{$type}auto,
   #{$col_min_max_selector} {
     height: auto;
   }
