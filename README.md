@@ -28,7 +28,7 @@
 
 
 ## 🎉Features
-> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, grid system, colors, elevations and buttons.
+> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, grid system, colors, elevations, buttons and more.
 
 * [Button](https://seeren.github.io/ui-design/#button)
 * [Card](https://seeren.github.io/ui-design/#card)
