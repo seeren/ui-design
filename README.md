@@ -37,9 +37,6 @@
 * [Gride](https://seeren.github.io/ui-design/#gride)
 * [Wave](https://seeren.github.io/ui-design/#wave)
 
-## 📖 Documentation
-* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
-
 ## 📦 Installation
 Install with [npm](https://www.npmjs.com/package/ui-design)
 ```
