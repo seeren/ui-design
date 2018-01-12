@@ -1,3 +1,4 @@
+
 <h1 align="center">
     ui-design
 </h1>
@@ -26,10 +27,8 @@
  </p >
 
 
-## 🚩 Documentation
-* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
-
 ## 🎉Features
+Open source library for developing with HTML, SASS and JavaScript. Fix your design with classes, variables and mixins, program components with grid system, material colors, elevations and buttons.
 > Features use HTMLElement class attribute or script.
 
 * [Button](https://seeren.github.io/ui-design/#button)
@@ -38,6 +37,9 @@
 * [Dialog](https://seeren.github.io/ui-design/#dialog)
 * [Gride](https://seeren.github.io/ui-design/#gride)
 * [Wave](https://seeren.github.io/ui-design/#wave)
+
+## 📖 Documentation
+* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
 
 ## 📦 Installation
 Install with [npm](https://www.npmjs.com/package/ui-design)
@@ -60,6 +62,9 @@ npm install ui-design
 ```
 ./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit
 ```
+
+## 🙏 Contributor
+Original work [@seeren](https://github.com/seeren)
 
 ## 🎫 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
