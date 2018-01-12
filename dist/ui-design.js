@@ -914,7 +914,6 @@ var LeftWave = exports.LeftWave = function (_Wave) {
     value: function render(e) {
       this.x = 0;
       this.y = 50;
-      this.size = 0;
       this.renderWave();
     }
   }]);
