@@ -28,8 +28,7 @@
 
 
 ## 🎉Features
-Open source library for developing with HTML, SASS and JavaScript. Fix your design with classes, variables and mixins, program components with grid system, material colors, elevations and buttons.
-> Features use HTMLElement class attribute or script.
+> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, grid system, colors, elevations and buttons.
 
 * [Button](https://seeren.github.io/ui-design/#button)
 * [Card](https://seeren.github.io/ui-design/#card)
@@ -62,9 +61,6 @@ npm install ui-design
 ```
 ./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit
 ```
-
-## 🙏 Contributor
-Original work [@seeren](https://github.com/seeren)
 
 ## 🎫 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
