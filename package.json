@@ -1,9 +1,9 @@
 {
   "name": "ui-design",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ui component design",
   "keywords": ["ui","javascript", "sass", "css"],
-  "main": "./sass/index.js",
+  "main": "index.html",
   "scripts": {
     "babelify": "./node_modules/.bin/watchify ./src/index.js -t [babelify] -o ./dist/ui-design.js",
     "coverage": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit",
