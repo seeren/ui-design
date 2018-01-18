@@ -1,7 +1,7 @@
 
-<h1 align="center">
-    ui-design
-</h1>
+<p align="center">
+<img src="https://raw.githubusercontent.com/seeren/ui-design/master/ressources/ui-design.png" alt="ui-design">
+</p>
 <h4 align="center">
   Build mobile first component and interface
 </h4>
@@ -28,7 +28,7 @@
 
 
 ## 🎉Features
-> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, grid system, colors, elevations, buttons and more.
+> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, grid system, colors, elevations and buttons.
 
 * [Button](https://seeren.github.io/ui-design/#button)
 * [Card](https://seeren.github.io/ui-design/#card)
@@ -36,6 +36,9 @@
 * [Dialog](https://seeren.github.io/ui-design/#dialog)
 * [Gride](https://seeren.github.io/ui-design/#gride)
 * [Wave](https://seeren.github.io/ui-design/#wave)
+
+## 📖 Documentation
+* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
 
 ## 📦 Installation
 Install with [npm](https://www.npmjs.com/package/ui-design)
