@@ -1,8 +1,8 @@
 {
   "name": "ui-design",
   "version": "1.0.10",
-  "description": "ui component design",
-  "keywords": ["ui","javascript", "sass", "css"],
+  "description": "Build mobile first component and interface ",
+  "keywords": ["ui", "sass", "css", "javascript"],
   "main": "index.html",
   "scripts": {
     "babelify": "./node_modules/.bin/watchify ./src/index.js -t [babelify] -o ./dist/ui-design.js",
