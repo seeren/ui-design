@@ -28,7 +28,7 @@
 
 
 ## 🎉Features
-> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, grid system, colors, elevations and buttons.
+> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, use grid system, colors, elevations, buttons and more.
 
 * [Button](https://seeren.github.io/ui-design/#button)
 * [Card](https://seeren.github.io/ui-design/#card)
@@ -38,7 +38,7 @@
 * [Wave](https://seeren.github.io/ui-design/#wave)
 
 ## 📖 Documentation
-* [https://seeren.github.io/ui-design/](https://seeren.github.io/ui-design/)
+> [Documentation](https://seeren.github.io/ui-design/)
 
 ## 📦 Installation
 Install with [npm](https://www.npmjs.com/package/ui-design)
