@@ -1,5 +1,5 @@
 /**
- * This file contain ui-wave
+ * This file contain a part of ui-design
  *     __
  *    / /__ __ __ __ __ __
  *   / // // // // // // /

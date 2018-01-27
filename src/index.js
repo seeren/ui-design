@@ -12,12 +12,14 @@
 
 import { dialog } from "./dialog/index";
 import { wave } from "./wave/index";
+import { scroll } from "./scroll/index";
 
 export let ui = ((() => {
 
     global.ui = {};
     global.ui.dialog = dialog;
     global.ui.wave = wave;
+    global.ui.scroll = scroll;
     return global.ui;
 
 })());
