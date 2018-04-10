@@ -2,15 +2,15 @@
   "name": "ui-design",
   "version": "1.0.11",
   "description": "Build mobile first component and interface ",
-  "keywords": ["ui", "sass", "css", "javascript"],
+  "keywords": ["ui", "html", "css", "javascript"],
   "main": "index.html",
   "scripts": {
+    "dev": "npm run sync | npm run babelify | npm run sassify",
     "babelify": "./node_modules/.bin/watchify ./src/index.js -t [babelify] -o ./dist/ui-design.js",
+    "sassify": "./node_modules/.bin/node-sass --watch ./src/index.scss ./dist/ui-design.css",
     "coverage": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit",
     "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "dev": "npm run sync | npm run babelify | npm run sassify",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "sassify": "./node_modules/.bin/node-sass --watch ./sass/index.scss ./dist/ui-design.css",
     "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/ui-design.*\"",
     "test": "./node_modules/.bin/mocha --require babel-register --recursive test/unit"
   },
