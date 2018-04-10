@@ -1,7 +1,7 @@
 import { describe, before, after, afterEach, it } from "mocha";
 import { assert, expect , timeout} from "chai";
-import { window } from "./../../../window";
-import { Waver } from "./../../../../src/wave/wave/Waver";
+import { window } from "./../../window";
+import { Waver } from "./../../../src/wave/waver.wave";
 
 describe("Waver", () => {
 
@@ -56,12 +56,9 @@ describe("Waver", () => {
         });
     });
 
-    describe("getTargetedColor", () => {
-        it("return targeted style background", () => {
-            assert(
-                waver.getColor(waveable)
-            !== waver.getTargetedColor(waveable)
-            );
+    describe("getTargetColor", () => {
+        it("return Target style background", () => {
+            assert(waver.getColor(waveable) !== waver.getTargetColor(waveable));
         });
     });
 

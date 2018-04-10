@@ -10,6 +10,12 @@ export let window = ((() => {
     global.window.Object = Object;
     global.window.RegExp = RegExp;
     global.window.parseInt = parseInt;
+    global.window.requestAnimationFrame = (callback) => {
+        return global.window.setTimeout(callback, 10);
+    };
+    global.window.cancelAnimationFrame = (handle) => {
+        global.window.clearTimeout(handle);
+    };
     return global.window;
 
 })());
