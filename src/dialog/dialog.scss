@@ -1,0 +1,30 @@
+@mixin dialog () {
+    &.dialog {
+        @include cardTransition();
+        bottom: 1em;
+        cursor: default;
+        opacity: 1;
+        padding-bottom: 1em;
+        position: fixed;
+        .cross {
+            cursor: pointer;
+            position: relative;
+            padding-right: 1.3em;
+            right: -.25em;
+            top: .5em;
+            &:hover:after {
+                color: map-get($color, "grey-900");
+            }
+            &:after {
+                color: map-get($color, "grey-700");
+                content: "\d7";
+                font-size: 1.6em;
+                line-height: .5em;
+                position: absolute;
+                right: .25em;
+                top: .25em;
+                @include cardTransition();
+            }
+        }
+    }
+}

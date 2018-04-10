@@ -1,0 +1,3 @@
+@function vh($ncol, $n) {
+    @return #{(floor(100 / $ncol * $n * 100) / 100)}vh;
+  }

@@ -1,0 +1,72 @@
+@mixin btn-raised () {
+    &.btn-raised,
+    &.btn-basic,
+    &.btn-link {
+        box-shadow: map-get($card, 2);
+        &.disabled,
+        &.disabled:active,
+        &.disabled:hover {
+            box-shadow: map-get($card, 2);
+        }
+        &:hover {
+            box-shadow: map-get($card, 4);
+        }
+        &:active,
+        &.target {
+            box-shadow: map-get($card, 8);
+        }
+    }
+    &.btn-raised {
+        color: map-get($color, "grey-0");
+        &:hover {
+            background-color: map-get($color, "blue-600");
+        }
+        &:active,
+        &.target {
+            background-color: map-get($color, "blue-700");
+        }
+    }
+    &.btn-raised,
+    &.btn-raised.disabled,
+    &.btn-raised.disabled:active,
+    &.btn-raised.disabled:hover {
+        background-color: map-get($color, "blue-500");
+    }
+    &.btn-basic,
+    &.btn-basic:hover,
+    &.btn-basic.disabled,
+    &.btn-basic.disabled:active,
+    &.btn-basic.disabled:hover,
+    &.btn-link,
+    &.btn-link:hover,
+    &.btn-link.disabled,
+    &.btn-link.disabled:active,
+    &.btn-link.disabled:hover {
+        background-color: map-get($color, "grey-0");
+    }
+    &.btn-basic {
+        color: map-get($color, "grey-900");
+    }
+    @each $key, $value in $level {
+        &.btn-#{$key} {
+            background-color:  map-get($color,  #{$value}-500);
+            box-shadow: map-get($card, 2);
+            color: map-get($color, "grey-0");
+            &.disabled,
+            &.disabled:active,
+            &.disabled:hover {
+                box-shadow: map-get($card, 2);
+                background-color:  map-get($color,  #{$value}-500);
+            }
+            &:hover {
+                box-shadow: map-get($card, 4);
+                background-color:  map-get($color,  #{$value}-600);
+            }
+            &:active,
+            &.target {
+                box-shadow: map-get($card, 8);
+                background-color:  map-get($color,  #{$value}-700);
+            }
+        }
+    }
+}

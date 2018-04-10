@@ -1,0 +1,61 @@
+@mixin btn-flat () {
+    &.btn-flat {
+        box-shadow: none !important;
+        box-shadow: 0px 0px 0px 0px transparent;
+        &.btn-basic:hover,
+        &.btn-link:hover {
+            background-color:  map-get($color, "grey-200");            
+        }
+        &.btn-basic.disabled,
+        &.btn-basic.disabled:active,
+        &.btn-basic.disabled:hover,
+        &.btn-basic:active,
+        &.btn-basic.target,
+        &.btn-link.disabled,
+        &.btn-link.disabled:active,
+        &.btn-link.disabled:hover,
+        &.btn-link:active,
+        &.btn-link.target {
+            background-color:  map-get($color, "grey-300");            
+        }
+        &.btn-basic {
+            color: map-get($color, "grey-900");
+            background-color:  transparent; 
+        }
+        &.btn-link {
+            background-color:  transparent;
+            color: map-get($color, "grey-0");
+            &.disabled,
+            &.disabled:active,
+            &.disabled:hover {
+                color:  map-get($color, "blue-500");
+            }
+        }
+        @each $key, $value in $level {
+            &.btn-#{$key},
+            &.btn-#{$key}.disabled,
+            &.btn-#{$key}.disabled:active,
+            &.btn-#{$key}.disabled:hover {
+                color: map-get($color,  #{$value}-500); 
+                background-color: transparent;
+            }
+            &.btn-#{$key} {
+                &:hover {
+                    color: map-get($color,  #{$value}-600);
+                    background-color: map-get($color, #{$value}-50);
+                }
+                &.disabled,
+                &.disabled:active,
+                &.disabled:hover,
+                &:active,
+                &.target {
+                    background-color: map-get($color, #{$value}-100);
+                }
+                &:active,
+                &.target {
+                    color: map-get($color,  #{$value}-700);
+                }
+            }
+        }
+    }
+}

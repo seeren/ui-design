@@ -1,0 +1,25 @@
+@mixin col-v ($type: "") {
+  $n: 0;
+  $col_min_max_selector: null;
+  @for $n from 1 through $ncol {
+    $selectors: "&.col-v-min-#{$type}#{$n}, &.col-v-max-#{$type}#{$n}";
+    @if (not $col_min_max_selector) {
+      $col_min_max_selector: $selectors;
+    } @else {
+      $col_min_max_selector: "#{$col_min_max_selector}, #{$selectors}";
+    }
+    &.col-v-#{$type}#{$n} {
+      height: vh($ncol, $n);
+    }
+    &.col-v-min-#{$type}#{$n} {
+      min-height: vh($ncol, $n);
+    }
+    &.col-v-max-#{$type}#{$n} {
+      max-height: vh($ncol, $n);
+    }
+  }
+  &.col-v-#{$type}auto,
+  #{$col_min_max_selector} {
+    height: auto;
+  }
+}

@@ -1,0 +1,17 @@
+@import "btn/btn";
+@import "color/color";
+@import "card/card";
+@import "dialog/dialog";
+@import "gride/gride";
+@import "text/text";
+@import "reset/reset";
+
+@include reset();
+.ui {
+    @include color();
+    @include card();
+    @include gride();
+    @include text();
+    @include btn();
+    @include dialog();
+}

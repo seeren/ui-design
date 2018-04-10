@@ -1,0 +1,27 @@
+@import "@percentage";
+@import "@vh";
+@import "$size";
+@import "$ncol";
+@import "col";
+@import "col-h";
+@import "col-v";
+@import "col-offset";
+
+@mixin gride () {
+  @include col-h();
+  @include col-v();
+  @include col-offset();
+  @each $key, $value in $size  {
+    @if ($value > 0) {
+      @media all and (min-width: #{$value}px) {
+        @include col-h(#{$key}-);
+        @include col-v(#{$key}-);
+        @include col-offset(#{$key}-);
+      }
+    } @else {
+        @include col-h(#{$key}-);
+        @include col-v(#{$key}-);
+        @include col-offset(#{$key}-);
+    }
+  }
+}

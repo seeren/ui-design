@@ -1,0 +1,12 @@
+@import "$color";
+
+@mixin color () {
+    @each $name, $value in $color {
+        &.#{$name} {
+            color: $value;
+        }
+        &.bg-#{$name} {
+            background-color: $value;
+        }
+    }
+}

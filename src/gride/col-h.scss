@@ -1,0 +1,56 @@
+@mixin col-h ($type: "") {
+  $n: 0;
+  $col_selector: null;
+  $col_center_selector: null;
+  $col_left_selector: null;
+  $col_right_selector: null;
+  $col_justify_selector: null;
+  $col_min_max_selector: null;
+  &.col-#{$type}#{$n} {
+    display: none;
+  }
+  &.col-#{$type}center {
+    text-align: center;
+  }
+  &.col-#{$type}left {
+    text-align: left;
+  }
+  &.col-#{$type}right {
+    text-align: right;
+  }
+  &.col-#{$type}justify {
+    text-align: justify;
+  }
+  @for $n from 1 through $ncol {
+    $col_selectors: "&.col-#{$type}#{$n}, &.col-min-#{$type}#{$n}, &.col-max-#{$type}#{$n}";
+    @if (not $col_selector) {
+      $col_selector: $col_selectors;
+    } @else {
+      $col_selector: "#{$col_selector}, #{$col_selectors}";
+    }
+    $selectors: "&.col-min-#{$type}#{$n}, &.col-max-#{$type}#{$n}";
+    @if (not $col_min_max_selector) {
+      $col_min_max_selector: $selectors;
+    } @else {
+      $col_min_max_selector: "#{$col_min_max_selector}, #{$selectors}";
+    }
+    &.col-#{$type}#{$n} {
+      width:percent($ncol, $n);
+    }
+    &.col-min-#{$type}#{$n} {
+      min-width: percent($ncol, $n);
+    }
+    &.col-max-#{$type}#{$n} {
+      max-width: percent($ncol, $n);
+    }
+  }
+  &.col-#{$type}auto,
+  #{$col_selector},
+  #{$col_min_max_selector}  {
+    @include col();
+  }
+  &.col-#{$type}auto,
+  #{$col_min_max_selector} {
+    width: auto;
+  }
+}
