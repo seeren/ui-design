@@ -13,9 +13,9 @@
         text-align: center;
         vertical-align: middle;
         min-width: 2em;
-        &.disabled,
-        &.disabled:active,
-        &.disabled:hover {
+        &.disable,
+        &.disable:active,
+        &.disable:hover {
             box-shadow: map-get($card, 6);
         }
         &:hover {

@@ -19,16 +19,15 @@
         cursor: pointer;
         display: inline-block;
         font-size: 1.05rem;
-        font-variant: small-caps;
         font-weight: 500;
         line-height: 1em;
-        padding: .4em 1.2em .6em;
+        padding: .6em 1.2em;
         margin: .5em;
         text-align: center;
         letter-spacing: .05em;
-        &.disabled,
-        &.disabled:active,
-        &.disabled:hover {
+        &.disable,
+        &.disable:active,
+        &.disable:hover {
             cursor: default;
             opacity: .5;
             cursor: default;
@@ -37,9 +36,9 @@
         &:hover {
             background-color: map-get($color, "grey-200") ;
         }
-        &.disabled,
-        &.disabled:active,
-        &.disabled:hover,
+        &.disable,
+        &.disable:active,
+        &.disable:hover,
         &:active,
         &.target {
             background-color: map-get($color, "grey-300") ;
