@@ -1,8 +1,8 @@
 
-import { Event } from "./../event/Event";
-import { default as _btn } from "./../template/btn";
-import { default as _cross } from "./../template/cross";
-import { default as _dialog } from "./../template/dialog";
+import { Event } from "./event.dialog";
+import { default as _btn } from "./btn.dialog.html";
+import { default as _cross } from "./cross.dialog.html";
+import { default as _dialog } from "./dialog.dialog.html";
 
 /**
  * @type {View}
@@ -79,7 +79,7 @@ export let View = ((() => {
          || "confirm" !== dialog.lastChild.className.split(" ").pop()) {
             let container = window.document.createElement("div");
             container.innerHTML = _btn(
-                title || "ok",
+                title || "Ok",
                 dialog.className.split(" ").pop() + " confirm"
             );
             dialog.appendChild(container.firstChild);
@@ -104,7 +104,7 @@ export let View = ((() => {
          && "BUTTON" !== dialog.lastChild.previousSibling.tagName) {
             let container = window.document.createElement("div");
             container.innerHTML = _btn(
-                 title || "cancel",
+                 title || "Cancel",
                  dialog.className.split(" ").pop() + " cancel",
                  true
              );

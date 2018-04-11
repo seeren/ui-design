@@ -1,8 +1,8 @@
 
 import { describe, before, after, it } from "mocha";
 import { assert, expect } from "chai";
-import { window } from "./../../../window";
-import { Event } from "./../../../../src/dialog/event/Event";
+import { window } from "./../../window";
+import { Event } from "./../../../src/dialog/event.dialog";
 
 describe("Event", () => {
 

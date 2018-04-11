@@ -2,10 +2,8 @@
 import { describe, before, after, it } from "mocha";
 import { assert, expect } from "chai";
 import sinon from "sinon";
-import { window } from "./../../../window";
-import { Dialog } from "./../../../../src/dialog/dialog/Dialog";
-import { Event } from "./../../../../src/dialog/event/Event";
-import { View } from "./../../../../src/dialog/view/View";
+import { window } from "./../../window";
+import { Dialog } from "./../../../src/dialog/dialog.dialog";
 
 describe("Dialog", () => {
 
@@ -14,17 +12,9 @@ describe("Dialog", () => {
 
     before(() => {
         getDialog = () => {
-            return  new Dialog(new View(new Event));
+            return  new Dialog;
         };
         message = "Dummy";
-    });
-
-    describe("constructor throw", () => {
-        it("Throw Error when no View", () => {
-            expect(() => {
-                getDialog().constructor();
-            }).to.throw("A View must be provided");
-        });
     });
 
     describe("emergency", () => {
@@ -109,9 +99,9 @@ describe("Dialog", () => {
     describe("onabort", () => {
         it("onabort call view onabort", () => {
             let dialog = getDialog();
-            let view = new View(new Event);
+            let view = dialog.view;
             let callback = sinon.spy(view, "onabort");
-            dialog.constructor(view);
+            dialog.view = view;
             dialog.onabort();
             assert(view.onabort.calledOnce);
         });
@@ -120,9 +110,9 @@ describe("Dialog", () => {
     describe("onconfirm", () => {
         it("onconfirm call view onconfirm", () => {
             let dialog = getDialog();
-            let view = new View(new Event);
+            let view = dialog.view;
             let callback = sinon.spy(view, "onconfirm");
-            dialog.constructor(view);
+            dialog.view = view;
             dialog.onconfirm();
             assert(view.onconfirm.calledOnce);
         });
@@ -131,9 +121,9 @@ describe("Dialog", () => {
     describe("oncancel", () => {
         it("oncancel call view oncancel", () => {
             let dialog = getDialog();
-            let view = new View(new Event);
+            let view = dialog.view;
             let callback = sinon.spy(view, "oncancel");
-            dialog.constructor(view);
+            dialog.view = view;
             dialog.oncancel();
             assert(view.oncancel.calledOnce);
         });

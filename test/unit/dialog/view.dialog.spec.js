@@ -1,9 +1,9 @@
 
 import { describe, before, after, afterEach, it } from "mocha";
-import { assert, expect , timeout} from "chai";
-import { window } from "./../../../window";
-import { Event } from "./../../../../src/dialog/event/Event";
-import { View } from "./../../../../src/dialog/view/View";
+import { assert, expect, timeout } from "chai";
+import { window } from "./../../window";
+import { Event } from "./../../../src/dialog/event.dialog";
+import { View } from "./../../../src/dialog/view.dialog";
 
 describe("View", () => {
 
@@ -41,8 +41,8 @@ describe("View", () => {
         it("Throw Error when message exceed 75 characters", () => {
             expect(() => {
                 getView().render("-------------------------"
-                               + "-------------------------"
-                               + "--------------------------");
+                    + "-------------------------"
+                    + "--------------------------");
             }).to.throw("Can't render: message is limited to 75 characters");
         });
     });
@@ -52,7 +52,7 @@ describe("View", () => {
             assert.equal(getView().render(message).constructor.name, "HTMLDivElement");
         });
         it("Dialog opacity is set to 1", () => {
-            assert.equal(getView().render(message).style.opacity,"1");
+            assert.equal(getView().render(message).style.opacity, "1");
         });
         it("Dialog contain a message", () => {
             assert.equal(
@@ -72,13 +72,10 @@ describe("View", () => {
             let firstDialog = view.render(message);
             view.render(message);
             this.timeout(0);
-            id = window.setTimeout(
-                () => {
-                    window.clearTimeout(id);
-                    assert.equal(firstDialog.parentNode, null);
-                },
-                510
-            );
+            id = window.setTimeout(() => {
+                window.clearTimeout(id);
+                assert.equal(firstDialog.parentNode, null);
+            }, 510);
             done();
         });
     });
@@ -87,7 +84,7 @@ describe("View", () => {
         it("First <a/> onclick is a Function", () => {
             let view = getView();
             let dialog = view.render(message);
-            view.onabort(() => {});
+            view.onabort(() => { });
             assert.equal(
                 typeof dialog.getElementsByTagName("a")[0].onclick,
                 "function"
@@ -103,13 +100,10 @@ describe("View", () => {
                 trigger = true;
             });
             dialog.getElementsByTagName("a")[0].onclick();
-            id = window.setTimeout(
-                () => {
-                    window.clearTimeout(id);
-                    assert(null === dialog.parentNode && true === trigger);
-                },
-                520
-            );
+            id = window.setTimeout(() => {
+                window.clearTimeout(id);
+                assert(null === dialog.parentNode && true === trigger);
+            }, 520);
             done();
         });
     });
@@ -125,13 +119,10 @@ describe("View", () => {
                 trigger = true;
             });
             dialog.getElementsByTagName("button")[0].onclick();
-            id = window.setTimeout(
-                () => {
-                    window.clearTimeout(id);
-                    assert(null === dialog.parentNode && true === trigger);
-                },
-                530
-            );
+            id = window.setTimeout(() => {
+                window.clearTimeout(id);
+                assert(null === dialog.parentNode && true === trigger);
+            }, 530);
             done();
         });
     });
@@ -147,26 +138,21 @@ describe("View", () => {
                 trigger = true;
             });
             dialog.getElementsByTagName("button")[0].onclick();
-            id = window.setTimeout(
-                () => {
-                    window.clearTimeout(id);
-                    assert(null === dialog.parentNode && true === trigger);
-                },
-                530
-            );
+            id = window.setTimeout(() => {
+                window.clearTimeout(id);
+                assert(null === dialog.parentNode && true === trigger);
+            }, 530);
             done();
         });
         it("<button/> cancel is insered before <button/> ok", function () {
             let view = getView();
             let dialog = view.render(message);
-            view.oncancel() ;
+            view.oncancel();
             view.onconfirm();
-            view.oncancel() ;
+            view.oncancel();
             assert(
-                "cancel"
-            === dialog.getElementsByTagName("button")[0].innerHTML
-             && "ok"
-            === dialog.getElementsByTagName("button")[1].innerHTML
+                "Cancel" === dialog.getElementsByTagName("button")[0].innerHTML
+                && "Ok" === dialog.getElementsByTagName("button")[1].innerHTML
             );
         });
     });
