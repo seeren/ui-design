@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://seeren.github.io/ui-design">
-    <img src="https://raw.githubusercontent.com/seeren/ui-design/master/ressources/ui-design.png" alt="ui-design"/>
+    <img src="https://raw.githubusercontent.com/seeren/ui-design/master/resources/ui-design.png" alt="ui-design"/>
   </a>
 </p>
 <h4 align="center">
