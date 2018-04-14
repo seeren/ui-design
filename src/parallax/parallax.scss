@@ -1,0 +1,26 @@
+@mixin parallax () {
+    &.parallax,
+    &.parallax-fixed  {
+        transition: none;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    &.parallax {
+        background-size: auto 150%;
+        @for $n from 0 through 12 {
+            &.parallax-#{$n} {
+                background-size: auto #{percentage(1 + 1/8 * $n)};
+            }
+        }
+    }
+    &.parallax-fixed  {
+        background-size: auto 133%;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        @for $n from 0 through 12 {
+            &.parallax-#{$n} {
+                background-size: auto #{percentage(1 + 1/12 * $n)};
+            }
+        }
+    }
+}

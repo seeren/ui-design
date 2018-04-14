@@ -7,19 +7,17 @@
  *    /_//_//_//_//_//_/
  *
  * @author Cyril <consultant@seeren.fr>
- * @version 1.3.0
+ * @version 2.1.0
  */
 
-import { dialog } from "./dialog/index";
-import { wave } from "./wave/index";
-import { scroll } from "./scroll/index";
+import { Waver } from "./wave/waver.wave";
+import { Dialog } from "./dialog/dialog.dialog";
+import { Parallaxer } from "./parallax/parallaxer.parallax";
 
 export let ui = ((() => {
-
-    global.ui = {};
-    global.ui.dialog = dialog;
-    global.ui.wave = wave;
-    global.ui.scroll = scroll;
-    return global.ui;
-
+    return global.ui = {
+        dialog: new Dialog,
+        parallax: new Parallaxer,
+        wave:  new Waver
+    };
 })());
