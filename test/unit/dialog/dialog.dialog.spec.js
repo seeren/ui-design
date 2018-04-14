@@ -99,33 +99,27 @@ describe("Dialog", () => {
     describe("onabort", () => {
         it("onabort call view onabort", () => {
             let dialog = getDialog();
-            let view = dialog.view;
-            let callback = sinon.spy(view, "onabort");
-            dialog.view = view;
+            let callback = sinon.spy(dialog.view, "onabort");
             dialog.onabort();
-            assert(view.onabort.calledOnce);
+            assert(dialog.view.onabort.calledOnce);
         });
     });
 
     describe("onconfirm", () => {
         it("onconfirm call view onconfirm", () => {
             let dialog = getDialog();
-            let view = dialog.view;
-            let callback = sinon.spy(view, "onconfirm");
-            dialog.view = view;
+            let callback = sinon.spy(dialog.view, "onconfirm");
             dialog.onconfirm();
-            assert(view.onconfirm.calledOnce);
+            assert(dialog.view.onconfirm.calledOnce);
         });
     });
 
     describe("oncancel", () => {
         it("oncancel call view oncancel", () => {
             let dialog = getDialog();
-            let view = dialog.view;
-            let callback = sinon.spy(view, "oncancel");
-            dialog.view = view;
+            let callback = sinon.spy(dialog.view, "oncancel");
             dialog.oncancel();
-            assert(view.oncancel.calledOnce);
+            assert(dialog.view.oncancel.calledOnce);
         });
     });
 
