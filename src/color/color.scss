@@ -2,10 +2,12 @@
 
 @mixin color () {
     @each $name, $value in $color {
-        &.#{$name} {
+        &.#{$name},
+        &.target.target-#{$name} {
             color: $value;
         }
-        &.bg-#{$name} {
+        &.bg-#{$name},
+        &.target.target-bg-#{$name} {
             background-color: $value;
         }
     }
