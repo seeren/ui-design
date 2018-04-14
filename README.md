@@ -1,6 +1,8 @@
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/seeren/ui-design/master/ressources/ui-design.png" alt="ui-design">
+  <a href="https://seeren.github.io/ui-design">
+    <img src="https://raw.githubusercontent.com/seeren/ui-design/master/ressources/ui-design.png" alt="ui-design"/>
+  </a>
 </p>
 <h4 align="center">
   Build mobile first component and interface
@@ -26,25 +28,21 @@
   </a>
  </p >
 
-
 ## 🎉Features
-> Open source library for developing with HTML, SASS and JavaScript. Program components  with classes, variables and mixins, use grid system, colors, elevations, buttons and more.
+> Open source library for developing with HTML, CSS and JavaScript. Program components  with classes, variables and mixins, use grid system, colors, elevations and other features.
 
 * [Button](https://seeren.github.io/ui-design/#button)
 * [Card](https://seeren.github.io/ui-design/#card)
 * [Color](https://seeren.github.io/ui-design/#color)
 * [Dialog](https://seeren.github.io/ui-design/#dialog)
 * [Gride](https://seeren.github.io/ui-design/#gride)
+* [Parallax](https://seeren.github.io/ui-design/#parallax)
+* [Text](https://seeren.github.io/ui-design/#text)
 * [Wave](https://seeren.github.io/ui-design/#wave)
 
-## 📖 Documentation
-> [Documentation](https://seeren.github.io/ui-design/)
-
 ## 📦 Installation
-Install with [npm](https://www.npmjs.com/package/ui-design)
-```
-npm install ui-design
-```
+
+`npm install ui-design`
 ```html
 <link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
 ```

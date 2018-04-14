@@ -36,6 +36,8 @@ body {
   width: 100%; }
 
 main,
+header,
+nav,
 article,
 section,
 footer {
@@ -57,1540 +59,1540 @@ hr {
   padding-left: 0;
   padding-right: 0; }
 
-.ui.red-50 {
+.ui.red-50, .ui.target.target-red-50 {
   color: #ffebee; }
 
-.ui.bg-red-50 {
+.ui.bg-red-50, .ui.target.target-bg-red-50 {
   background-color: #ffebee; }
 
-.ui.red-100 {
+.ui.red-100, .ui.target.target-red-100 {
   color: #ffcdd2; }
 
-.ui.bg-red-100 {
+.ui.bg-red-100, .ui.target.target-bg-red-100 {
   background-color: #ffcdd2; }
 
-.ui.red-200 {
+.ui.red-200, .ui.target.target-red-200 {
   color: #ef9a9a; }
 
-.ui.bg-red-200 {
+.ui.bg-red-200, .ui.target.target-bg-red-200 {
   background-color: #ef9a9a; }
 
-.ui.red-300 {
+.ui.red-300, .ui.target.target-red-300 {
   color: #e57373; }
 
-.ui.bg-red-300 {
+.ui.bg-red-300, .ui.target.target-bg-red-300 {
   background-color: #e57373; }
 
-.ui.red-400 {
+.ui.red-400, .ui.target.target-red-400 {
   color: #ef5350; }
 
-.ui.bg-red-400 {
+.ui.bg-red-400, .ui.target.target-bg-red-400 {
   background-color: #ef5350; }
 
-.ui.red-500 {
+.ui.red-500, .ui.target.target-red-500 {
   color: #f44336; }
 
-.ui.bg-red-500 {
+.ui.bg-red-500, .ui.target.target-bg-red-500 {
   background-color: #f44336; }
 
-.ui.red-600 {
+.ui.red-600, .ui.target.target-red-600 {
   color: #e53935; }
 
-.ui.bg-red-600 {
+.ui.bg-red-600, .ui.target.target-bg-red-600 {
   background-color: #e53935; }
 
-.ui.red-700 {
+.ui.red-700, .ui.target.target-red-700 {
   color: #d32f2f; }
 
-.ui.bg-red-700 {
+.ui.bg-red-700, .ui.target.target-bg-red-700 {
   background-color: #d32f2f; }
 
-.ui.red-800 {
+.ui.red-800, .ui.target.target-red-800 {
   color: #c62828; }
 
-.ui.bg-red-800 {
+.ui.bg-red-800, .ui.target.target-bg-red-800 {
   background-color: #c62828; }
 
-.ui.red-900 {
+.ui.red-900, .ui.target.target-red-900 {
   color: #b71c1c; }
 
-.ui.bg-red-900 {
+.ui.bg-red-900, .ui.target.target-bg-red-900 {
   background-color: #b71c1c; }
 
-.ui.red-a100 {
+.ui.red-a100, .ui.target.target-red-a100 {
   color: #ff8a80; }
 
-.ui.bg-red-a100 {
+.ui.bg-red-a100, .ui.target.target-bg-red-a100 {
   background-color: #ff8a80; }
 
-.ui.red-a200 {
+.ui.red-a200, .ui.target.target-red-a200 {
   color: #ff5252; }
 
-.ui.bg-red-a200 {
+.ui.bg-red-a200, .ui.target.target-bg-red-a200 {
   background-color: #ff5252; }
 
-.ui.red-a400 {
+.ui.red-a400, .ui.target.target-red-a400 {
   color: #ff1744; }
 
-.ui.bg-red-a400 {
+.ui.bg-red-a400, .ui.target.target-bg-red-a400 {
   background-color: #ff1744; }
 
-.ui.red-a700 {
+.ui.red-a700, .ui.target.target-red-a700 {
   color: #d50000; }
 
-.ui.bg-red-a700 {
+.ui.bg-red-a700, .ui.target.target-bg-red-a700 {
   background-color: #d50000; }
 
-.ui.pink-50 {
+.ui.pink-50, .ui.target.target-pink-50 {
   color: #fce4ec; }
 
-.ui.bg-pink-50 {
+.ui.bg-pink-50, .ui.target.target-bg-pink-50 {
   background-color: #fce4ec; }
 
-.ui.pink-100 {
+.ui.pink-100, .ui.target.target-pink-100 {
   color: #f8bbd0; }
 
-.ui.bg-pink-100 {
+.ui.bg-pink-100, .ui.target.target-bg-pink-100 {
   background-color: #f8bbd0; }
 
-.ui.pink-200 {
+.ui.pink-200, .ui.target.target-pink-200 {
   color: #f48fb1; }
 
-.ui.bg-pink-200 {
+.ui.bg-pink-200, .ui.target.target-bg-pink-200 {
   background-color: #f48fb1; }
 
-.ui.pink-300 {
+.ui.pink-300, .ui.target.target-pink-300 {
   color: #f06292; }
 
-.ui.bg-pink-300 {
+.ui.bg-pink-300, .ui.target.target-bg-pink-300 {
   background-color: #f06292; }
 
-.ui.pink-400 {
+.ui.pink-400, .ui.target.target-pink-400 {
   color: #ec407a; }
 
-.ui.bg-pink-400 {
+.ui.bg-pink-400, .ui.target.target-bg-pink-400 {
   background-color: #ec407a; }
 
-.ui.pink-500 {
+.ui.pink-500, .ui.target.target-pink-500 {
   color: #e91e63; }
 
-.ui.bg-pink-500 {
+.ui.bg-pink-500, .ui.target.target-bg-pink-500 {
   background-color: #e91e63; }
 
-.ui.pink-600 {
+.ui.pink-600, .ui.target.target-pink-600 {
   color: #d81b60; }
 
-.ui.bg-pink-600 {
+.ui.bg-pink-600, .ui.target.target-bg-pink-600 {
   background-color: #d81b60; }
 
-.ui.pink-700 {
+.ui.pink-700, .ui.target.target-pink-700 {
   color: #c2185b; }
 
-.ui.bg-pink-700 {
+.ui.bg-pink-700, .ui.target.target-bg-pink-700 {
   background-color: #c2185b; }
 
-.ui.pink-800 {
+.ui.pink-800, .ui.target.target-pink-800 {
   color: #ad1457; }
 
-.ui.bg-pink-800 {
+.ui.bg-pink-800, .ui.target.target-bg-pink-800 {
   background-color: #ad1457; }
 
-.ui.pink-900 {
+.ui.pink-900, .ui.target.target-pink-900 {
   color: #880e4f; }
 
-.ui.bg-pink-900 {
+.ui.bg-pink-900, .ui.target.target-bg-pink-900 {
   background-color: #880e4f; }
 
-.ui.pink-a100 {
+.ui.pink-a100, .ui.target.target-pink-a100 {
   color: #ff80ab; }
 
-.ui.bg-pink-a100 {
+.ui.bg-pink-a100, .ui.target.target-bg-pink-a100 {
   background-color: #ff80ab; }
 
-.ui.pink-a200 {
+.ui.pink-a200, .ui.target.target-pink-a200 {
   color: #ff4081; }
 
-.ui.bg-pink-a200 {
+.ui.bg-pink-a200, .ui.target.target-bg-pink-a200 {
   background-color: #ff4081; }
 
-.ui.pink-a400 {
+.ui.pink-a400, .ui.target.target-pink-a400 {
   color: #f50057; }
 
-.ui.bg-pink-a400 {
+.ui.bg-pink-a400, .ui.target.target-bg-pink-a400 {
   background-color: #f50057; }
 
-.ui.pink-a700 {
+.ui.pink-a700, .ui.target.target-pink-a700 {
   color: #c51162; }
 
-.ui.bg-pink-a700 {
+.ui.bg-pink-a700, .ui.target.target-bg-pink-a700 {
   background-color: #c51162; }
 
-.ui.purple-50 {
+.ui.purple-50, .ui.target.target-purple-50 {
   color: #f3e5f5; }
 
-.ui.bg-purple-50 {
+.ui.bg-purple-50, .ui.target.target-bg-purple-50 {
   background-color: #f3e5f5; }
 
-.ui.purple-100 {
+.ui.purple-100, .ui.target.target-purple-100 {
   color: #e1bee7; }
 
-.ui.bg-purple-100 {
+.ui.bg-purple-100, .ui.target.target-bg-purple-100 {
   background-color: #e1bee7; }
 
-.ui.purple-200 {
+.ui.purple-200, .ui.target.target-purple-200 {
   color: #ce93d8; }
 
-.ui.bg-purple-200 {
+.ui.bg-purple-200, .ui.target.target-bg-purple-200 {
   background-color: #ce93d8; }
 
-.ui.purple-300 {
+.ui.purple-300, .ui.target.target-purple-300 {
   color: #ba68c8; }
 
-.ui.bg-purple-300 {
+.ui.bg-purple-300, .ui.target.target-bg-purple-300 {
   background-color: #ba68c8; }
 
-.ui.purple-400 {
+.ui.purple-400, .ui.target.target-purple-400 {
   color: #ab47bc; }
 
-.ui.bg-purple-400 {
+.ui.bg-purple-400, .ui.target.target-bg-purple-400 {
   background-color: #ab47bc; }
 
-.ui.purple-500 {
+.ui.purple-500, .ui.target.target-purple-500 {
   color: #9c27b0; }
 
-.ui.bg-purple-500 {
+.ui.bg-purple-500, .ui.target.target-bg-purple-500 {
   background-color: #9c27b0; }
 
-.ui.purple-600 {
+.ui.purple-600, .ui.target.target-purple-600 {
   color: #8e24aa; }
 
-.ui.bg-purple-600 {
+.ui.bg-purple-600, .ui.target.target-bg-purple-600 {
   background-color: #8e24aa; }
 
-.ui.purple-700 {
+.ui.purple-700, .ui.target.target-purple-700 {
   color: #7b1fa2; }
 
-.ui.bg-purple-700 {
+.ui.bg-purple-700, .ui.target.target-bg-purple-700 {
   background-color: #7b1fa2; }
 
-.ui.purple-800 {
+.ui.purple-800, .ui.target.target-purple-800 {
   color: #6a1b9a; }
 
-.ui.bg-purple-800 {
+.ui.bg-purple-800, .ui.target.target-bg-purple-800 {
   background-color: #6a1b9a; }
 
-.ui.purple-900 {
+.ui.purple-900, .ui.target.target-purple-900 {
   color: #4a148c; }
 
-.ui.bg-purple-900 {
+.ui.bg-purple-900, .ui.target.target-bg-purple-900 {
   background-color: #4a148c; }
 
-.ui.purple-a100 {
+.ui.purple-a100, .ui.target.target-purple-a100 {
   color: #ea80fc; }
 
-.ui.bg-purple-a100 {
+.ui.bg-purple-a100, .ui.target.target-bg-purple-a100 {
   background-color: #ea80fc; }
 
-.ui.purple-a200 {
+.ui.purple-a200, .ui.target.target-purple-a200 {
   color: #e040fb; }
 
-.ui.bg-purple-a200 {
+.ui.bg-purple-a200, .ui.target.target-bg-purple-a200 {
   background-color: #e040fb; }
 
-.ui.purple-a400 {
+.ui.purple-a400, .ui.target.target-purple-a400 {
   color: #d500f9; }
 
-.ui.bg-purple-a400 {
+.ui.bg-purple-a400, .ui.target.target-bg-purple-a400 {
   background-color: #d500f9; }
 
-.ui.purple-a700 {
+.ui.purple-a700, .ui.target.target-purple-a700 {
   color: #aa00ff; }
 
-.ui.bg-purple-a700 {
+.ui.bg-purple-a700, .ui.target.target-bg-purple-a700 {
   background-color: #aa00ff; }
 
-.ui.deep-purple-50 {
+.ui.deep-purple-50, .ui.target.target-deep-purple-50 {
   color: #ede7f6; }
 
-.ui.bg-deep-purple-50 {
+.ui.bg-deep-purple-50, .ui.target.target-bg-deep-purple-50 {
   background-color: #ede7f6; }
 
-.ui.deep-purple-100 {
+.ui.deep-purple-100, .ui.target.target-deep-purple-100 {
   color: #d1c4e9; }
 
-.ui.bg-deep-purple-100 {
+.ui.bg-deep-purple-100, .ui.target.target-bg-deep-purple-100 {
   background-color: #d1c4e9; }
 
-.ui.deep-purple-200 {
+.ui.deep-purple-200, .ui.target.target-deep-purple-200 {
   color: #b39ddb; }
 
-.ui.bg-deep-purple-200 {
+.ui.bg-deep-purple-200, .ui.target.target-bg-deep-purple-200 {
   background-color: #b39ddb; }
 
-.ui.deep-purple-300 {
+.ui.deep-purple-300, .ui.target.target-deep-purple-300 {
   color: #9575cd; }
 
-.ui.bg-deep-purple-300 {
+.ui.bg-deep-purple-300, .ui.target.target-bg-deep-purple-300 {
   background-color: #9575cd; }
 
-.ui.deep-purple-400 {
+.ui.deep-purple-400, .ui.target.target-deep-purple-400 {
   color: #7e57c2; }
 
-.ui.bg-deep-purple-400 {
+.ui.bg-deep-purple-400, .ui.target.target-bg-deep-purple-400 {
   background-color: #7e57c2; }
 
-.ui.deep-purple-500 {
+.ui.deep-purple-500, .ui.target.target-deep-purple-500 {
   color: #673ab7; }
 
-.ui.bg-deep-purple-500 {
+.ui.bg-deep-purple-500, .ui.target.target-bg-deep-purple-500 {
   background-color: #673ab7; }
 
-.ui.deep-purple-600 {
+.ui.deep-purple-600, .ui.target.target-deep-purple-600 {
   color: #5e35b1; }
 
-.ui.bg-deep-purple-600 {
+.ui.bg-deep-purple-600, .ui.target.target-bg-deep-purple-600 {
   background-color: #5e35b1; }
 
-.ui.deep-purple-700 {
+.ui.deep-purple-700, .ui.target.target-deep-purple-700 {
   color: #512da8; }
 
-.ui.bg-deep-purple-700 {
+.ui.bg-deep-purple-700, .ui.target.target-bg-deep-purple-700 {
   background-color: #512da8; }
 
-.ui.deep-purple-800 {
+.ui.deep-purple-800, .ui.target.target-deep-purple-800 {
   color: #4527a0; }
 
-.ui.bg-deep-purple-800 {
+.ui.bg-deep-purple-800, .ui.target.target-bg-deep-purple-800 {
   background-color: #4527a0; }
 
-.ui.deep-purple-900 {
+.ui.deep-purple-900, .ui.target.target-deep-purple-900 {
   color: #311b92; }
 
-.ui.bg-deep-purple-900 {
+.ui.bg-deep-purple-900, .ui.target.target-bg-deep-purple-900 {
   background-color: #311b92; }
 
-.ui.deep-purple-a100 {
+.ui.deep-purple-a100, .ui.target.target-deep-purple-a100 {
   color: #b388ff; }
 
-.ui.bg-deep-purple-a100 {
+.ui.bg-deep-purple-a100, .ui.target.target-bg-deep-purple-a100 {
   background-color: #b388ff; }
 
-.ui.deep-purple-a200 {
+.ui.deep-purple-a200, .ui.target.target-deep-purple-a200 {
   color: #7c4dff; }
 
-.ui.bg-deep-purple-a200 {
+.ui.bg-deep-purple-a200, .ui.target.target-bg-deep-purple-a200 {
   background-color: #7c4dff; }
 
-.ui.deep-purple-a400 {
+.ui.deep-purple-a400, .ui.target.target-deep-purple-a400 {
   color: #651fff; }
 
-.ui.bg-deep-purple-a400 {
+.ui.bg-deep-purple-a400, .ui.target.target-bg-deep-purple-a400 {
   background-color: #651fff; }
 
-.ui.deep-purple-a700 {
+.ui.deep-purple-a700, .ui.target.target-deep-purple-a700 {
   color: #6200ea; }
 
-.ui.bg-deep-purple-a700 {
+.ui.bg-deep-purple-a700, .ui.target.target-bg-deep-purple-a700 {
   background-color: #6200ea; }
 
-.ui.indigo-50 {
+.ui.indigo-50, .ui.target.target-indigo-50 {
   color: #e8eaf6; }
 
-.ui.bg-indigo-50 {
+.ui.bg-indigo-50, .ui.target.target-bg-indigo-50 {
   background-color: #e8eaf6; }
 
-.ui.indigo-100 {
+.ui.indigo-100, .ui.target.target-indigo-100 {
   color: #c5cae9; }
 
-.ui.bg-indigo-100 {
+.ui.bg-indigo-100, .ui.target.target-bg-indigo-100 {
   background-color: #c5cae9; }
 
-.ui.indigo-200 {
+.ui.indigo-200, .ui.target.target-indigo-200 {
   color: #9fa8da; }
 
-.ui.bg-indigo-200 {
+.ui.bg-indigo-200, .ui.target.target-bg-indigo-200 {
   background-color: #9fa8da; }
 
-.ui.indigo-300 {
+.ui.indigo-300, .ui.target.target-indigo-300 {
   color: #7986cb; }
 
-.ui.bg-indigo-300 {
+.ui.bg-indigo-300, .ui.target.target-bg-indigo-300 {
   background-color: #7986cb; }
 
-.ui.indigo-400 {
+.ui.indigo-400, .ui.target.target-indigo-400 {
   color: #5c6bc0; }
 
-.ui.bg-indigo-400 {
+.ui.bg-indigo-400, .ui.target.target-bg-indigo-400 {
   background-color: #5c6bc0; }
 
-.ui.indigo-500 {
+.ui.indigo-500, .ui.target.target-indigo-500 {
   color: #3f51b5; }
 
-.ui.bg-indigo-500 {
+.ui.bg-indigo-500, .ui.target.target-bg-indigo-500 {
   background-color: #3f51b5; }
 
-.ui.indigo-600 {
+.ui.indigo-600, .ui.target.target-indigo-600 {
   color: #3949ab; }
 
-.ui.bg-indigo-600 {
+.ui.bg-indigo-600, .ui.target.target-bg-indigo-600 {
   background-color: #3949ab; }
 
-.ui.indigo-700 {
+.ui.indigo-700, .ui.target.target-indigo-700 {
   color: #303f9f; }
 
-.ui.bg-indigo-700 {
+.ui.bg-indigo-700, .ui.target.target-bg-indigo-700 {
   background-color: #303f9f; }
 
-.ui.indigo-800 {
+.ui.indigo-800, .ui.target.target-indigo-800 {
   color: #283593; }
 
-.ui.bg-indigo-800 {
+.ui.bg-indigo-800, .ui.target.target-bg-indigo-800 {
   background-color: #283593; }
 
-.ui.indigo-900 {
+.ui.indigo-900, .ui.target.target-indigo-900 {
   color: #1a237e; }
 
-.ui.bg-indigo-900 {
+.ui.bg-indigo-900, .ui.target.target-bg-indigo-900 {
   background-color: #1a237e; }
 
-.ui.indigo-a100 {
+.ui.indigo-a100, .ui.target.target-indigo-a100 {
   color: #8c9eff; }
 
-.ui.bg-indigo-a100 {
+.ui.bg-indigo-a100, .ui.target.target-bg-indigo-a100 {
   background-color: #8c9eff; }
 
-.ui.indigo-a200 {
+.ui.indigo-a200, .ui.target.target-indigo-a200 {
   color: #536dfe; }
 
-.ui.bg-indigo-a200 {
+.ui.bg-indigo-a200, .ui.target.target-bg-indigo-a200 {
   background-color: #536dfe; }
 
-.ui.indigo-a400 {
+.ui.indigo-a400, .ui.target.target-indigo-a400 {
   color: #3d5afe; }
 
-.ui.bg-indigo-a400 {
+.ui.bg-indigo-a400, .ui.target.target-bg-indigo-a400 {
   background-color: #3d5afe; }
 
-.ui.indigo-a700 {
+.ui.indigo-a700, .ui.target.target-indigo-a700 {
   color: #304ffe; }
 
-.ui.bg-indigo-a700 {
+.ui.bg-indigo-a700, .ui.target.target-bg-indigo-a700 {
   background-color: #304ffe; }
 
-.ui.blue-50 {
+.ui.blue-50, .ui.target.target-blue-50 {
   color: #e3f2fd; }
 
-.ui.bg-blue-50 {
+.ui.bg-blue-50, .ui.target.target-bg-blue-50 {
   background-color: #e3f2fd; }
 
-.ui.blue-100 {
+.ui.blue-100, .ui.target.target-blue-100 {
   color: #bbdefb; }
 
-.ui.bg-blue-100 {
+.ui.bg-blue-100, .ui.target.target-bg-blue-100 {
   background-color: #bbdefb; }
 
-.ui.blue-200 {
+.ui.blue-200, .ui.target.target-blue-200 {
   color: #90caf9; }
 
-.ui.bg-blue-200 {
+.ui.bg-blue-200, .ui.target.target-bg-blue-200 {
   background-color: #90caf9; }
 
-.ui.blue-300 {
+.ui.blue-300, .ui.target.target-blue-300 {
   color: #64b5f6; }
 
-.ui.bg-blue-300 {
+.ui.bg-blue-300, .ui.target.target-bg-blue-300 {
   background-color: #64b5f6; }
 
-.ui.blue-400 {
+.ui.blue-400, .ui.target.target-blue-400 {
   color: #42a5f5; }
 
-.ui.bg-blue-400 {
+.ui.bg-blue-400, .ui.target.target-bg-blue-400 {
   background-color: #42a5f5; }
 
-.ui.blue-500 {
+.ui.blue-500, .ui.target.target-blue-500 {
   color: #2196f3; }
 
-.ui.bg-blue-500 {
+.ui.bg-blue-500, .ui.target.target-bg-blue-500 {
   background-color: #2196f3; }
 
-.ui.blue-600 {
+.ui.blue-600, .ui.target.target-blue-600 {
   color: #1e88e5; }
 
-.ui.bg-blue-600 {
+.ui.bg-blue-600, .ui.target.target-bg-blue-600 {
   background-color: #1e88e5; }
 
-.ui.blue-700 {
+.ui.blue-700, .ui.target.target-blue-700 {
   color: #1976d2; }
 
-.ui.bg-blue-700 {
+.ui.bg-blue-700, .ui.target.target-bg-blue-700 {
   background-color: #1976d2; }
 
-.ui.blue-800 {
+.ui.blue-800, .ui.target.target-blue-800 {
   color: #1565c0; }
 
-.ui.bg-blue-800 {
+.ui.bg-blue-800, .ui.target.target-bg-blue-800 {
   background-color: #1565c0; }
 
-.ui.blue-900 {
+.ui.blue-900, .ui.target.target-blue-900 {
   color: #0d47a1; }
 
-.ui.bg-blue-900 {
+.ui.bg-blue-900, .ui.target.target-bg-blue-900 {
   background-color: #0d47a1; }
 
-.ui.blue-a100 {
+.ui.blue-a100, .ui.target.target-blue-a100 {
   color: #82b1ff; }
 
-.ui.bg-blue-a100 {
+.ui.bg-blue-a100, .ui.target.target-bg-blue-a100 {
   background-color: #82b1ff; }
 
-.ui.blue-a200 {
+.ui.blue-a200, .ui.target.target-blue-a200 {
   color: #448aff; }
 
-.ui.bg-blue-a200 {
+.ui.bg-blue-a200, .ui.target.target-bg-blue-a200 {
   background-color: #448aff; }
 
-.ui.blue-a400 {
+.ui.blue-a400, .ui.target.target-blue-a400 {
   color: #2979ff; }
 
-.ui.bg-blue-a400 {
+.ui.bg-blue-a400, .ui.target.target-bg-blue-a400 {
   background-color: #2979ff; }
 
-.ui.blue-a700 {
+.ui.blue-a700, .ui.target.target-blue-a700 {
   color: #2962ff; }
 
-.ui.bg-blue-a700 {
+.ui.bg-blue-a700, .ui.target.target-bg-blue-a700 {
   background-color: #2962ff; }
 
-.ui.light-blue-50 {
+.ui.light-blue-50, .ui.target.target-light-blue-50 {
   color: #e1f5fe; }
 
-.ui.bg-light-blue-50 {
+.ui.bg-light-blue-50, .ui.target.target-bg-light-blue-50 {
   background-color: #e1f5fe; }
 
-.ui.light-blue-100 {
+.ui.light-blue-100, .ui.target.target-light-blue-100 {
   color: #b3e5fc; }
 
-.ui.bg-light-blue-100 {
+.ui.bg-light-blue-100, .ui.target.target-bg-light-blue-100 {
   background-color: #b3e5fc; }
 
-.ui.light-blue-200 {
+.ui.light-blue-200, .ui.target.target-light-blue-200 {
   color: #81d4fa; }
 
-.ui.bg-light-blue-200 {
+.ui.bg-light-blue-200, .ui.target.target-bg-light-blue-200 {
   background-color: #81d4fa; }
 
-.ui.light-blue-300 {
+.ui.light-blue-300, .ui.target.target-light-blue-300 {
   color: #4fc3f7; }
 
-.ui.bg-light-blue-300 {
+.ui.bg-light-blue-300, .ui.target.target-bg-light-blue-300 {
   background-color: #4fc3f7; }
 
-.ui.light-blue-400 {
+.ui.light-blue-400, .ui.target.target-light-blue-400 {
   color: #29b6f6; }
 
-.ui.bg-light-blue-400 {
+.ui.bg-light-blue-400, .ui.target.target-bg-light-blue-400 {
   background-color: #29b6f6; }
 
-.ui.light-blue-500 {
+.ui.light-blue-500, .ui.target.target-light-blue-500 {
   color: #03a9f4; }
 
-.ui.bg-light-blue-500 {
+.ui.bg-light-blue-500, .ui.target.target-bg-light-blue-500 {
   background-color: #03a9f4; }
 
-.ui.light-blue-600 {
+.ui.light-blue-600, .ui.target.target-light-blue-600 {
   color: #039be5; }
 
-.ui.bg-light-blue-600 {
+.ui.bg-light-blue-600, .ui.target.target-bg-light-blue-600 {
   background-color: #039be5; }
 
-.ui.light-blue-700 {
+.ui.light-blue-700, .ui.target.target-light-blue-700 {
   color: #0288d1; }
 
-.ui.bg-light-blue-700 {
+.ui.bg-light-blue-700, .ui.target.target-bg-light-blue-700 {
   background-color: #0288d1; }
 
-.ui.light-blue-800 {
+.ui.light-blue-800, .ui.target.target-light-blue-800 {
   color: #0277bd; }
 
-.ui.bg-light-blue-800 {
+.ui.bg-light-blue-800, .ui.target.target-bg-light-blue-800 {
   background-color: #0277bd; }
 
-.ui.light-blue-900 {
+.ui.light-blue-900, .ui.target.target-light-blue-900 {
   color: #01579b; }
 
-.ui.bg-light-blue-900 {
+.ui.bg-light-blue-900, .ui.target.target-bg-light-blue-900 {
   background-color: #01579b; }
 
-.ui.light-blue-a100 {
+.ui.light-blue-a100, .ui.target.target-light-blue-a100 {
   color: #80d8ff; }
 
-.ui.bg-light-blue-a100 {
+.ui.bg-light-blue-a100, .ui.target.target-bg-light-blue-a100 {
   background-color: #80d8ff; }
 
-.ui.light-blue-a200 {
+.ui.light-blue-a200, .ui.target.target-light-blue-a200 {
   color: #40c4ff; }
 
-.ui.bg-light-blue-a200 {
+.ui.bg-light-blue-a200, .ui.target.target-bg-light-blue-a200 {
   background-color: #40c4ff; }
 
-.ui.light-blue-a400 {
+.ui.light-blue-a400, .ui.target.target-light-blue-a400 {
   color: #00b0ff; }
 
-.ui.bg-light-blue-a400 {
+.ui.bg-light-blue-a400, .ui.target.target-bg-light-blue-a400 {
   background-color: #00b0ff; }
 
-.ui.light-blue-a700 {
+.ui.light-blue-a700, .ui.target.target-light-blue-a700 {
   color: #0091ea; }
 
-.ui.bg-light-blue-a700 {
+.ui.bg-light-blue-a700, .ui.target.target-bg-light-blue-a700 {
   background-color: #0091ea; }
 
-.ui.cyan-50 {
+.ui.cyan-50, .ui.target.target-cyan-50 {
   color: #e0f7fa; }
 
-.ui.bg-cyan-50 {
+.ui.bg-cyan-50, .ui.target.target-bg-cyan-50 {
   background-color: #e0f7fa; }
 
-.ui.cyan-100 {
+.ui.cyan-100, .ui.target.target-cyan-100 {
   color: #b2ebf2; }
 
-.ui.bg-cyan-100 {
+.ui.bg-cyan-100, .ui.target.target-bg-cyan-100 {
   background-color: #b2ebf2; }
 
-.ui.cyan-200 {
+.ui.cyan-200, .ui.target.target-cyan-200 {
   color: #80deea; }
 
-.ui.bg-cyan-200 {
+.ui.bg-cyan-200, .ui.target.target-bg-cyan-200 {
   background-color: #80deea; }
 
-.ui.cyan-300 {
+.ui.cyan-300, .ui.target.target-cyan-300 {
   color: #4dd0e1; }
 
-.ui.bg-cyan-300 {
+.ui.bg-cyan-300, .ui.target.target-bg-cyan-300 {
   background-color: #4dd0e1; }
 
-.ui.cyan-400 {
+.ui.cyan-400, .ui.target.target-cyan-400 {
   color: #26c6da; }
 
-.ui.bg-cyan-400 {
+.ui.bg-cyan-400, .ui.target.target-bg-cyan-400 {
   background-color: #26c6da; }
 
-.ui.cyan-500 {
+.ui.cyan-500, .ui.target.target-cyan-500 {
   color: #00bcd4; }
 
-.ui.bg-cyan-500 {
+.ui.bg-cyan-500, .ui.target.target-bg-cyan-500 {
   background-color: #00bcd4; }
 
-.ui.cyan-600 {
+.ui.cyan-600, .ui.target.target-cyan-600 {
   color: #00acc1; }
 
-.ui.bg-cyan-600 {
+.ui.bg-cyan-600, .ui.target.target-bg-cyan-600 {
   background-color: #00acc1; }
 
-.ui.cyan-700 {
+.ui.cyan-700, .ui.target.target-cyan-700 {
   color: #0097a7; }
 
-.ui.bg-cyan-700 {
+.ui.bg-cyan-700, .ui.target.target-bg-cyan-700 {
   background-color: #0097a7; }
 
-.ui.cyan-800 {
+.ui.cyan-800, .ui.target.target-cyan-800 {
   color: #00838f; }
 
-.ui.bg-cyan-800 {
+.ui.bg-cyan-800, .ui.target.target-bg-cyan-800 {
   background-color: #00838f; }
 
-.ui.cyan-900 {
+.ui.cyan-900, .ui.target.target-cyan-900 {
   color: #006064; }
 
-.ui.bg-cyan-900 {
+.ui.bg-cyan-900, .ui.target.target-bg-cyan-900 {
   background-color: #006064; }
 
-.ui.cyan-a100 {
+.ui.cyan-a100, .ui.target.target-cyan-a100 {
   color: #84ffff; }
 
-.ui.bg-cyan-a100 {
+.ui.bg-cyan-a100, .ui.target.target-bg-cyan-a100 {
   background-color: #84ffff; }
 
-.ui.cyan-a200 {
+.ui.cyan-a200, .ui.target.target-cyan-a200 {
   color: #18ffff; }
 
-.ui.bg-cyan-a200 {
+.ui.bg-cyan-a200, .ui.target.target-bg-cyan-a200 {
   background-color: #18ffff; }
 
-.ui.cyan-a400 {
+.ui.cyan-a400, .ui.target.target-cyan-a400 {
   color: #00e5ff; }
 
-.ui.bg-cyan-a400 {
+.ui.bg-cyan-a400, .ui.target.target-bg-cyan-a400 {
   background-color: #00e5ff; }
 
-.ui.cyan-a700 {
+.ui.cyan-a700, .ui.target.target-cyan-a700 {
   color: #00b8d4; }
 
-.ui.bg-cyan-a700 {
+.ui.bg-cyan-a700, .ui.target.target-bg-cyan-a700 {
   background-color: #00b8d4; }
 
-.ui.teal-50 {
+.ui.teal-50, .ui.target.target-teal-50 {
   color: #e0f2f1; }
 
-.ui.bg-teal-50 {
+.ui.bg-teal-50, .ui.target.target-bg-teal-50 {
   background-color: #e0f2f1; }
 
-.ui.teal-100 {
+.ui.teal-100, .ui.target.target-teal-100 {
   color: #b2dfdb; }
 
-.ui.bg-teal-100 {
+.ui.bg-teal-100, .ui.target.target-bg-teal-100 {
   background-color: #b2dfdb; }
 
-.ui.teal-200 {
+.ui.teal-200, .ui.target.target-teal-200 {
   color: #80cbc4; }
 
-.ui.bg-teal-200 {
+.ui.bg-teal-200, .ui.target.target-bg-teal-200 {
   background-color: #80cbc4; }
 
-.ui.teal-300 {
+.ui.teal-300, .ui.target.target-teal-300 {
   color: #4db6ac; }
 
-.ui.bg-teal-300 {
+.ui.bg-teal-300, .ui.target.target-bg-teal-300 {
   background-color: #4db6ac; }
 
-.ui.teal-400 {
+.ui.teal-400, .ui.target.target-teal-400 {
   color: #26a69a; }
 
-.ui.bg-teal-400 {
+.ui.bg-teal-400, .ui.target.target-bg-teal-400 {
   background-color: #26a69a; }
 
-.ui.teal-500 {
+.ui.teal-500, .ui.target.target-teal-500 {
   color: #009688; }
 
-.ui.bg-teal-500 {
+.ui.bg-teal-500, .ui.target.target-bg-teal-500 {
   background-color: #009688; }
 
-.ui.teal-600 {
+.ui.teal-600, .ui.target.target-teal-600 {
   color: #00897b; }
 
-.ui.bg-teal-600 {
+.ui.bg-teal-600, .ui.target.target-bg-teal-600 {
   background-color: #00897b; }
 
-.ui.teal-700 {
+.ui.teal-700, .ui.target.target-teal-700 {
   color: #00796b; }
 
-.ui.bg-teal-700 {
+.ui.bg-teal-700, .ui.target.target-bg-teal-700 {
   background-color: #00796b; }
 
-.ui.teal-800 {
+.ui.teal-800, .ui.target.target-teal-800 {
   color: #00695c; }
 
-.ui.bg-teal-800 {
+.ui.bg-teal-800, .ui.target.target-bg-teal-800 {
   background-color: #00695c; }
 
-.ui.teal-900 {
+.ui.teal-900, .ui.target.target-teal-900 {
   color: #004d40; }
 
-.ui.bg-teal-900 {
+.ui.bg-teal-900, .ui.target.target-bg-teal-900 {
   background-color: #004d40; }
 
-.ui.teal-a100 {
+.ui.teal-a100, .ui.target.target-teal-a100 {
   color: #a7ffeb; }
 
-.ui.bg-teal-a100 {
+.ui.bg-teal-a100, .ui.target.target-bg-teal-a100 {
   background-color: #a7ffeb; }
 
-.ui.teal-a200 {
+.ui.teal-a200, .ui.target.target-teal-a200 {
   color: #64ffda; }
 
-.ui.bg-teal-a200 {
+.ui.bg-teal-a200, .ui.target.target-bg-teal-a200 {
   background-color: #64ffda; }
 
-.ui.teal-a400 {
+.ui.teal-a400, .ui.target.target-teal-a400 {
   color: #1de9b6; }
 
-.ui.bg-teal-a400 {
+.ui.bg-teal-a400, .ui.target.target-bg-teal-a400 {
   background-color: #1de9b6; }
 
-.ui.teal-a700 {
+.ui.teal-a700, .ui.target.target-teal-a700 {
   color: #00bfa5; }
 
-.ui.bg-teal-a700 {
+.ui.bg-teal-a700, .ui.target.target-bg-teal-a700 {
   background-color: #00bfa5; }
 
-.ui.green-50 {
+.ui.green-50, .ui.target.target-green-50 {
   color: #e8f5e9; }
 
-.ui.bg-green-50 {
+.ui.bg-green-50, .ui.target.target-bg-green-50 {
   background-color: #e8f5e9; }
 
-.ui.green-100 {
+.ui.green-100, .ui.target.target-green-100 {
   color: #c8e6c9; }
 
-.ui.bg-green-100 {
+.ui.bg-green-100, .ui.target.target-bg-green-100 {
   background-color: #c8e6c9; }
 
-.ui.green-200 {
+.ui.green-200, .ui.target.target-green-200 {
   color: #a5d6a7; }
 
-.ui.bg-green-200 {
+.ui.bg-green-200, .ui.target.target-bg-green-200 {
   background-color: #a5d6a7; }
 
-.ui.green-300 {
+.ui.green-300, .ui.target.target-green-300 {
   color: #81c784; }
 
-.ui.bg-green-300 {
+.ui.bg-green-300, .ui.target.target-bg-green-300 {
   background-color: #81c784; }
 
-.ui.green-400 {
+.ui.green-400, .ui.target.target-green-400 {
   color: #66bb6a; }
 
-.ui.bg-green-400 {
+.ui.bg-green-400, .ui.target.target-bg-green-400 {
   background-color: #66bb6a; }
 
-.ui.green-500 {
+.ui.green-500, .ui.target.target-green-500 {
   color: #4caf50; }
 
-.ui.bg-green-500 {
+.ui.bg-green-500, .ui.target.target-bg-green-500 {
   background-color: #4caf50; }
 
-.ui.green-600 {
+.ui.green-600, .ui.target.target-green-600 {
   color: #43a047; }
 
-.ui.bg-green-600 {
+.ui.bg-green-600, .ui.target.target-bg-green-600 {
   background-color: #43a047; }
 
-.ui.green-700 {
+.ui.green-700, .ui.target.target-green-700 {
   color: #388e3c; }
 
-.ui.bg-green-700 {
+.ui.bg-green-700, .ui.target.target-bg-green-700 {
   background-color: #388e3c; }
 
-.ui.green-800 {
+.ui.green-800, .ui.target.target-green-800 {
   color: #2e7d32; }
 
-.ui.bg-green-800 {
+.ui.bg-green-800, .ui.target.target-bg-green-800 {
   background-color: #2e7d32; }
 
-.ui.green-900 {
+.ui.green-900, .ui.target.target-green-900 {
   color: #1b5e20; }
 
-.ui.bg-green-900 {
+.ui.bg-green-900, .ui.target.target-bg-green-900 {
   background-color: #1b5e20; }
 
-.ui.green-a100 {
+.ui.green-a100, .ui.target.target-green-a100 {
   color: #b9f6ca; }
 
-.ui.bg-green-a100 {
+.ui.bg-green-a100, .ui.target.target-bg-green-a100 {
   background-color: #b9f6ca; }
 
-.ui.green-a200 {
+.ui.green-a200, .ui.target.target-green-a200 {
   color: #69f0ae; }
 
-.ui.bg-green-a200 {
+.ui.bg-green-a200, .ui.target.target-bg-green-a200 {
   background-color: #69f0ae; }
 
-.ui.green-a400 {
+.ui.green-a400, .ui.target.target-green-a400 {
   color: #00e676; }
 
-.ui.bg-green-a400 {
+.ui.bg-green-a400, .ui.target.target-bg-green-a400 {
   background-color: #00e676; }
 
-.ui.green-a700 {
+.ui.green-a700, .ui.target.target-green-a700 {
   color: #00c853; }
 
-.ui.bg-green-a700 {
+.ui.bg-green-a700, .ui.target.target-bg-green-a700 {
   background-color: #00c853; }
 
-.ui.light-green-50 {
+.ui.light-green-50, .ui.target.target-light-green-50 {
   color: #f1f8e9; }
 
-.ui.bg-light-green-50 {
+.ui.bg-light-green-50, .ui.target.target-bg-light-green-50 {
   background-color: #f1f8e9; }
 
-.ui.light-green-100 {
+.ui.light-green-100, .ui.target.target-light-green-100 {
   color: #dcedc8; }
 
-.ui.bg-light-green-100 {
+.ui.bg-light-green-100, .ui.target.target-bg-light-green-100 {
   background-color: #dcedc8; }
 
-.ui.light-green-200 {
+.ui.light-green-200, .ui.target.target-light-green-200 {
   color: #c5e1a5; }
 
-.ui.bg-light-green-200 {
+.ui.bg-light-green-200, .ui.target.target-bg-light-green-200 {
   background-color: #c5e1a5; }
 
-.ui.light-green-300 {
+.ui.light-green-300, .ui.target.target-light-green-300 {
   color: #aed581; }
 
-.ui.bg-light-green-300 {
+.ui.bg-light-green-300, .ui.target.target-bg-light-green-300 {
   background-color: #aed581; }
 
-.ui.light-green-400 {
+.ui.light-green-400, .ui.target.target-light-green-400 {
   color: #9ccc65; }
 
-.ui.bg-light-green-400 {
+.ui.bg-light-green-400, .ui.target.target-bg-light-green-400 {
   background-color: #9ccc65; }
 
-.ui.light-green-500 {
+.ui.light-green-500, .ui.target.target-light-green-500 {
   color: #8bc34a; }
 
-.ui.bg-light-green-500 {
+.ui.bg-light-green-500, .ui.target.target-bg-light-green-500 {
   background-color: #8bc34a; }
 
-.ui.light-green-600 {
+.ui.light-green-600, .ui.target.target-light-green-600 {
   color: #7cb342; }
 
-.ui.bg-light-green-600 {
+.ui.bg-light-green-600, .ui.target.target-bg-light-green-600 {
   background-color: #7cb342; }
 
-.ui.light-green-700 {
+.ui.light-green-700, .ui.target.target-light-green-700 {
   color: #689f38; }
 
-.ui.bg-light-green-700 {
+.ui.bg-light-green-700, .ui.target.target-bg-light-green-700 {
   background-color: #689f38; }
 
-.ui.light-green-800 {
+.ui.light-green-800, .ui.target.target-light-green-800 {
   color: #558b2f; }
 
-.ui.bg-light-green-800 {
+.ui.bg-light-green-800, .ui.target.target-bg-light-green-800 {
   background-color: #558b2f; }
 
-.ui.light-green-900 {
+.ui.light-green-900, .ui.target.target-light-green-900 {
   color: #33691e; }
 
-.ui.bg-light-green-900 {
+.ui.bg-light-green-900, .ui.target.target-bg-light-green-900 {
   background-color: #33691e; }
 
-.ui.light-green-a100 {
+.ui.light-green-a100, .ui.target.target-light-green-a100 {
   color: #ccff90; }
 
-.ui.bg-light-green-a100 {
+.ui.bg-light-green-a100, .ui.target.target-bg-light-green-a100 {
   background-color: #ccff90; }
 
-.ui.light-green-a200 {
+.ui.light-green-a200, .ui.target.target-light-green-a200 {
   color: #b2ff59; }
 
-.ui.bg-light-green-a200 {
+.ui.bg-light-green-a200, .ui.target.target-bg-light-green-a200 {
   background-color: #b2ff59; }
 
-.ui.light-green-a400 {
+.ui.light-green-a400, .ui.target.target-light-green-a400 {
   color: #76ff03; }
 
-.ui.bg-light-green-a400 {
+.ui.bg-light-green-a400, .ui.target.target-bg-light-green-a400 {
   background-color: #76ff03; }
 
-.ui.light-green-a700 {
+.ui.light-green-a700, .ui.target.target-light-green-a700 {
   color: #64dd17; }
 
-.ui.bg-light-green-a700 {
+.ui.bg-light-green-a700, .ui.target.target-bg-light-green-a700 {
   background-color: #64dd17; }
 
-.ui.lime-50 {
+.ui.lime-50, .ui.target.target-lime-50 {
   color: #f9fbe7; }
 
-.ui.bg-lime-50 {
+.ui.bg-lime-50, .ui.target.target-bg-lime-50 {
   background-color: #f9fbe7; }
 
-.ui.lime-100 {
+.ui.lime-100, .ui.target.target-lime-100 {
   color: #f0f4c3; }
 
-.ui.bg-lime-100 {
+.ui.bg-lime-100, .ui.target.target-bg-lime-100 {
   background-color: #f0f4c3; }
 
-.ui.lime-200 {
+.ui.lime-200, .ui.target.target-lime-200 {
   color: #e6ee9c; }
 
-.ui.bg-lime-200 {
+.ui.bg-lime-200, .ui.target.target-bg-lime-200 {
   background-color: #e6ee9c; }
 
-.ui.lime-300 {
+.ui.lime-300, .ui.target.target-lime-300 {
   color: #dce775; }
 
-.ui.bg-lime-300 {
+.ui.bg-lime-300, .ui.target.target-bg-lime-300 {
   background-color: #dce775; }
 
-.ui.lime-400 {
+.ui.lime-400, .ui.target.target-lime-400 {
   color: #d4e157; }
 
-.ui.bg-lime-400 {
+.ui.bg-lime-400, .ui.target.target-bg-lime-400 {
   background-color: #d4e157; }
 
-.ui.lime-500 {
+.ui.lime-500, .ui.target.target-lime-500 {
   color: #cddc39; }
 
-.ui.bg-lime-500 {
+.ui.bg-lime-500, .ui.target.target-bg-lime-500 {
   background-color: #cddc39; }
 
-.ui.lime-600 {
+.ui.lime-600, .ui.target.target-lime-600 {
   color: #c0ca33; }
 
-.ui.bg-lime-600 {
+.ui.bg-lime-600, .ui.target.target-bg-lime-600 {
   background-color: #c0ca33; }
 
-.ui.lime-700 {
+.ui.lime-700, .ui.target.target-lime-700 {
   color: #afb42b; }
 
-.ui.bg-lime-700 {
+.ui.bg-lime-700, .ui.target.target-bg-lime-700 {
   background-color: #afb42b; }
 
-.ui.lime-800 {
+.ui.lime-800, .ui.target.target-lime-800 {
   color: #9e9d24; }
 
-.ui.bg-lime-800 {
+.ui.bg-lime-800, .ui.target.target-bg-lime-800 {
   background-color: #9e9d24; }
 
-.ui.lime-900 {
+.ui.lime-900, .ui.target.target-lime-900 {
   color: #827717; }
 
-.ui.bg-lime-900 {
+.ui.bg-lime-900, .ui.target.target-bg-lime-900 {
   background-color: #827717; }
 
-.ui.lime-a100 {
+.ui.lime-a100, .ui.target.target-lime-a100 {
   color: #f4ff81; }
 
-.ui.bg-lime-a100 {
+.ui.bg-lime-a100, .ui.target.target-bg-lime-a100 {
   background-color: #f4ff81; }
 
-.ui.lime-a200 {
+.ui.lime-a200, .ui.target.target-lime-a200 {
   color: #eeff41; }
 
-.ui.bg-lime-a200 {
+.ui.bg-lime-a200, .ui.target.target-bg-lime-a200 {
   background-color: #eeff41; }
 
-.ui.lime-a400 {
+.ui.lime-a400, .ui.target.target-lime-a400 {
   color: #c6ff00; }
 
-.ui.bg-lime-a400 {
+.ui.bg-lime-a400, .ui.target.target-bg-lime-a400 {
   background-color: #c6ff00; }
 
-.ui.lime-a700 {
+.ui.lime-a700, .ui.target.target-lime-a700 {
   color: #aeea00; }
 
-.ui.bg-lime-a700 {
+.ui.bg-lime-a700, .ui.target.target-bg-lime-a700 {
   background-color: #aeea00; }
 
-.ui.yellow-50 {
+.ui.yellow-50, .ui.target.target-yellow-50 {
   color: #fffde7; }
 
-.ui.bg-yellow-50 {
+.ui.bg-yellow-50, .ui.target.target-bg-yellow-50 {
   background-color: #fffde7; }
 
-.ui.yellow-100 {
+.ui.yellow-100, .ui.target.target-yellow-100 {
   color: #fff9c4; }
 
-.ui.bg-yellow-100 {
+.ui.bg-yellow-100, .ui.target.target-bg-yellow-100 {
   background-color: #fff9c4; }
 
-.ui.yellow-200 {
+.ui.yellow-200, .ui.target.target-yellow-200 {
   color: #fff59d; }
 
-.ui.bg-yellow-200 {
+.ui.bg-yellow-200, .ui.target.target-bg-yellow-200 {
   background-color: #fff59d; }
 
-.ui.yellow-300 {
+.ui.yellow-300, .ui.target.target-yellow-300 {
   color: #fff176; }
 
-.ui.bg-yellow-300 {
+.ui.bg-yellow-300, .ui.target.target-bg-yellow-300 {
   background-color: #fff176; }
 
-.ui.yellow-400 {
+.ui.yellow-400, .ui.target.target-yellow-400 {
   color: #ffee58; }
 
-.ui.bg-yellow-400 {
+.ui.bg-yellow-400, .ui.target.target-bg-yellow-400 {
   background-color: #ffee58; }
 
-.ui.yellow-500 {
+.ui.yellow-500, .ui.target.target-yellow-500 {
   color: #ffeb3b; }
 
-.ui.bg-yellow-500 {
+.ui.bg-yellow-500, .ui.target.target-bg-yellow-500 {
   background-color: #ffeb3b; }
 
-.ui.yellow-600 {
+.ui.yellow-600, .ui.target.target-yellow-600 {
   color: #fdd835; }
 
-.ui.bg-yellow-600 {
+.ui.bg-yellow-600, .ui.target.target-bg-yellow-600 {
   background-color: #fdd835; }
 
-.ui.yellow-700 {
+.ui.yellow-700, .ui.target.target-yellow-700 {
   color: #fbc02d; }
 
-.ui.bg-yellow-700 {
+.ui.bg-yellow-700, .ui.target.target-bg-yellow-700 {
   background-color: #fbc02d; }
 
-.ui.yellow-800 {
+.ui.yellow-800, .ui.target.target-yellow-800 {
   color: #f9a825; }
 
-.ui.bg-yellow-800 {
+.ui.bg-yellow-800, .ui.target.target-bg-yellow-800 {
   background-color: #f9a825; }
 
-.ui.yellow-900 {
+.ui.yellow-900, .ui.target.target-yellow-900 {
   color: #f57f17; }
 
-.ui.bg-yellow-900 {
+.ui.bg-yellow-900, .ui.target.target-bg-yellow-900 {
   background-color: #f57f17; }
 
-.ui.yellow-a100 {
+.ui.yellow-a100, .ui.target.target-yellow-a100 {
   color: #ffff8d; }
 
-.ui.bg-yellow-a100 {
+.ui.bg-yellow-a100, .ui.target.target-bg-yellow-a100 {
   background-color: #ffff8d; }
 
-.ui.yellow-a200 {
+.ui.yellow-a200, .ui.target.target-yellow-a200 {
   color: #ffff00; }
 
-.ui.bg-yellow-a200 {
+.ui.bg-yellow-a200, .ui.target.target-bg-yellow-a200 {
   background-color: #ffff00; }
 
-.ui.yellow-a400 {
+.ui.yellow-a400, .ui.target.target-yellow-a400 {
   color: #ffea00; }
 
-.ui.bg-yellow-a400 {
+.ui.bg-yellow-a400, .ui.target.target-bg-yellow-a400 {
   background-color: #ffea00; }
 
-.ui.yellow-a700 {
+.ui.yellow-a700, .ui.target.target-yellow-a700 {
   color: #ffd600; }
 
-.ui.bg-yellow-a700 {
+.ui.bg-yellow-a700, .ui.target.target-bg-yellow-a700 {
   background-color: #ffd600; }
 
-.ui.amber-50 {
+.ui.amber-50, .ui.target.target-amber-50 {
   color: #fff8e1; }
 
-.ui.bg-amber-50 {
+.ui.bg-amber-50, .ui.target.target-bg-amber-50 {
   background-color: #fff8e1; }
 
-.ui.amber-100 {
+.ui.amber-100, .ui.target.target-amber-100 {
   color: #ffecb3; }
 
-.ui.bg-amber-100 {
+.ui.bg-amber-100, .ui.target.target-bg-amber-100 {
   background-color: #ffecb3; }
 
-.ui.amber-200 {
+.ui.amber-200, .ui.target.target-amber-200 {
   color: #ffe082; }
 
-.ui.bg-amber-200 {
+.ui.bg-amber-200, .ui.target.target-bg-amber-200 {
   background-color: #ffe082; }
 
-.ui.amber-300 {
+.ui.amber-300, .ui.target.target-amber-300 {
   color: #ffd54f; }
 
-.ui.bg-amber-300 {
+.ui.bg-amber-300, .ui.target.target-bg-amber-300 {
   background-color: #ffd54f; }
 
-.ui.amber-400 {
+.ui.amber-400, .ui.target.target-amber-400 {
   color: #ffca28; }
 
-.ui.bg-amber-400 {
+.ui.bg-amber-400, .ui.target.target-bg-amber-400 {
   background-color: #ffca28; }
 
-.ui.amber-500 {
+.ui.amber-500, .ui.target.target-amber-500 {
   color: #ffc107; }
 
-.ui.bg-amber-500 {
+.ui.bg-amber-500, .ui.target.target-bg-amber-500 {
   background-color: #ffc107; }
 
-.ui.amber-600 {
+.ui.amber-600, .ui.target.target-amber-600 {
   color: #ffb300; }
 
-.ui.bg-amber-600 {
+.ui.bg-amber-600, .ui.target.target-bg-amber-600 {
   background-color: #ffb300; }
 
-.ui.amber-700 {
+.ui.amber-700, .ui.target.target-amber-700 {
   color: #ffa000; }
 
-.ui.bg-amber-700 {
+.ui.bg-amber-700, .ui.target.target-bg-amber-700 {
   background-color: #ffa000; }
 
-.ui.amber-800 {
+.ui.amber-800, .ui.target.target-amber-800 {
   color: #ff8f00; }
 
-.ui.bg-amber-800 {
+.ui.bg-amber-800, .ui.target.target-bg-amber-800 {
   background-color: #ff8f00; }
 
-.ui.amber-900 {
+.ui.amber-900, .ui.target.target-amber-900 {
   color: #ff6f00; }
 
-.ui.bg-amber-900 {
+.ui.bg-amber-900, .ui.target.target-bg-amber-900 {
   background-color: #ff6f00; }
 
-.ui.amber-a100 {
+.ui.amber-a100, .ui.target.target-amber-a100 {
   color: #ffe57f; }
 
-.ui.bg-amber-a100 {
+.ui.bg-amber-a100, .ui.target.target-bg-amber-a100 {
   background-color: #ffe57f; }
 
-.ui.amber-a200 {
+.ui.amber-a200, .ui.target.target-amber-a200 {
   color: #ffd740; }
 
-.ui.bg-amber-a200 {
+.ui.bg-amber-a200, .ui.target.target-bg-amber-a200 {
   background-color: #ffd740; }
 
-.ui.amber-a400 {
+.ui.amber-a400, .ui.target.target-amber-a400 {
   color: #ffc400; }
 
-.ui.bg-amber-a400 {
+.ui.bg-amber-a400, .ui.target.target-bg-amber-a400 {
   background-color: #ffc400; }
 
-.ui.amber-a700 {
+.ui.amber-a700, .ui.target.target-amber-a700 {
   color: #ffab00; }
 
-.ui.bg-amber-a700 {
+.ui.bg-amber-a700, .ui.target.target-bg-amber-a700 {
   background-color: #ffab00; }
 
-.ui.orange-50 {
+.ui.orange-50, .ui.target.target-orange-50 {
   color: #fff3e0; }
 
-.ui.bg-orange-50 {
+.ui.bg-orange-50, .ui.target.target-bg-orange-50 {
   background-color: #fff3e0; }
 
-.ui.orange-100 {
+.ui.orange-100, .ui.target.target-orange-100 {
   color: #ffe0b2; }
 
-.ui.bg-orange-100 {
+.ui.bg-orange-100, .ui.target.target-bg-orange-100 {
   background-color: #ffe0b2; }
 
-.ui.orange-200 {
+.ui.orange-200, .ui.target.target-orange-200 {
   color: #ffcc80; }
 
-.ui.bg-orange-200 {
+.ui.bg-orange-200, .ui.target.target-bg-orange-200 {
   background-color: #ffcc80; }
 
-.ui.orange-300 {
+.ui.orange-300, .ui.target.target-orange-300 {
   color: #ffb74d; }
 
-.ui.bg-orange-300 {
+.ui.bg-orange-300, .ui.target.target-bg-orange-300 {
   background-color: #ffb74d; }
 
-.ui.orange-400 {
+.ui.orange-400, .ui.target.target-orange-400 {
   color: #ffa726; }
 
-.ui.bg-orange-400 {
+.ui.bg-orange-400, .ui.target.target-bg-orange-400 {
   background-color: #ffa726; }
 
-.ui.orange-500 {
+.ui.orange-500, .ui.target.target-orange-500 {
   color: #ff9800; }
 
-.ui.bg-orange-500 {
+.ui.bg-orange-500, .ui.target.target-bg-orange-500 {
   background-color: #ff9800; }
 
-.ui.orange-600 {
+.ui.orange-600, .ui.target.target-orange-600 {
   color: #fb8c00; }
 
-.ui.bg-orange-600 {
+.ui.bg-orange-600, .ui.target.target-bg-orange-600 {
   background-color: #fb8c00; }
 
-.ui.orange-700 {
+.ui.orange-700, .ui.target.target-orange-700 {
   color: #f57c00; }
 
-.ui.bg-orange-700 {
+.ui.bg-orange-700, .ui.target.target-bg-orange-700 {
   background-color: #f57c00; }
 
-.ui.orange-800 {
+.ui.orange-800, .ui.target.target-orange-800 {
   color: #ef6c00; }
 
-.ui.bg-orange-800 {
+.ui.bg-orange-800, .ui.target.target-bg-orange-800 {
   background-color: #ef6c00; }
 
-.ui.orange-900 {
+.ui.orange-900, .ui.target.target-orange-900 {
   color: #e65100; }
 
-.ui.bg-orange-900 {
+.ui.bg-orange-900, .ui.target.target-bg-orange-900 {
   background-color: #e65100; }
 
-.ui.orange-a100 {
+.ui.orange-a100, .ui.target.target-orange-a100 {
   color: #ffd180; }
 
-.ui.bg-orange-a100 {
+.ui.bg-orange-a100, .ui.target.target-bg-orange-a100 {
   background-color: #ffd180; }
 
-.ui.orange-a200 {
+.ui.orange-a200, .ui.target.target-orange-a200 {
   color: #ffab40; }
 
-.ui.bg-orange-a200 {
+.ui.bg-orange-a200, .ui.target.target-bg-orange-a200 {
   background-color: #ffab40; }
 
-.ui.orange-a400 {
+.ui.orange-a400, .ui.target.target-orange-a400 {
   color: #ff9100; }
 
-.ui.bg-orange-a400 {
+.ui.bg-orange-a400, .ui.target.target-bg-orange-a400 {
   background-color: #ff9100; }
 
-.ui.orange-a700 {
+.ui.orange-a700, .ui.target.target-orange-a700 {
   color: #ff6d00; }
 
-.ui.bg-orange-a700 {
+.ui.bg-orange-a700, .ui.target.target-bg-orange-a700 {
   background-color: #ff6d00; }
 
-.ui.deep-orange-50 {
+.ui.deep-orange-50, .ui.target.target-deep-orange-50 {
   color: #fbe9e7; }
 
-.ui.bg-deep-orange-50 {
+.ui.bg-deep-orange-50, .ui.target.target-bg-deep-orange-50 {
   background-color: #fbe9e7; }
 
-.ui.deep-orange-100 {
+.ui.deep-orange-100, .ui.target.target-deep-orange-100 {
   color: #ffccbc; }
 
-.ui.bg-deep-orange-100 {
+.ui.bg-deep-orange-100, .ui.target.target-bg-deep-orange-100 {
   background-color: #ffccbc; }
 
-.ui.deep-orange-200 {
+.ui.deep-orange-200, .ui.target.target-deep-orange-200 {
   color: #ffab91; }
 
-.ui.bg-deep-orange-200 {
+.ui.bg-deep-orange-200, .ui.target.target-bg-deep-orange-200 {
   background-color: #ffab91; }
 
-.ui.deep-orange-300 {
+.ui.deep-orange-300, .ui.target.target-deep-orange-300 {
   color: #ff8a65; }
 
-.ui.bg-deep-orange-300 {
+.ui.bg-deep-orange-300, .ui.target.target-bg-deep-orange-300 {
   background-color: #ff8a65; }
 
-.ui.deep-orange-400 {
+.ui.deep-orange-400, .ui.target.target-deep-orange-400 {
   color: #ff7043; }
 
-.ui.bg-deep-orange-400 {
+.ui.bg-deep-orange-400, .ui.target.target-bg-deep-orange-400 {
   background-color: #ff7043; }
 
-.ui.deep-orange-500 {
+.ui.deep-orange-500, .ui.target.target-deep-orange-500 {
   color: #ff5722; }
 
-.ui.bg-deep-orange-500 {
+.ui.bg-deep-orange-500, .ui.target.target-bg-deep-orange-500 {
   background-color: #ff5722; }
 
-.ui.deep-orange-600 {
+.ui.deep-orange-600, .ui.target.target-deep-orange-600 {
   color: #f4511e; }
 
-.ui.bg-deep-orange-600 {
+.ui.bg-deep-orange-600, .ui.target.target-bg-deep-orange-600 {
   background-color: #f4511e; }
 
-.ui.deep-orange-700 {
+.ui.deep-orange-700, .ui.target.target-deep-orange-700 {
   color: #e64a19; }
 
-.ui.bg-deep-orange-700 {
+.ui.bg-deep-orange-700, .ui.target.target-bg-deep-orange-700 {
   background-color: #e64a19; }
 
-.ui.deep-orange-800 {
+.ui.deep-orange-800, .ui.target.target-deep-orange-800 {
   color: #d84315; }
 
-.ui.bg-deep-orange-800 {
+.ui.bg-deep-orange-800, .ui.target.target-bg-deep-orange-800 {
   background-color: #d84315; }
 
-.ui.deep-orange-900 {
+.ui.deep-orange-900, .ui.target.target-deep-orange-900 {
   color: #bf360c; }
 
-.ui.bg-deep-orange-900 {
+.ui.bg-deep-orange-900, .ui.target.target-bg-deep-orange-900 {
   background-color: #bf360c; }
 
-.ui.deep-orange-a100 {
+.ui.deep-orange-a100, .ui.target.target-deep-orange-a100 {
   color: #ff9e80; }
 
-.ui.bg-deep-orange-a100 {
+.ui.bg-deep-orange-a100, .ui.target.target-bg-deep-orange-a100 {
   background-color: #ff9e80; }
 
-.ui.deep-orange-a200 {
+.ui.deep-orange-a200, .ui.target.target-deep-orange-a200 {
   color: #ff6e40; }
 
-.ui.bg-deep-orange-a200 {
+.ui.bg-deep-orange-a200, .ui.target.target-bg-deep-orange-a200 {
   background-color: #ff6e40; }
 
-.ui.deep-orange-a400 {
+.ui.deep-orange-a400, .ui.target.target-deep-orange-a400 {
   color: #ff3d00; }
 
-.ui.bg-deep-orange-a400 {
+.ui.bg-deep-orange-a400, .ui.target.target-bg-deep-orange-a400 {
   background-color: #ff3d00; }
 
-.ui.deep-orange-a700 {
+.ui.deep-orange-a700, .ui.target.target-deep-orange-a700 {
   color: #dd2c00; }
 
-.ui.bg-deep-orange-a700 {
+.ui.bg-deep-orange-a700, .ui.target.target-bg-deep-orange-a700 {
   background-color: #dd2c00; }
 
-.ui.brown-50 {
+.ui.brown-50, .ui.target.target-brown-50 {
   color: #efebe9; }
 
-.ui.bg-brown-50 {
+.ui.bg-brown-50, .ui.target.target-bg-brown-50 {
   background-color: #efebe9; }
 
-.ui.brown-100 {
+.ui.brown-100, .ui.target.target-brown-100 {
   color: #d7ccc8; }
 
-.ui.bg-brown-100 {
+.ui.bg-brown-100, .ui.target.target-bg-brown-100 {
   background-color: #d7ccc8; }
 
-.ui.brown-200 {
+.ui.brown-200, .ui.target.target-brown-200 {
   color: #bcaaa4; }
 
-.ui.bg-brown-200 {
+.ui.bg-brown-200, .ui.target.target-bg-brown-200 {
   background-color: #bcaaa4; }
 
-.ui.brown-300 {
+.ui.brown-300, .ui.target.target-brown-300 {
   color: #a1887f; }
 
-.ui.bg-brown-300 {
+.ui.bg-brown-300, .ui.target.target-bg-brown-300 {
   background-color: #a1887f; }
 
-.ui.brown-400 {
+.ui.brown-400, .ui.target.target-brown-400 {
   color: #8d6e63; }
 
-.ui.bg-brown-400 {
+.ui.bg-brown-400, .ui.target.target-bg-brown-400 {
   background-color: #8d6e63; }
 
-.ui.brown-500 {
+.ui.brown-500, .ui.target.target-brown-500 {
   color: #795548; }
 
-.ui.bg-brown-500 {
+.ui.bg-brown-500, .ui.target.target-bg-brown-500 {
   background-color: #795548; }
 
-.ui.brown-600 {
+.ui.brown-600, .ui.target.target-brown-600 {
   color: #6d4c41; }
 
-.ui.bg-brown-600 {
+.ui.bg-brown-600, .ui.target.target-bg-brown-600 {
   background-color: #6d4c41; }
 
-.ui.brown-700 {
+.ui.brown-700, .ui.target.target-brown-700 {
   color: #5d4037; }
 
-.ui.bg-brown-700 {
+.ui.bg-brown-700, .ui.target.target-bg-brown-700 {
   background-color: #5d4037; }
 
-.ui.brown-800 {
+.ui.brown-800, .ui.target.target-brown-800 {
   color: #4e342e; }
 
-.ui.bg-brown-800 {
+.ui.bg-brown-800, .ui.target.target-bg-brown-800 {
   background-color: #4e342e; }
 
-.ui.brown-900 {
+.ui.brown-900, .ui.target.target-brown-900 {
   color: #3e2723; }
 
-.ui.bg-brown-900 {
+.ui.bg-brown-900, .ui.target.target-bg-brown-900 {
   background-color: #3e2723; }
 
-.ui.grey-0 {
+.ui.grey-0, .ui.target.target-grey-0 {
   color: #ffffff; }
 
-.ui.bg-grey-0 {
+.ui.bg-grey-0, .ui.target.target-bg-grey-0 {
   background-color: #ffffff; }
 
-.ui.grey-50 {
+.ui.grey-50, .ui.target.target-grey-50 {
   color: #fafafa; }
 
-.ui.bg-grey-50 {
+.ui.bg-grey-50, .ui.target.target-bg-grey-50 {
   background-color: #fafafa; }
 
-.ui.grey-100 {
+.ui.grey-100, .ui.target.target-grey-100 {
   color: #f5f5f5; }
 
-.ui.bg-grey-100 {
+.ui.bg-grey-100, .ui.target.target-bg-grey-100 {
   background-color: #f5f5f5; }
 
-.ui.grey-200 {
+.ui.grey-200, .ui.target.target-grey-200 {
   color: #eeeeee; }
 
-.ui.bg-grey-200 {
+.ui.bg-grey-200, .ui.target.target-bg-grey-200 {
   background-color: #eeeeee; }
 
-.ui.grey-300 {
+.ui.grey-300, .ui.target.target-grey-300 {
   color: #e0e0e0; }
 
-.ui.bg-grey-300 {
+.ui.bg-grey-300, .ui.target.target-bg-grey-300 {
   background-color: #e0e0e0; }
 
-.ui.grey-400 {
+.ui.grey-400, .ui.target.target-grey-400 {
   color: #bdbdbd; }
 
-.ui.bg-grey-400 {
+.ui.bg-grey-400, .ui.target.target-bg-grey-400 {
   background-color: #bdbdbd; }
 
-.ui.grey-500 {
+.ui.grey-500, .ui.target.target-grey-500 {
   color: #9e9e9e; }
 
-.ui.bg-grey-500 {
+.ui.bg-grey-500, .ui.target.target-bg-grey-500 {
   background-color: #9e9e9e; }
 
-.ui.grey-600 {
+.ui.grey-600, .ui.target.target-grey-600 {
   color: #757575; }
 
-.ui.bg-grey-600 {
+.ui.bg-grey-600, .ui.target.target-bg-grey-600 {
   background-color: #757575; }
 
-.ui.grey-700 {
+.ui.grey-700, .ui.target.target-grey-700 {
   color: #616161; }
 
-.ui.bg-grey-700 {
+.ui.bg-grey-700, .ui.target.target-bg-grey-700 {
   background-color: #616161; }
 
-.ui.grey-800 {
+.ui.grey-800, .ui.target.target-grey-800 {
   color: #424242; }
 
-.ui.bg-grey-800 {
+.ui.bg-grey-800, .ui.target.target-bg-grey-800 {
   background-color: #424242; }
 
-.ui.grey-900 {
+.ui.grey-900, .ui.target.target-grey-900 {
   color: #212121; }
 
-.ui.bg-grey-900 {
+.ui.bg-grey-900, .ui.target.target-bg-grey-900 {
   background-color: #212121; }
 
-.ui.grey-1000 {
+.ui.grey-1000, .ui.target.target-grey-1000 {
   color: #000000; }
 
-.ui.bg-grey-1000 {
+.ui.bg-grey-1000, .ui.target.target-bg-grey-1000 {
   background-color: #000000; }
 
-.ui.blue-grey-50 {
+.ui.blue-grey-50, .ui.target.target-blue-grey-50 {
   color: #eceff1; }
 
-.ui.bg-blue-grey-50 {
+.ui.bg-blue-grey-50, .ui.target.target-bg-blue-grey-50 {
   background-color: #eceff1; }
 
-.ui.blue-grey-100 {
+.ui.blue-grey-100, .ui.target.target-blue-grey-100 {
   color: #cfd8dc; }
 
-.ui.bg-blue-grey-100 {
+.ui.bg-blue-grey-100, .ui.target.target-bg-blue-grey-100 {
   background-color: #cfd8dc; }
 
-.ui.blue-grey-200 {
+.ui.blue-grey-200, .ui.target.target-blue-grey-200 {
   color: #b0bec5; }
 
-.ui.bg-blue-grey-200 {
+.ui.bg-blue-grey-200, .ui.target.target-bg-blue-grey-200 {
   background-color: #b0bec5; }
 
-.ui.blue-grey-300 {
+.ui.blue-grey-300, .ui.target.target-blue-grey-300 {
   color: #90a4ae; }
 
-.ui.bg-blue-grey-300 {
+.ui.bg-blue-grey-300, .ui.target.target-bg-blue-grey-300 {
   background-color: #90a4ae; }
 
-.ui.blue-grey-400 {
+.ui.blue-grey-400, .ui.target.target-blue-grey-400 {
   color: #78909c; }
 
-.ui.bg-blue-grey-400 {
+.ui.bg-blue-grey-400, .ui.target.target-bg-blue-grey-400 {
   background-color: #78909c; }
 
-.ui.blue-grey-500 {
+.ui.blue-grey-500, .ui.target.target-blue-grey-500 {
   color: #607d8b; }
 
-.ui.bg-blue-grey-500 {
+.ui.bg-blue-grey-500, .ui.target.target-bg-blue-grey-500 {
   background-color: #607d8b; }
 
-.ui.blue-grey-600 {
+.ui.blue-grey-600, .ui.target.target-blue-grey-600 {
   color: #546e7a; }
 
-.ui.bg-blue-grey-600 {
+.ui.bg-blue-grey-600, .ui.target.target-bg-blue-grey-600 {
   background-color: #546e7a; }
 
-.ui.blue-grey-700 {
+.ui.blue-grey-700, .ui.target.target-blue-grey-700 {
   color: #455a64; }
 
-.ui.bg-blue-grey-700 {
+.ui.bg-blue-grey-700, .ui.target.target-bg-blue-grey-700 {
   background-color: #455a64; }
 
-.ui.blue-grey-800 {
+.ui.blue-grey-800, .ui.target.target-blue-grey-800 {
   color: #37474f; }
 
-.ui.bg-blue-grey-800 {
+.ui.bg-blue-grey-800, .ui.target.target-bg-blue-grey-800 {
   background-color: #37474f; }
 
-.ui.blue-grey-900 {
+.ui.blue-grey-900, .ui.target.target-blue-grey-900 {
   color: #263238; }
 
-.ui.bg-blue-grey-900 {
+.ui.bg-blue-grey-900, .ui.target.target-bg-blue-grey-900 {
   background-color: #263238; }
 
 .ui.card {
@@ -3049,31 +3051,91 @@ hr {
   .ui.col-offset-xl-12 {
     margin-left: 100%; } }
 
+.ui.parallax, .ui.parallax-fixed {
+  transition: none;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.ui.parallax {
+  background-size: auto 150%; }
+  .ui.parallax.parallax-0 {
+    background-size: auto 100%; }
+  .ui.parallax.parallax-1 {
+    background-size: auto 112.5%; }
+  .ui.parallax.parallax-2 {
+    background-size: auto 125%; }
+  .ui.parallax.parallax-3 {
+    background-size: auto 137.5%; }
+  .ui.parallax.parallax-4 {
+    background-size: auto 150%; }
+  .ui.parallax.parallax-5 {
+    background-size: auto 162.5%; }
+  .ui.parallax.parallax-6 {
+    background-size: auto 175%; }
+  .ui.parallax.parallax-7 {
+    background-size: auto 187.5%; }
+  .ui.parallax.parallax-8 {
+    background-size: auto 200%; }
+  .ui.parallax.parallax-9 {
+    background-size: auto 212.5%; }
+  .ui.parallax.parallax-10 {
+    background-size: auto 225%; }
+  .ui.parallax.parallax-11 {
+    background-size: auto 237.5%; }
+  .ui.parallax.parallax-12 {
+    background-size: auto 250%; }
+
+.ui.parallax-fixed {
+  background-size: auto 133%;
+  background-position: 50% 50%;
+  background-attachment: fixed; }
+  .ui.parallax-fixed.parallax-0 {
+    background-size: auto 100%; }
+  .ui.parallax-fixed.parallax-1 {
+    background-size: auto 108.33333%; }
+  .ui.parallax-fixed.parallax-2 {
+    background-size: auto 116.66667%; }
+  .ui.parallax-fixed.parallax-3 {
+    background-size: auto 125%; }
+  .ui.parallax-fixed.parallax-4 {
+    background-size: auto 133.33333%; }
+  .ui.parallax-fixed.parallax-5 {
+    background-size: auto 141.66667%; }
+  .ui.parallax-fixed.parallax-6 {
+    background-size: auto 150%; }
+  .ui.parallax-fixed.parallax-7 {
+    background-size: auto 158.33333%; }
+  .ui.parallax-fixed.parallax-8 {
+    background-size: auto 166.66667%; }
+  .ui.parallax-fixed.parallax-9 {
+    background-size: auto 175%; }
+  .ui.parallax-fixed.parallax-10 {
+    background-size: auto 183.33333%; }
+  .ui.parallax-fixed.parallax-11 {
+    background-size: auto 191.66667%; }
+  .ui.parallax-fixed.parallax-12 {
+    background-size: auto 200%; }
+
+.ui.smaller {
+  font-size: .7em; }
+
 .ui.bigger {
   font-size: 1.4em; }
 
-.ui.bold {
-  font-weight: 900; }
-
-.ui.bolder {
-  font-weight: 600; }
+.ui.left {
+  text-align: left; }
 
 .ui.center {
   text-align: center; }
 
-.ui.hyphens {
-  hyphens: auto; }
-
-.ui.ellipsis {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
 .ui.justify {
   text-align: justify; }
 
-.ui.left {
-  text-align: left; }
+.ui.right {
+  text-align: right; }
+
+.ui.thin {
+  font-weight: 100; }
 
 .ui.light {
   font-weight: 200; }
@@ -3081,27 +3143,29 @@ hr {
 .ui.lighter {
   font-weight: 300; }
 
-.ui.monospace {
-  font-family: Monospace, sans-serif; }
-
 .ui.normal {
   font-weight: 400; }
 
-.ui.pointer {
-  cursor: pointer; }
+.ui.bolder {
+  font-weight: 500; }
 
-.ui.right {
-  text-align: right; }
+.ui.bold {
+  font-weight: 600; }
 
-.ui.smaller {
-  font-size: .7em; }
+.ui.black {
+  font-weight: 900; }
 
-.ui.thin {
-  font-weight: 100; }
+.ui.roboto {
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
 
-.ui.txt-scroll {
-  white-space: nowrap;
-  overflow-x: auto; }
+.ui.segoe {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.ui.georgia {
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+.ui.monospace {
+  font-family: "Courier New", Courier, monospace, sans-serif; }
 
 .ui.v-bottom {
   vertical-align: bottom; }
@@ -3112,6 +3176,21 @@ hr {
 .ui.v-top {
   vertical-align: top; }
 
+.ui.pointer {
+  cursor: pointer; }
+
+.ui.txt-scroll {
+  white-space: nowrap;
+  overflow-x: auto; }
+
+.ui.hyphens {
+  hyphens: auto; }
+
+.ui.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
 .ui.btn {
   transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 4em;
@@ -3121,10 +3200,9 @@ hr {
   cursor: pointer;
   display: inline-block;
   font-size: 1.05rem;
-  font-variant: small-caps;
   font-weight: 500;
   line-height: 1em;
-  padding: .4em 1.2em .6em;
+  padding: .6em 1.2em;
   margin: .5em;
   text-align: center;
   letter-spacing: .05em; }
@@ -3133,7 +3211,7 @@ hr {
     box-shadow: 0px 0px 0px 0px transparent; }
     .ui.btn.btn-flat.btn-basic:hover, .ui.btn.btn-flat.btn-link:hover {
       background-color: #eeeeee; }
-    .ui.btn.btn-flat.btn-basic.disabled, .ui.btn.btn-flat.btn-basic.disabled:active, .ui.btn.btn-flat.btn-basic.disabled:hover, .ui.btn.btn-flat.btn-basic:active, .ui.btn.btn-flat.btn-basic.targeted, .ui.btn.btn-flat.btn-link.disabled, .ui.btn.btn-flat.btn-link.disabled:active, .ui.btn.btn-flat.btn-link.disabled:hover, .ui.btn.btn-flat.btn-link:active, .ui.btn.btn-flat.btn-link.targeted {
+    .ui.btn.btn-flat.btn-basic.disable, .ui.btn.btn-flat.btn-basic.disable:active, .ui.btn.btn-flat.btn-basic.disable:hover, .ui.btn.btn-flat.btn-basic:active, .ui.btn.btn-flat.btn-basic.target, .ui.btn.btn-flat.btn-link.disable, .ui.btn.btn-flat.btn-link.disable:active, .ui.btn.btn-flat.btn-link.disable:hover, .ui.btn.btn-flat.btn-link:active, .ui.btn.btn-flat.btn-link.target {
       background-color: #e0e0e0; }
     .ui.btn.btn-flat.btn-basic {
       color: #212121;
@@ -3141,165 +3219,165 @@ hr {
     .ui.btn.btn-flat.btn-link {
       background-color: transparent;
       color: #ffffff; }
-      .ui.btn.btn-flat.btn-link.disabled, .ui.btn.btn-flat.btn-link.disabled:active, .ui.btn.btn-flat.btn-link.disabled:hover {
+      .ui.btn.btn-flat.btn-link.disable, .ui.btn.btn-flat.btn-link.disable:active, .ui.btn.btn-flat.btn-link.disable:hover {
         color: #2196f3; }
-    .ui.btn.btn-flat.btn-emergency, .ui.btn.btn-flat.btn-emergency.disabled, .ui.btn.btn-flat.btn-emergency.disabled:active, .ui.btn.btn-flat.btn-emergency.disabled:hover {
+    .ui.btn.btn-flat.btn-emergency, .ui.btn.btn-flat.btn-emergency.disable, .ui.btn.btn-flat.btn-emergency.disable:active, .ui.btn.btn-flat.btn-emergency.disable:hover {
       color: #e91e63;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-emergency:hover {
       color: #d81b60;
       background-color: #fce4ec; }
-    .ui.btn.btn-flat.btn-emergency.disabled, .ui.btn.btn-flat.btn-emergency.disabled:active, .ui.btn.btn-flat.btn-emergency.disabled:hover, .ui.btn.btn-flat.btn-emergency:active, .ui.btn.btn-flat.btn-emergency.targeted {
+    .ui.btn.btn-flat.btn-emergency.disable, .ui.btn.btn-flat.btn-emergency.disable:active, .ui.btn.btn-flat.btn-emergency.disable:hover, .ui.btn.btn-flat.btn-emergency:active, .ui.btn.btn-flat.btn-emergency.target {
       background-color: #f8bbd0; }
-    .ui.btn.btn-flat.btn-emergency:active, .ui.btn.btn-flat.btn-emergency.targeted {
+    .ui.btn.btn-flat.btn-emergency:active, .ui.btn.btn-flat.btn-emergency.target {
       color: #c2185b; }
-    .ui.btn.btn-flat.btn-alert, .ui.btn.btn-flat.btn-alert.disabled, .ui.btn.btn-flat.btn-alert.disabled:active, .ui.btn.btn-flat.btn-alert.disabled:hover {
+    .ui.btn.btn-flat.btn-alert, .ui.btn.btn-flat.btn-alert.disable, .ui.btn.btn-flat.btn-alert.disable:active, .ui.btn.btn-flat.btn-alert.disable:hover {
       color: #f44336;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-alert:hover {
       color: #e53935;
       background-color: #ffebee; }
-    .ui.btn.btn-flat.btn-alert.disabled, .ui.btn.btn-flat.btn-alert.disabled:active, .ui.btn.btn-flat.btn-alert.disabled:hover, .ui.btn.btn-flat.btn-alert:active, .ui.btn.btn-flat.btn-alert.targeted {
+    .ui.btn.btn-flat.btn-alert.disable, .ui.btn.btn-flat.btn-alert.disable:active, .ui.btn.btn-flat.btn-alert.disable:hover, .ui.btn.btn-flat.btn-alert:active, .ui.btn.btn-flat.btn-alert.target {
       background-color: #ffcdd2; }
-    .ui.btn.btn-flat.btn-alert:active, .ui.btn.btn-flat.btn-alert.targeted {
+    .ui.btn.btn-flat.btn-alert:active, .ui.btn.btn-flat.btn-alert.target {
       color: #d32f2f; }
-    .ui.btn.btn-flat.btn-critical, .ui.btn.btn-flat.btn-critical.disabled, .ui.btn.btn-flat.btn-critical.disabled:active, .ui.btn.btn-flat.btn-critical.disabled:hover {
+    .ui.btn.btn-flat.btn-critical, .ui.btn.btn-flat.btn-critical.disable, .ui.btn.btn-flat.btn-critical.disable:active, .ui.btn.btn-flat.btn-critical.disable:hover {
       color: #ff5722;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-critical:hover {
       color: #f4511e;
       background-color: #fbe9e7; }
-    .ui.btn.btn-flat.btn-critical.disabled, .ui.btn.btn-flat.btn-critical.disabled:active, .ui.btn.btn-flat.btn-critical.disabled:hover, .ui.btn.btn-flat.btn-critical:active, .ui.btn.btn-flat.btn-critical.targeted {
+    .ui.btn.btn-flat.btn-critical.disable, .ui.btn.btn-flat.btn-critical.disable:active, .ui.btn.btn-flat.btn-critical.disable:hover, .ui.btn.btn-flat.btn-critical:active, .ui.btn.btn-flat.btn-critical.target {
       background-color: #ffccbc; }
-    .ui.btn.btn-flat.btn-critical:active, .ui.btn.btn-flat.btn-critical.targeted {
+    .ui.btn.btn-flat.btn-critical:active, .ui.btn.btn-flat.btn-critical.target {
       color: #e64a19; }
-    .ui.btn.btn-flat.btn-error, .ui.btn.btn-flat.btn-error.disabled, .ui.btn.btn-flat.btn-error.disabled:active, .ui.btn.btn-flat.btn-error.disabled:hover {
+    .ui.btn.btn-flat.btn-error, .ui.btn.btn-flat.btn-error.disable, .ui.btn.btn-flat.btn-error.disable:active, .ui.btn.btn-flat.btn-error.disable:hover {
       color: #ff9800;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-error:hover {
       color: #fb8c00;
       background-color: #fff3e0; }
-    .ui.btn.btn-flat.btn-error.disabled, .ui.btn.btn-flat.btn-error.disabled:active, .ui.btn.btn-flat.btn-error.disabled:hover, .ui.btn.btn-flat.btn-error:active, .ui.btn.btn-flat.btn-error.targeted {
+    .ui.btn.btn-flat.btn-error.disable, .ui.btn.btn-flat.btn-error.disable:active, .ui.btn.btn-flat.btn-error.disable:hover, .ui.btn.btn-flat.btn-error:active, .ui.btn.btn-flat.btn-error.target {
       background-color: #ffe0b2; }
-    .ui.btn.btn-flat.btn-error:active, .ui.btn.btn-flat.btn-error.targeted {
+    .ui.btn.btn-flat.btn-error:active, .ui.btn.btn-flat.btn-error.target {
       color: #f57c00; }
-    .ui.btn.btn-flat.btn-warning, .ui.btn.btn-flat.btn-warning.disabled, .ui.btn.btn-flat.btn-warning.disabled:active, .ui.btn.btn-flat.btn-warning.disabled:hover {
+    .ui.btn.btn-flat.btn-warning, .ui.btn.btn-flat.btn-warning.disable, .ui.btn.btn-flat.btn-warning.disable:active, .ui.btn.btn-flat.btn-warning.disable:hover {
       color: #ffeb3b;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-warning:hover {
       color: #fdd835;
       background-color: #fffde7; }
-    .ui.btn.btn-flat.btn-warning.disabled, .ui.btn.btn-flat.btn-warning.disabled:active, .ui.btn.btn-flat.btn-warning.disabled:hover, .ui.btn.btn-flat.btn-warning:active, .ui.btn.btn-flat.btn-warning.targeted {
+    .ui.btn.btn-flat.btn-warning.disable, .ui.btn.btn-flat.btn-warning.disable:active, .ui.btn.btn-flat.btn-warning.disable:hover, .ui.btn.btn-flat.btn-warning:active, .ui.btn.btn-flat.btn-warning.target {
       background-color: #fff9c4; }
-    .ui.btn.btn-flat.btn-warning:active, .ui.btn.btn-flat.btn-warning.targeted {
+    .ui.btn.btn-flat.btn-warning:active, .ui.btn.btn-flat.btn-warning.target {
       color: #fbc02d; }
-    .ui.btn.btn-flat.btn-notice, .ui.btn.btn-flat.btn-notice.disabled, .ui.btn.btn-flat.btn-notice.disabled:active, .ui.btn.btn-flat.btn-notice.disabled:hover {
+    .ui.btn.btn-flat.btn-notice, .ui.btn.btn-flat.btn-notice.disable, .ui.btn.btn-flat.btn-notice.disable:active, .ui.btn.btn-flat.btn-notice.disable:hover {
       color: #cddc39;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-notice:hover {
       color: #c0ca33;
       background-color: #f9fbe7; }
-    .ui.btn.btn-flat.btn-notice.disabled, .ui.btn.btn-flat.btn-notice.disabled:active, .ui.btn.btn-flat.btn-notice.disabled:hover, .ui.btn.btn-flat.btn-notice:active, .ui.btn.btn-flat.btn-notice.targeted {
+    .ui.btn.btn-flat.btn-notice.disable, .ui.btn.btn-flat.btn-notice.disable:active, .ui.btn.btn-flat.btn-notice.disable:hover, .ui.btn.btn-flat.btn-notice:active, .ui.btn.btn-flat.btn-notice.target {
       background-color: #f0f4c3; }
-    .ui.btn.btn-flat.btn-notice:active, .ui.btn.btn-flat.btn-notice.targeted {
+    .ui.btn.btn-flat.btn-notice:active, .ui.btn.btn-flat.btn-notice.target {
       color: #afb42b; }
-    .ui.btn.btn-flat.btn-info, .ui.btn.btn-flat.btn-info.disabled, .ui.btn.btn-flat.btn-info.disabled:active, .ui.btn.btn-flat.btn-info.disabled:hover {
+    .ui.btn.btn-flat.btn-info, .ui.btn.btn-flat.btn-info.disable, .ui.btn.btn-flat.btn-info.disable:active, .ui.btn.btn-flat.btn-info.disable:hover {
       color: #8bc34a;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-info:hover {
       color: #7cb342;
       background-color: #f1f8e9; }
-    .ui.btn.btn-flat.btn-info.disabled, .ui.btn.btn-flat.btn-info.disabled:active, .ui.btn.btn-flat.btn-info.disabled:hover, .ui.btn.btn-flat.btn-info:active, .ui.btn.btn-flat.btn-info.targeted {
+    .ui.btn.btn-flat.btn-info.disable, .ui.btn.btn-flat.btn-info.disable:active, .ui.btn.btn-flat.btn-info.disable:hover, .ui.btn.btn-flat.btn-info:active, .ui.btn.btn-flat.btn-info.target {
       background-color: #dcedc8; }
-    .ui.btn.btn-flat.btn-info:active, .ui.btn.btn-flat.btn-info.targeted {
+    .ui.btn.btn-flat.btn-info:active, .ui.btn.btn-flat.btn-info.target {
       color: #689f38; }
-    .ui.btn.btn-flat.btn-success, .ui.btn.btn-flat.btn-success.disabled, .ui.btn.btn-flat.btn-success.disabled:active, .ui.btn.btn-flat.btn-success.disabled:hover {
+    .ui.btn.btn-flat.btn-success, .ui.btn.btn-flat.btn-success.disable, .ui.btn.btn-flat.btn-success.disable:active, .ui.btn.btn-flat.btn-success.disable:hover {
       color: #4caf50;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-success:hover {
       color: #43a047;
       background-color: #e8f5e9; }
-    .ui.btn.btn-flat.btn-success.disabled, .ui.btn.btn-flat.btn-success.disabled:active, .ui.btn.btn-flat.btn-success.disabled:hover, .ui.btn.btn-flat.btn-success:active, .ui.btn.btn-flat.btn-success.targeted {
+    .ui.btn.btn-flat.btn-success.disable, .ui.btn.btn-flat.btn-success.disable:active, .ui.btn.btn-flat.btn-success.disable:hover, .ui.btn.btn-flat.btn-success:active, .ui.btn.btn-flat.btn-success.target {
       background-color: #c8e6c9; }
-    .ui.btn.btn-flat.btn-success:active, .ui.btn.btn-flat.btn-success.targeted {
+    .ui.btn.btn-flat.btn-success:active, .ui.btn.btn-flat.btn-success.target {
       color: #388e3c; }
-    .ui.btn.btn-flat.btn-debug, .ui.btn.btn-flat.btn-debug.disabled, .ui.btn.btn-flat.btn-debug.disabled:active, .ui.btn.btn-flat.btn-debug.disabled:hover {
+    .ui.btn.btn-flat.btn-debug, .ui.btn.btn-flat.btn-debug.disable, .ui.btn.btn-flat.btn-debug.disable:active, .ui.btn.btn-flat.btn-debug.disable:hover {
       color: #009688;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-debug:hover {
       color: #00897b;
       background-color: #e0f2f1; }
-    .ui.btn.btn-flat.btn-debug.disabled, .ui.btn.btn-flat.btn-debug.disabled:active, .ui.btn.btn-flat.btn-debug.disabled:hover, .ui.btn.btn-flat.btn-debug:active, .ui.btn.btn-flat.btn-debug.targeted {
+    .ui.btn.btn-flat.btn-debug.disable, .ui.btn.btn-flat.btn-debug.disable:active, .ui.btn.btn-flat.btn-debug.disable:hover, .ui.btn.btn-flat.btn-debug:active, .ui.btn.btn-flat.btn-debug.target {
       background-color: #b2dfdb; }
-    .ui.btn.btn-flat.btn-debug:active, .ui.btn.btn-flat.btn-debug.targeted {
+    .ui.btn.btn-flat.btn-debug:active, .ui.btn.btn-flat.btn-debug.target {
       color: #00796b; }
-    .ui.btn.btn-flat.btn-cure, .ui.btn.btn-flat.btn-cure.disabled, .ui.btn.btn-flat.btn-cure.disabled:active, .ui.btn.btn-flat.btn-cure.disabled:hover {
+    .ui.btn.btn-flat.btn-cure, .ui.btn.btn-flat.btn-cure.disable, .ui.btn.btn-flat.btn-cure.disable:active, .ui.btn.btn-flat.btn-cure.disable:hover {
       color: #00bcd4;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-cure:hover {
       color: #00acc1;
       background-color: #e0f7fa; }
-    .ui.btn.btn-flat.btn-cure.disabled, .ui.btn.btn-flat.btn-cure.disabled:active, .ui.btn.btn-flat.btn-cure.disabled:hover, .ui.btn.btn-flat.btn-cure:active, .ui.btn.btn-flat.btn-cure.targeted {
+    .ui.btn.btn-flat.btn-cure.disable, .ui.btn.btn-flat.btn-cure.disable:active, .ui.btn.btn-flat.btn-cure.disable:hover, .ui.btn.btn-flat.btn-cure:active, .ui.btn.btn-flat.btn-cure.target {
       background-color: #b2ebf2; }
-    .ui.btn.btn-flat.btn-cure:active, .ui.btn.btn-flat.btn-cure.targeted {
+    .ui.btn.btn-flat.btn-cure:active, .ui.btn.btn-flat.btn-cure.target {
       color: #0097a7; }
-    .ui.btn.btn-flat.btn-restore, .ui.btn.btn-flat.btn-restore.disabled, .ui.btn.btn-flat.btn-restore.disabled:active, .ui.btn.btn-flat.btn-restore.disabled:hover {
+    .ui.btn.btn-flat.btn-restore, .ui.btn.btn-flat.btn-restore.disable, .ui.btn.btn-flat.btn-restore.disable:active, .ui.btn.btn-flat.btn-restore.disable:hover {
       color: #03a9f4;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-restore:hover {
       color: #039be5;
       background-color: #e1f5fe; }
-    .ui.btn.btn-flat.btn-restore.disabled, .ui.btn.btn-flat.btn-restore.disabled:active, .ui.btn.btn-flat.btn-restore.disabled:hover, .ui.btn.btn-flat.btn-restore:active, .ui.btn.btn-flat.btn-restore.targeted {
+    .ui.btn.btn-flat.btn-restore.disable, .ui.btn.btn-flat.btn-restore.disable:active, .ui.btn.btn-flat.btn-restore.disable:hover, .ui.btn.btn-flat.btn-restore:active, .ui.btn.btn-flat.btn-restore.target {
       background-color: #b3e5fc; }
-    .ui.btn.btn-flat.btn-restore:active, .ui.btn.btn-flat.btn-restore.targeted {
+    .ui.btn.btn-flat.btn-restore:active, .ui.btn.btn-flat.btn-restore.target {
       color: #0288d1; }
-    .ui.btn.btn-flat.btn-reset, .ui.btn.btn-flat.btn-reset.disabled, .ui.btn.btn-flat.btn-reset.disabled:active, .ui.btn.btn-flat.btn-reset.disabled:hover {
+    .ui.btn.btn-flat.btn-reset, .ui.btn.btn-flat.btn-reset.disable, .ui.btn.btn-flat.btn-reset.disable:active, .ui.btn.btn-flat.btn-reset.disable:hover {
       color: #3f51b5;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-reset:hover {
       color: #3949ab;
       background-color: #e8eaf6; }
-    .ui.btn.btn-flat.btn-reset.disabled, .ui.btn.btn-flat.btn-reset.disabled:active, .ui.btn.btn-flat.btn-reset.disabled:hover, .ui.btn.btn-flat.btn-reset:active, .ui.btn.btn-flat.btn-reset.targeted {
+    .ui.btn.btn-flat.btn-reset.disable, .ui.btn.btn-flat.btn-reset.disable:active, .ui.btn.btn-flat.btn-reset.disable:hover, .ui.btn.btn-flat.btn-reset:active, .ui.btn.btn-flat.btn-reset.target {
       background-color: #c5cae9; }
-    .ui.btn.btn-flat.btn-reset:active, .ui.btn.btn-flat.btn-reset.targeted {
+    .ui.btn.btn-flat.btn-reset:active, .ui.btn.btn-flat.btn-reset.target {
       color: #303f9f; }
-    .ui.btn.btn-flat.btn-hazard, .ui.btn.btn-flat.btn-hazard.disabled, .ui.btn.btn-flat.btn-hazard.disabled:active, .ui.btn.btn-flat.btn-hazard.disabled:hover {
+    .ui.btn.btn-flat.btn-hazard, .ui.btn.btn-flat.btn-hazard.disable, .ui.btn.btn-flat.btn-hazard.disable:active, .ui.btn.btn-flat.btn-hazard.disable:hover {
       color: #673ab7;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-hazard:hover {
       color: #5e35b1;
       background-color: #ede7f6; }
-    .ui.btn.btn-flat.btn-hazard.disabled, .ui.btn.btn-flat.btn-hazard.disabled:active, .ui.btn.btn-flat.btn-hazard.disabled:hover, .ui.btn.btn-flat.btn-hazard:active, .ui.btn.btn-flat.btn-hazard.targeted {
+    .ui.btn.btn-flat.btn-hazard.disable, .ui.btn.btn-flat.btn-hazard.disable:active, .ui.btn.btn-flat.btn-hazard.disable:hover, .ui.btn.btn-flat.btn-hazard:active, .ui.btn.btn-flat.btn-hazard.target {
       background-color: #d1c4e9; }
-    .ui.btn.btn-flat.btn-hazard:active, .ui.btn.btn-flat.btn-hazard.targeted {
+    .ui.btn.btn-flat.btn-hazard:active, .ui.btn.btn-flat.btn-hazard.target {
       color: #512da8; }
-    .ui.btn.btn-flat.btn-tilt, .ui.btn.btn-flat.btn-tilt.disabled, .ui.btn.btn-flat.btn-tilt.disabled:active, .ui.btn.btn-flat.btn-tilt.disabled:hover {
+    .ui.btn.btn-flat.btn-tilt, .ui.btn.btn-flat.btn-tilt.disable, .ui.btn.btn-flat.btn-tilt.disable:active, .ui.btn.btn-flat.btn-tilt.disable:hover {
       color: #9c27b0;
       background-color: transparent; }
     .ui.btn.btn-flat.btn-tilt:hover {
       color: #8e24aa;
       background-color: #f3e5f5; }
-    .ui.btn.btn-flat.btn-tilt.disabled, .ui.btn.btn-flat.btn-tilt.disabled:active, .ui.btn.btn-flat.btn-tilt.disabled:hover, .ui.btn.btn-flat.btn-tilt:active, .ui.btn.btn-flat.btn-tilt.targeted {
+    .ui.btn.btn-flat.btn-tilt.disable, .ui.btn.btn-flat.btn-tilt.disable:active, .ui.btn.btn-flat.btn-tilt.disable:hover, .ui.btn.btn-flat.btn-tilt:active, .ui.btn.btn-flat.btn-tilt.target {
       background-color: #e1bee7; }
-    .ui.btn.btn-flat.btn-tilt:active, .ui.btn.btn-flat.btn-tilt.targeted {
+    .ui.btn.btn-flat.btn-tilt:active, .ui.btn.btn-flat.btn-tilt.target {
       color: #7b1fa2; }
   .ui.btn.btn-raised, .ui.btn.btn-basic, .ui.btn.btn-link {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
-    .ui.btn.btn-raised.disabled, .ui.btn.btn-raised.disabled:active, .ui.btn.btn-raised.disabled:hover, .ui.btn.btn-basic.disabled, .ui.btn.btn-basic.disabled:active, .ui.btn.btn-basic.disabled:hover, .ui.btn.btn-link.disabled, .ui.btn.btn-link.disabled:active, .ui.btn.btn-link.disabled:hover {
+    .ui.btn.btn-raised.disable, .ui.btn.btn-raised.disable:active, .ui.btn.btn-raised.disable:hover, .ui.btn.btn-basic.disable, .ui.btn.btn-basic.disable:active, .ui.btn.btn-basic.disable:hover, .ui.btn.btn-link.disable, .ui.btn.btn-link.disable:active, .ui.btn.btn-link.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
     .ui.btn.btn-raised:hover, .ui.btn.btn-basic:hover, .ui.btn.btn-link:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); }
-    .ui.btn.btn-raised:active, .ui.btn.btn-raised.targeted, .ui.btn.btn-basic:active, .ui.btn.btn-basic.targeted, .ui.btn.btn-link:active, .ui.btn.btn-link.targeted {
+    .ui.btn.btn-raised:active, .ui.btn.btn-raised.target, .ui.btn.btn-basic:active, .ui.btn.btn-basic.target, .ui.btn.btn-link:active, .ui.btn.btn-link.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); }
   .ui.btn.btn-raised {
     color: #ffffff; }
     .ui.btn.btn-raised:hover {
       background-color: #1e88e5; }
-    .ui.btn.btn-raised:active, .ui.btn.btn-raised.targeted {
+    .ui.btn.btn-raised:active, .ui.btn.btn-raised.target {
       background-color: #1976d2; }
-  .ui.btn.btn-raised, .ui.btn.btn-raised.disabled, .ui.btn.btn-raised.disabled:active, .ui.btn.btn-raised.disabled:hover {
+  .ui.btn.btn-raised, .ui.btn.btn-raised.disable, .ui.btn.btn-raised.disable:active, .ui.btn.btn-raised.disable:hover {
     background-color: #2196f3; }
-  .ui.btn.btn-basic, .ui.btn.btn-basic:hover, .ui.btn.btn-basic.disabled, .ui.btn.btn-basic.disabled:active, .ui.btn.btn-basic.disabled:hover, .ui.btn.btn-link, .ui.btn.btn-link:hover, .ui.btn.btn-link.disabled, .ui.btn.btn-link.disabled:active, .ui.btn.btn-link.disabled:hover {
+  .ui.btn.btn-basic, .ui.btn.btn-basic:hover, .ui.btn.btn-basic.disable, .ui.btn.btn-basic.disable:active, .ui.btn.btn-basic.disable:hover, .ui.btn.btn-link, .ui.btn.btn-link:hover, .ui.btn.btn-link.disable, .ui.btn.btn-link.disable:active, .ui.btn.btn-link.disable:hover {
     background-color: #ffffff; }
   .ui.btn.btn-basic {
     color: #212121; }
@@ -3307,182 +3385,182 @@ hr {
     background-color: #e91e63;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-emergency.disabled, .ui.btn.btn-emergency.disabled:active, .ui.btn.btn-emergency.disabled:hover {
+    .ui.btn.btn-emergency.disable, .ui.btn.btn-emergency.disable:active, .ui.btn.btn-emergency.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #e91e63; }
     .ui.btn.btn-emergency:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #d81b60; }
-    .ui.btn.btn-emergency:active, .ui.btn.btn-emergency.targeted {
+    .ui.btn.btn-emergency:active, .ui.btn.btn-emergency.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #c2185b; }
   .ui.btn.btn-alert {
     background-color: #f44336;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-alert.disabled, .ui.btn.btn-alert.disabled:active, .ui.btn.btn-alert.disabled:hover {
+    .ui.btn.btn-alert.disable, .ui.btn.btn-alert.disable:active, .ui.btn.btn-alert.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #f44336; }
     .ui.btn.btn-alert:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #e53935; }
-    .ui.btn.btn-alert:active, .ui.btn.btn-alert.targeted {
+    .ui.btn.btn-alert:active, .ui.btn.btn-alert.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #d32f2f; }
   .ui.btn.btn-critical {
     background-color: #ff5722;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-critical.disabled, .ui.btn.btn-critical.disabled:active, .ui.btn.btn-critical.disabled:hover {
+    .ui.btn.btn-critical.disable, .ui.btn.btn-critical.disable:active, .ui.btn.btn-critical.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #ff5722; }
     .ui.btn.btn-critical:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #f4511e; }
-    .ui.btn.btn-critical:active, .ui.btn.btn-critical.targeted {
+    .ui.btn.btn-critical:active, .ui.btn.btn-critical.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #e64a19; }
   .ui.btn.btn-error {
     background-color: #ff9800;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-error.disabled, .ui.btn.btn-error.disabled:active, .ui.btn.btn-error.disabled:hover {
+    .ui.btn.btn-error.disable, .ui.btn.btn-error.disable:active, .ui.btn.btn-error.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #ff9800; }
     .ui.btn.btn-error:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #fb8c00; }
-    .ui.btn.btn-error:active, .ui.btn.btn-error.targeted {
+    .ui.btn.btn-error:active, .ui.btn.btn-error.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #f57c00; }
   .ui.btn.btn-warning {
     background-color: #ffeb3b;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-warning.disabled, .ui.btn.btn-warning.disabled:active, .ui.btn.btn-warning.disabled:hover {
+    .ui.btn.btn-warning.disable, .ui.btn.btn-warning.disable:active, .ui.btn.btn-warning.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #ffeb3b; }
     .ui.btn.btn-warning:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #fdd835; }
-    .ui.btn.btn-warning:active, .ui.btn.btn-warning.targeted {
+    .ui.btn.btn-warning:active, .ui.btn.btn-warning.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #fbc02d; }
   .ui.btn.btn-notice {
     background-color: #cddc39;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-notice.disabled, .ui.btn.btn-notice.disabled:active, .ui.btn.btn-notice.disabled:hover {
+    .ui.btn.btn-notice.disable, .ui.btn.btn-notice.disable:active, .ui.btn.btn-notice.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #cddc39; }
     .ui.btn.btn-notice:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #c0ca33; }
-    .ui.btn.btn-notice:active, .ui.btn.btn-notice.targeted {
+    .ui.btn.btn-notice:active, .ui.btn.btn-notice.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #afb42b; }
   .ui.btn.btn-info {
     background-color: #8bc34a;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-info.disabled, .ui.btn.btn-info.disabled:active, .ui.btn.btn-info.disabled:hover {
+    .ui.btn.btn-info.disable, .ui.btn.btn-info.disable:active, .ui.btn.btn-info.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #8bc34a; }
     .ui.btn.btn-info:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #7cb342; }
-    .ui.btn.btn-info:active, .ui.btn.btn-info.targeted {
+    .ui.btn.btn-info:active, .ui.btn.btn-info.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #689f38; }
   .ui.btn.btn-success {
     background-color: #4caf50;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-success.disabled, .ui.btn.btn-success.disabled:active, .ui.btn.btn-success.disabled:hover {
+    .ui.btn.btn-success.disable, .ui.btn.btn-success.disable:active, .ui.btn.btn-success.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #4caf50; }
     .ui.btn.btn-success:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #43a047; }
-    .ui.btn.btn-success:active, .ui.btn.btn-success.targeted {
+    .ui.btn.btn-success:active, .ui.btn.btn-success.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #388e3c; }
   .ui.btn.btn-debug {
     background-color: #009688;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-debug.disabled, .ui.btn.btn-debug.disabled:active, .ui.btn.btn-debug.disabled:hover {
+    .ui.btn.btn-debug.disable, .ui.btn.btn-debug.disable:active, .ui.btn.btn-debug.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #009688; }
     .ui.btn.btn-debug:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #00897b; }
-    .ui.btn.btn-debug:active, .ui.btn.btn-debug.targeted {
+    .ui.btn.btn-debug:active, .ui.btn.btn-debug.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #00796b; }
   .ui.btn.btn-cure {
     background-color: #00bcd4;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-cure.disabled, .ui.btn.btn-cure.disabled:active, .ui.btn.btn-cure.disabled:hover {
+    .ui.btn.btn-cure.disable, .ui.btn.btn-cure.disable:active, .ui.btn.btn-cure.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #00bcd4; }
     .ui.btn.btn-cure:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #00acc1; }
-    .ui.btn.btn-cure:active, .ui.btn.btn-cure.targeted {
+    .ui.btn.btn-cure:active, .ui.btn.btn-cure.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #0097a7; }
   .ui.btn.btn-restore {
     background-color: #03a9f4;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-restore.disabled, .ui.btn.btn-restore.disabled:active, .ui.btn.btn-restore.disabled:hover {
+    .ui.btn.btn-restore.disable, .ui.btn.btn-restore.disable:active, .ui.btn.btn-restore.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #03a9f4; }
     .ui.btn.btn-restore:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #039be5; }
-    .ui.btn.btn-restore:active, .ui.btn.btn-restore.targeted {
+    .ui.btn.btn-restore:active, .ui.btn.btn-restore.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #0288d1; }
   .ui.btn.btn-reset {
     background-color: #3f51b5;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-reset.disabled, .ui.btn.btn-reset.disabled:active, .ui.btn.btn-reset.disabled:hover {
+    .ui.btn.btn-reset.disable, .ui.btn.btn-reset.disable:active, .ui.btn.btn-reset.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #3f51b5; }
     .ui.btn.btn-reset:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #3949ab; }
-    .ui.btn.btn-reset:active, .ui.btn.btn-reset.targeted {
+    .ui.btn.btn-reset:active, .ui.btn.btn-reset.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #303f9f; }
   .ui.btn.btn-hazard {
     background-color: #673ab7;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-hazard.disabled, .ui.btn.btn-hazard.disabled:active, .ui.btn.btn-hazard.disabled:hover {
+    .ui.btn.btn-hazard.disable, .ui.btn.btn-hazard.disable:active, .ui.btn.btn-hazard.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #673ab7; }
     .ui.btn.btn-hazard:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #5e35b1; }
-    .ui.btn.btn-hazard:active, .ui.btn.btn-hazard.targeted {
+    .ui.btn.btn-hazard:active, .ui.btn.btn-hazard.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #512da8; }
   .ui.btn.btn-tilt {
     background-color: #9c27b0;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     color: #ffffff; }
-    .ui.btn.btn-tilt.disabled, .ui.btn.btn-tilt.disabled:active, .ui.btn.btn-tilt.disabled:hover {
+    .ui.btn.btn-tilt.disable, .ui.btn.btn-tilt.disable:active, .ui.btn.btn-tilt.disable:hover {
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
       background-color: #9c27b0; }
     .ui.btn.btn-tilt:hover {
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
       background-color: #8e24aa; }
-    .ui.btn.btn-tilt:active, .ui.btn.btn-tilt.targeted {
+    .ui.btn.btn-tilt:active, .ui.btn.btn-tilt.target {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
       background-color: #7b1fa2; }
   .ui.btn.btn-floating {
@@ -3497,11 +3575,11 @@ hr {
     text-align: center;
     vertical-align: middle;
     min-width: 2em; }
-    .ui.btn.btn-floating.disabled, .ui.btn.btn-floating.disabled:active, .ui.btn.btn-floating.disabled:hover {
+    .ui.btn.btn-floating.disable, .ui.btn.btn-floating.disable:active, .ui.btn.btn-floating.disable:hover {
       box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12); }
     .ui.btn.btn-floating:hover {
       box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); }
-    .ui.btn.btn-floating:active, .ui.btn.btn-floating.targeted {
+    .ui.btn.btn-floating:active, .ui.btn.btn-floating.target {
       box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12); }
     .ui.btn.btn-floating.btn-add:before {
       content: "+"; }
@@ -3523,41 +3601,23 @@ hr {
       content: "⋯"; }
     .ui.btn.btn-floating.btn-pencil:before {
       content: "✎"; }
-    .ui.btn.btn-floating.btn-mail:before {
-      content: "✉"; }
+    .ui.btn.btn-floating.btn-music:before {
+      content: "♫"; }
     .ui.btn.btn-floating.btn-position:before {
       content: "⌖"; }
-    .ui.btn.btn-floating.btn-clock:before {
-      content: "⏰"; }
+    .ui.btn.btn-floating.btn-star:before {
+      content: "☆"; }
   .ui.btn.btn-lg {
     font-size: 1.3rem; }
-  .ui.btn.disabled, .ui.btn.disabled:active, .ui.btn.disabled:hover {
+  .ui.btn.disable, .ui.btn.disable:active, .ui.btn.disable:hover {
     cursor: default;
     opacity: .5;
     cursor: default;
     opacity: .5; }
   .ui.btn:hover {
     background-color: #eeeeee; }
-  .ui.btn.disabled, .ui.btn.disabled:active, .ui.btn.disabled:hover, .ui.btn:active, .ui.btn.targeted {
+  .ui.btn.disable, .ui.btn.disable:active, .ui.btn.disable:hover, .ui.btn:active, .ui.btn.target {
     background-color: #e0e0e0; }
-
-.ui.cross {
-  cursor: pointer;
-  position: relative;
-  padding-right: 1.3em;
-  right: -.25em;
-  top: .5em; }
-  .ui.cross:hover:after {
-    color: #212121; }
-  .ui.cross:after {
-    color: #616161;
-    content: "\d7";
-    font-size: 1.6em;
-    line-height: .5em;
-    position: absolute;
-    right: .25em;
-    top: .25em;
-    transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
 
 .ui.dialog {
   transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
@@ -3566,3 +3626,20 @@ hr {
   opacity: 1;
   padding-bottom: 1em;
   position: fixed; }
+  .ui.dialog .cross {
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.3em;
+    right: -.25em;
+    top: .5em; }
+    .ui.dialog .cross:hover:after {
+      color: #212121; }
+    .ui.dialog .cross:after {
+      color: #616161;
+      content: "\d7";
+      font-size: 1.6em;
+      line-height: .5em;
+      position: absolute;
+      right: .25em;
+      top: .25em;
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }

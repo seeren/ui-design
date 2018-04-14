@@ -3,6 +3,7 @@
 @import "card/card";
 @import "dialog/dialog";
 @import "gride/gride";
+@import "parallax/parallax";
 @import "text/text";
 @import "reset/reset";
 
@@ -11,6 +12,7 @@
     @include color();
     @include card();
     @include gride();
+    @include parallax();
     @include text();
     @include btn();
     @include dialog();

@@ -4,11 +4,49 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+exports.default = function (text, className, cancel) {
+
+    return "<button class=\"ui btn " + (cancel ? "btn-flat " : "") + "btn-" + className + "\">" + text + "</button>";
+};
+
+},{}],2:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    return "<a class=\"ui cross\"></a>";
+};
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+            value: true
+});
+
+exports.default = function (title, message, className) {
+
+            return "<div id=\"ui-dialog\" class=\"ui dialog right grey-900 col-offset-1 col-10 col-offset-sm-5 col-sm-6 col-offset-lg-7 col-lg-4 col-offset-xl-9 col-xl-2 card card-24 " + className + "\">\n                <br /><h6 class=\"ui col-12 left normal\">" + title + "</h6>\n                <p class=\"ui col-12 left hyphens lighter\">" + message + "</p>\n            </div>";
+};
+
+},{}],4:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.Dialog = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _View = require("./../view/View");
+var _view = require("./view.dialog");
+
+var _event = require("./event.dialog");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -18,31 +56,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Dialog = exports.Dialog = function () {
 
     /**
-     * @type {View}
+     * @constructor
      */
-    var view = void 0;
+    function Dialog() {
+        _classCallCheck(this, Dialog);
+
+        this.view = new _view.View(new _event.Event());
+    }
 
     /**
-     * Class for create an ui for dialog
+     * Create emergency dialog
+     * 
+     * @param {String} title
+     * @param {String} message
+     * @returns {Dialog}
+     * 
+     * @throws {Error} for invalid argument exception
      */
-    return function () {
 
-        /**
-         * @constructor
-         * 
-         * @param {View} factory
-         */
-        function Dialog(factory) {
-            _classCallCheck(this, Dialog);
 
-            if (!(factory instanceof _View.View)) {
-                throw new window.Error("A View must be provided");
-            }
-            view = factory;
+    _createClass(Dialog, [{
+        key: "emergency",
+        value: function emergency(title, message) {
+            this.view.render(title, message, "emergency");
+            return this;
         }
 
         /**
-         * Create emergency dialog
+         * Create alert dialog
          * 
          * @param {String} title
          * @param {String} message
@@ -51,183 +92,164 @@ var Dialog = exports.Dialog = function () {
          * @throws {Error} for invalid argument exception
          */
 
+    }, {
+        key: "alert",
+        value: function alert(title, message) {
+            this.view.render(title, message, "alert");
+            return this;
+        }
 
-        _createClass(Dialog, [{
-            key: "emergency",
-            value: function emergency(title, message) {
-                view.render(title, message, "emergency");
-                return this;
-            }
+        /**
+         * Create critical dialog
+         * 
+         * @param {String} title
+         * @param {String} message
+         * @returns {Dialog}
+         * 
+         * @throws {Error} for invalid argument exception
+         */
 
-            /**
-             * Create alert dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "critical",
+        value: function critical(title, message) {
+            this.view.render(title, message, "critical");
+            return this;
+        }
 
-        }, {
-            key: "alert",
-            value: function alert(title, message) {
-                view.render(title, message, "alert");
-                return this;
-            }
+        /**
+         * Create error dialog
+         * 
+         * @param {String} title
+         * @param {String} message
+         * @returns {Dialog}
+         * 
+         * @throws {Error} for invalid argument exception
+         */
 
-            /**
-             * Create critical dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "error",
+        value: function error(title, message) {
+            this.view.render(title, message, "error");
+            return this;
+        }
 
-        }, {
-            key: "critical",
-            value: function critical(title, message) {
-                view.render(title, message, "critical");
-                return this;
-            }
+        /**
+         * Create warning dialog
+         * 
+         * @param {String} title
+         * @param {String} message
+         * @returns {Dialog}
+         * 
+         * @throws {Error} for invalid argument exception
+         */
 
-            /**
-             * Create error dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "warning",
+        value: function warning(title, message) {
+            this.view.render(title, message, "warning");
+            return this;
+        }
 
-        }, {
-            key: "error",
-            value: function error(title, message) {
-                view.render(title, message, "error");
-                return this;
-            }
+        /**
+         * Create notice dialog
+         * 
+         * @param {String} title
+         * @param {String} message
+         * @returns {Dialog}
+         * 
+         * @throws {Error} for invalid argument exception
+         */
 
-            /**
-             * Create warning dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "notice",
+        value: function notice(title, message) {
+            this.view.render(title, message, "notice");
+            return this;
+        }
 
-        }, {
-            key: "warning",
-            value: function warning(title, message) {
-                view.render(title, message, "warning");
-                return this;
-            }
+        /**
+         * Create info dialog
+         * 
+         * @param {String} title
+         * @param {String} message
+         * @returns {Dialog}
+         * 
+         * @throws {Error} for invalid argument exception
+         */
 
-            /**
-             * Create notice dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "info",
+        value: function info(title, message) {
+            this.view.render(title, message, "info");
+            return this;
+        }
 
-        }, {
-            key: "notice",
-            value: function notice(title, message) {
-                view.render(title, message, "notice");
-                return this;
-            }
+        /**
+         * Create debug dialog
+         * 
+         * @param {String} title
+         * @param {String} message
+         * @returns {Dialog}
+         * 
+         * @throws {Error} for invalid argument exception
+         */
 
-            /**
-             * Create info dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "debug",
+        value: function debug(title, message) {
+            this.view.render(title, message, "debug");
+            return this;
+        }
 
-        }, {
-            key: "info",
-            value: function info(title, message) {
-                view.render(title, message, "info");
-                return this;
-            }
+        /**
+         * Register abort event handler
+         * 
+         * @param {Function} callback
+         * @returns {Dialog}
+         */
 
-            /**
-             * Create debug dialog
-             * 
-             * @param {String} title
-             * @param {String} message
-             * @returns {Dialog}
-             * 
-             * @throws {Error} for invalid argument exception
-             */
+    }, {
+        key: "onabort",
+        value: function onabort(callback) {
+            this.view.onabort(callback);
+            return this;
+        }
 
-        }, {
-            key: "debug",
-            value: function debug(title, message) {
-                view.render(title, message, "debug");
-                return this;
-            }
+        /**
+         * Register confirm event handler
+         * 
+         * @param {String} title
+         * @param {Function} callback
+         * @returns {Dialog}
+         */
 
-            /**
-             * Register abort event handler
-             * 
-             * @param {Function} callback
-             * @returns {Dialog}
-             */
+    }, {
+        key: "onconfirm",
+        value: function onconfirm(title, callback) {
+            this.view.onconfirm(title, callback);
+            return this;
+        }
 
-        }, {
-            key: "onabort",
-            value: function onabort(callback) {
-                view.onabort(callback);
-                return this;
-            }
+        /**
+         * Register cancel event handler
+         * 
+         * @param {String} title
+         * @param {Function} callback
+         * @returns {Dialog}
+         */
 
-            /**
-             * Register confirm event handler
-             * 
-             * @param {String} title
-             * @param {Function} callback
-             * @returns {Dialog}
-             */
+    }, {
+        key: "oncancel",
+        value: function oncancel(title, callback) {
+            this.view.oncancel(title, callback);
+            return this;
+        }
+    }]);
 
-        }, {
-            key: "onconfirm",
-            value: function onconfirm(title, callback) {
-                view.onconfirm(title, callback);
-                return this;
-            }
-
-            /**
-             * Register cancel event handler
-             * 
-             * @param {String} title
-             * @param {Function} callback
-             * @returns {Dialog}
-             */
-
-        }, {
-            key: "oncancel",
-            value: function oncancel(title, callback) {
-                view.oncancel(title, callback);
-                return this;
-            }
-        }]);
-
-        return Dialog;
-    }();
+    return Dialog;
 }();
 
-},{"./../view/View":7}],2:[function(require,module,exports){
+},{"./event.dialog":5,"./view.dialog":6}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -399,75 +421,7 @@ var Event = exports.Event = function () {
     }();
 }();
 
-},{}],3:[function(require,module,exports){
-(function (global){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.dialog = undefined;
-
-var _Dialog = require("./dialog/Dialog");
-
-var _Event = require("./event/Event");
-
-var _View = require("./view/View");
-
-var dialog = exports.dialog = function () {
-
-  global.ui = global.ui || {};
-  return global.ui.dialog = new _Dialog.Dialog(new _View.View(new _Event.Event()));
-}(); /**
-      * This file contain ui-dialog
-      *     __
-      *    / /__ __ __ __ __ __
-      *   / // // // // // // /
-      *  /_// // // // // // /
-      *    /_//_//_//_//_//_/
-      *
-      * @author Cyril <consultant@seeren.fr>
-      * @version 2.1.1
-      */
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./dialog/Dialog":1,"./event/Event":2,"./view/View":7}],4:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-exports.default = function (text, className, cancel) {
-
-    return "<button class=\"ui btn " + (cancel ? "btn-flat " : "") + "btn-" + className + "\">" + text.toLowerCase() + "</button>";
-};
-
-},{}],5:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-exports.default = function () {
-
-    return "<a class=\"ui cross\"></a>";
-};
-
 },{}],6:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-            value: true
-});
-
-exports.default = function (title, message, className) {
-
-            return "<div id=\"ui-dialog\" class=\"ui dialog right grey-900 col-offset-1 col-10 col-offset-sm-5 col-sm-6 col-offset-lg-7 col-lg-4 col-offset-xl-9 col-xl-2 card card-24 " + className + "\">\n                <br /><h6 class=\"ui col-12 left normal\">" + title + "</h6>\n                <p class=\"ui col-12 left hyphens lighter\">" + message + "</p>\n            </div>";
-};
-
-},{}],7:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -477,19 +431,19 @@ exports.View = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _Event = require("./../event/Event");
+var _event = require("./event.dialog");
 
-var _btn2 = require("./../template/btn");
+var _btnDialog = require("./btn.dialog.html");
 
-var _btn3 = _interopRequireDefault(_btn2);
+var _btnDialog2 = _interopRequireDefault(_btnDialog);
 
-var _cross2 = require("./../template/cross");
+var _crossDialog = require("./cross.dialog.html");
 
-var _cross3 = _interopRequireDefault(_cross2);
+var _crossDialog2 = _interopRequireDefault(_crossDialog);
 
-var _dialog2 = require("./../template/dialog");
+var _dialogDialog = require("./dialog.dialog.html");
 
-var _dialog3 = _interopRequireDefault(_dialog2);
+var _dialogDialog2 = _interopRequireDefault(_dialogDialog);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -528,7 +482,7 @@ var View = exports.View = function () {
      */
     var create = function create(title, message, className) {
         var container = window.document.createElement("div");
-        container.innerHTML = (0, _dialog3.default)(title, message, className);
+        container.innerHTML = (0, _dialogDialog2.default)(title, message, className);
         window.document.body.appendChild(container.firstChild);
         window.document.body.lastChild.style.opacity = 0;
         window.document.body.lastChild.clientHeight;
@@ -546,7 +500,7 @@ var View = exports.View = function () {
     var createAbort = function createAbort(dialog, callback) {
         if (!dialog.firstChild || !dialog.firstChild.onclick) {
             var container = window.document.createElement("div");
-            container.innerHTML = (0, _cross3.default)();
+            container.innerHTML = (0, _crossDialog2.default)();
             dialog.insertBefore(container.firstChild, dialog.firstChild);
             dialog.firstChild.onclick = function () {
                 destroy(dialog, callback);
@@ -564,7 +518,7 @@ var View = exports.View = function () {
     var createConfirm = function createConfirm(title, dialog, callback) {
         if (!dialog.lastChild || !dialog.lastChild.className || "confirm" !== dialog.lastChild.className.split(" ").pop()) {
             var container = window.document.createElement("div");
-            container.innerHTML = (0, _btn3.default)(title || "ok", dialog.className.split(" ").pop() + " confirm");
+            container.innerHTML = (0, _btnDialog2.default)(title || "Ok", dialog.className.split(" ").pop() + " confirm");
             dialog.appendChild(container.firstChild);
             dialog.lastChild.onclick = function () {
                 destroy(dialog, callback);
@@ -582,7 +536,7 @@ var View = exports.View = function () {
     var createCancel = function createCancel(title, dialog, callback) {
         if (dialog.lastChild && dialog.lastChild.className && "confirm" === dialog.lastChild.className.split(" ").pop() && dialog.lastChild.previousSibling && "BUTTON" !== dialog.lastChild.previousSibling.tagName) {
             var container = window.document.createElement("div");
-            container.innerHTML = (0, _btn3.default)(title || "cancel", dialog.className.split(" ").pop() + " cancel", true);
+            container.innerHTML = (0, _btnDialog2.default)(title || "Cancel", dialog.className.split(" ").pop() + " cancel", true);
             dialog.insertBefore(container.firstChild, dialog.lastChild);
             dialog.lastChild.previousSibling.onclick = function () {
                 destroy(dialog, callback);
@@ -605,7 +559,7 @@ var View = exports.View = function () {
         function View(event) {
             _classCallCheck(this, View);
 
-            if (!(event instanceof _Event.Event)) {
+            if (!(event instanceof _event.Event)) {
                 throw new window.Error("Event must be an instance of Event");
             }
 
@@ -735,57 +689,29 @@ var View = exports.View = function () {
     }();
 }();
 
-},{"./../event/Event":2,"./../template/btn":4,"./../template/cross":5,"./../template/dialog":6}],8:[function(require,module,exports){
+},{"./btn.dialog.html":1,"./cross.dialog.html":2,"./dialog.dialog.html":3,"./event.dialog":5}],7:[function(require,module,exports){
 (function (global){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.ui = undefined;
 
-var _index = require("./dialog/index");
+var _waver = require("./wave/waver.wave");
 
-var _index2 = require("./wave/index");
+var _dialog = require("./dialog/dialog.dialog");
 
-/**
- * This file contain ui-design
- *     __
- *    / /__ __ __ __ __ __
- *   / // // // // // // /
- *  /_// // // // // // /
- *    /_//_//_//_//_//_/
- *
- * @author Cyril <consultant@seeren.fr>
- * @version 1.3.0
- */
+var _parallaxer = require("./parallax/parallaxer.parallax");
 
 var ui = exports.ui = function () {
-
-  global.ui = {};
-  global.ui.dialog = _index.dialog;
-  global.ui.wave = _index2.wave;
-  return global.ui;
-}();
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./dialog/index":3,"./wave/index":9}],9:[function(require,module,exports){
-(function (global){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.wave = undefined;
-
-var _Waver = require("./wave/Waver");
-
-var wave = exports.wave = function () {
-
-  global.ui = global.ui || {};
-  return global.ui.wave = new _Waver.Waver();
+    return global.ui = {
+        dialog: new _dialog.Dialog(),
+        parallax: new _parallaxer.Parallaxer(),
+        wave: new _waver.Waver()
+    };
 }(); /**
-      * This file contain ui-wave
+      * This file contain ui-design
       *     __
       *    / /__ __ __ __ __ __
       *   / // // // // // // /
@@ -793,11 +719,253 @@ var wave = exports.wave = function () {
       *    /_//_//_//_//_//_/
       *
       * @author Cyril <consultant@seeren.fr>
-      * @version 0.0.1
+      * @version 2.1.0
       */
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./wave/Waver":15}],10:[function(require,module,exports){
+},{"./dialog/dialog.dialog":4,"./parallax/parallaxer.parallax":9,"./wave/waver.wave":16}],8:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @type {Background}
+ */
+var Background =
+
+/**
+ * @constructor
+ * 
+ * @param {HTMLElement} parallaxe
+ */
+exports.Background = function Background(parallaxe) {
+    _classCallCheck(this, Background);
+
+    var shape = void 0;
+    var top = void 0;
+    var callback = void 0;
+    this.render = function () {
+        shape = parallaxe.getBoundingClientRect();
+        top = shape.top + shape.height;
+        if (shape.top < window.innerHeight && top > 0) {
+            parallaxe.style.backgroundPosition = callback();
+        }
+    };
+    if (/parallax-fixed/.test(parallaxe.className)) {
+        callback = !/parallax-neg/.test(parallaxe.className) ? function () {
+            return "50% " + (150 - top / (window.innerHeight + shape.height) * 100) + "%";
+        } : function () {
+            return "50% " + top / (window.innerHeight + shape.height) * 100 + "%";
+        };
+        return;
+    }
+    callback = /parallax-neg/.test(parallaxe.className) ? function () {
+        return "50% " + (100 - top / (window.innerHeight + shape.height) * 100) + "%";
+    } : function () {
+        return "50% " + top / (window.innerHeight + shape.height) * 100 + "%";
+    };
+};
+
+},{}],9:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Parallaxer = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _background = require("./background.parallax");
+
+var _target = require("./target.parallax");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @type {Parallaxer}
+ */
+var Parallaxer = exports.Parallaxer = function () {
+
+    var callback = void 0;
+
+    var _update = function _update() {
+        for (var i = 0, l = callback.length; i < l; i++) {
+            callback[i]();
+        }
+    };
+
+    return function () {
+
+        /**
+         * @constructor
+         */
+        function Parallaxer() {
+            _classCallCheck(this, Parallaxer);
+
+            this.update();
+            if (callback.length > 0) {
+                window.addEventListener("scroll", _update);
+                window.addEventListener("resize", _update);
+            }
+        }
+
+        /**
+         * Update
+         */
+
+
+        _createClass(Parallaxer, [{
+            key: "update",
+            value: function update() {
+                window.removeEventListener("scroll", _update);
+                window.removeEventListener("resize", _update);
+                callback = [];
+                var parallaxe = window.document.querySelectorAll(".ui.parallax");
+                for (var i = 0, l = parallaxe.length; i < l; i++) {
+                    /parallax-target/.test(parallaxe[i].className) ? callback.push(new _target.Target(parallaxe[i], callback).render) : callback.push(new _background.Background(parallaxe[i]).render);
+                }
+            }
+        }]);
+
+        return Parallaxer;
+    }();
+}();
+
+},{"./background.parallax":8,"./target.parallax":10}],10:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @type {Target}
+ */
+var Target =
+
+/**
+ * @constructor
+ * 
+ * @param {HTMLElement} parallaxe
+ */
+exports.Target = function Target(parallaxe, callback) {
+    var _this = this;
+
+    _classCallCheck(this, Target);
+
+    var shape = void 0;
+    this.render = function () {
+        shape = parallaxe.getBoundingClientRect();
+        if (shape.top + shape.height * 1 / 3 < window.innerHeight * 7 / 8 && shape.top + shape.height * 2 / 3 > window.innerHeight * 1 / 8) {
+            parallaxe.className += " target";
+            callback.splice(callback.indexOf(_this.render), 1);
+        }
+    };
+};
+
+},{}],11:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Left = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _wave = require("./wave.wave");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * @type {Left}
+ */
+var Left = exports.Left = function (_Wave) {
+  _inherits(Left, _Wave);
+
+  function Left() {
+    _classCallCheck(this, Left);
+
+    return _possibleConstructorReturn(this, (Left.__proto__ || Object.getPrototypeOf(Left)).apply(this, arguments));
+  }
+
+  _createClass(Left, [{
+    key: "update",
+
+
+    /**
+     * @param {MouseEvent} e 
+     * @param {HTMLElement} wave 
+     */
+    value: function update(e, wave) {
+      this.x = 0;
+      this.y = 50;
+    }
+  }]);
+
+  return Left;
+}(_wave.Wave);
+
+},{"./wave.wave":15}],12:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Pointer = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _wave = require("./wave.wave");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * @type {Pointer}
+ */
+var Pointer = exports.Pointer = function (_Wave) {
+  _inherits(Pointer, _Wave);
+
+  function Pointer() {
+    _classCallCheck(this, Pointer);
+
+    return _possibleConstructorReturn(this, (Pointer.__proto__ || Object.getPrototypeOf(Pointer)).apply(this, arguments));
+  }
+
+  _createClass(Pointer, [{
+    key: "update",
+
+
+    /**
+     * @param {MouseEvent} e 
+     * @param {HTMLElement} wave 
+     */
+    value: function update(e, wave) {
+      var shape = wave.getBoundingClientRect();
+      this.x = window.parseInt((e.clientX - shape.left) / shape.width * 100, 10);
+      this.y = window.parseInt((e.clientY - shape.top) / shape.height * 100, 10);
+    }
+  }]);
+
+  return Pointer;
+}(_wave.Wave);
+
+},{"./wave.wave":15}],13:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -809,23 +977,17 @@ exports.default = function (color, x, y, size, colorFrom, colorTo) {
     return color + " radial-gradient(circle at " + x + "% " + y + "%, " + colorFrom + " " + size + "%, " + colorTo + " " + size + "%)";
 };
 
-},{}],11:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.CenterWave = undefined;
+exports.Right = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _Wave2 = require("./Wave");
-
-var _radial = require("./../template/radial");
-
-var _radial2 = _interopRequireDefault(_radial);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _wave = require("./wave.wave");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -834,151 +996,35 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /**
- * @type {CenterWave}
+ * @type {Right}
  */
-var CenterWave = exports.CenterWave = function (_Wave) {
-  _inherits(CenterWave, _Wave);
+var Right = exports.Right = function (_Wave) {
+  _inherits(Right, _Wave);
 
-  function CenterWave() {
-    _classCallCheck(this, CenterWave);
+  function Right() {
+    _classCallCheck(this, Right);
 
-    return _possibleConstructorReturn(this, (CenterWave.__proto__ || Object.getPrototypeOf(CenterWave)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Right.__proto__ || Object.getPrototypeOf(Right)).apply(this, arguments));
   }
 
-  _createClass(CenterWave, [{
-    key: "render",
+  _createClass(Right, [{
+    key: "update",
 
 
     /**
-     * Render
-     * 
      * @param {MouseEvent} e 
+     * @param {HTMLElement} wave 
      */
-    value: function render(e) {
-      var shape = this.waveable.getBoundingClientRect();
-      this.x = window.parseInt((e.clientX - shape.left) / shape.width * 100, 10);
-      this.y = window.parseInt((e.clientY - shape.top) / shape.height * 100, 10);
-      this.size = 0;
-      this.renderWave();
-    }
-  }]);
-
-  return CenterWave;
-}(_Wave2.Wave);
-
-},{"./../template/radial":10,"./Wave":14}],12:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.LeftWave = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Wave2 = require("./Wave");
-
-var _radial = require("./../template/radial");
-
-var _radial2 = _interopRequireDefault(_radial);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * @type {LeftWave}
- */
-var LeftWave = exports.LeftWave = function (_Wave) {
-  _inherits(LeftWave, _Wave);
-
-  function LeftWave() {
-    _classCallCheck(this, LeftWave);
-
-    return _possibleConstructorReturn(this, (LeftWave.__proto__ || Object.getPrototypeOf(LeftWave)).apply(this, arguments));
-  }
-
-  _createClass(LeftWave, [{
-    key: "render",
-
-
-    /**
-     * Render
-     * 
-     * @param {MouseEvent} e 
-     */
-    value: function render(e) {
-      this.x = 0;
-      this.y = 50;
-      this.size = 0;
-      this.renderWave();
-    }
-  }]);
-
-  return LeftWave;
-}(_Wave2.Wave);
-
-},{"./../template/radial":10,"./Wave":14}],13:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.RightWave = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Wave2 = require("./Wave");
-
-var _radial = require("./../template/radial");
-
-var _radial2 = _interopRequireDefault(_radial);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * @type {RightWave}
- */
-var RightWave = exports.RightWave = function (_Wave) {
-  _inherits(RightWave, _Wave);
-
-  function RightWave() {
-    _classCallCheck(this, RightWave);
-
-    return _possibleConstructorReturn(this, (RightWave.__proto__ || Object.getPrototypeOf(RightWave)).apply(this, arguments));
-  }
-
-  _createClass(RightWave, [{
-    key: "render",
-
-
-    /**
-     * Render
-     * 
-     * @param {MouseEvent} e 
-     */
-    value: function render(e) {
+    value: function update(e, wave) {
       this.x = 100;
       this.y = 50;
-      this.size = 0;
-      this.renderWave();
     }
   }]);
 
-  return RightWave;
-}(_Wave2.Wave);
+  return Right;
+}(_wave.Wave);
 
-},{"./../template/radial":10,"./Wave":14}],14:[function(require,module,exports){
+},{"./wave.wave":15}],15:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -986,9 +1032,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Wave = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _radial = require("./../template/radial");
+var _radial = require("./radial.gradient");
 
 var _radial2 = _interopRequireDefault(_radial);
 
@@ -999,57 +1043,52 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /**
  * @type {Wave}
  */
-var Wave = exports.Wave = function () {
+var Wave =
 
-    /**
-     * @constructor
-     * 
-     * @param {HTMLElement} waveable
-     * @param {String} color
-     * @param {String} targetedColor
-     */
-    function Wave(waveable, color, targetedColor) {
-        _classCallCheck(this, Wave);
+/**
+ * @constructor
+ * 
+ * @param {HTMLElement} wave
+ * @param {String} color
+ * @param {String} targetColor
+ */
+exports.Wave = function Wave(wave, color, targetColor) {
+    var _this = this;
 
-        this.waveable = waveable;
-        this.color = color;
-        this.targetedColor = targetedColor;
-        this.timeout = 0;
-        this.x = 0;
-        this.y = 0;
-        this.size = 0;
-        waveable.onmousedown = this.render.bind(this);
-    }
+    _classCallCheck(this, Wave);
 
-    /**
-     * Render wave
-     */
-
-
-    _createClass(Wave, [{
-        key: "renderWave",
-        value: function renderWave() {
-            var _this = this;
-
-            this.timeout = window.clearTimeout(this.timeout);
-            this.waveable.style.background = (0, _radial2.default)(this.color, this.x, this.y, this.size, this.targetedColor, this.color);
-            if (100 < this.size) {
-                this.waveable.style.background = (0, _radial2.default)(this.targetedColor, this.x, this.y, this.size, this.targetedColor, this.color);
-                this.timeout = window.setTimeout(function () {
-                    _this.waveable.removeAttribute("style");
-                    _this.size = 0;
-                }.bind(this), 300);
-                return;
+    var size = 0;
+    var timeout = 0;
+    var fps = 1000 / 50;
+    var now = Date.now();
+    var from = Date.now();
+    var diff = void 0;
+    this.render = function () {
+        timeout = window.clearTimeout(timeout);
+        timeout = window.requestAnimationFrame(_this.render);
+        now = Date.now();
+        diff = now - from;
+        if (diff > fps) {
+            from = now - diff % fps;
+            wave.style.background = (0, _radial2.default)(color, _this.x, _this.y, size, targetColor, color);
+            if (100 < size) {
+                wave.style.background = (0, _radial2.default)(targetColor, _this.x, _this.y, size, targetColor, color);
+                window.cancelAnimationFrame(timeout);
+                return timeout = window.setTimeout(function () {
+                    wave.removeAttribute("style");
+                }, 300);
             }
-            this.size += 8;
-            this.timeout = window.setTimeout(this.renderWave.bind(this), 15);
+            size += 8;
         }
-    }]);
+    };
+    wave.onmousedown = function (e) {
+        _this.update(e, wave);
+        size = 0;
+        _this.render();
+    };
+};
 
-    return Wave;
-}();
-
-},{"./../template/radial":10}],15:[function(require,module,exports){
+},{"./radial.gradient":13}],16:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1059,11 +1098,11 @@ exports.Waver = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _CenterWave = require("./../view/CenterWave");
+var _pointer = require("./pointer.wave");
 
-var _LeftWave = require("./../view/LeftWave");
+var _left = require("./left.wave");
 
-var _RightWave = require("./../view/RightWave");
+var _right = require("./right.wave");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1078,18 +1117,10 @@ var Waver = exports.Waver = function () {
     function Waver() {
         _classCallCheck(this, Waver);
 
-        var waveables = window.document.querySelectorAll(".ui.wave");
-        for (var i = 0, l = waveables.length; i < l; i++) {
-            var waveable = waveables[i];
-            var color = this.getColor(waveable);
-            var targetedColor = this.getTargetedColor(waveable);
-            var wave = /wave-left/.test(waveable.className) ? new _LeftWave.LeftWave(waveable, color, targetedColor) : /wave-right/.test(waveable.className) ? new _RightWave.RightWave(waveable, color, targetedColor) : new _CenterWave.CenterWave(waveable, color, targetedColor);
-        }
+        this.update();
     }
 
     /**
-     * Get color
-     * 
      * @param {HTMLElement} waveable
      * @returns {String}
      */
@@ -1102,26 +1133,39 @@ var Waver = exports.Waver = function () {
         }
 
         /**
-         * Get targeted
-         * 
          * @param {HTMLElement} waveable
-         * @returns {HTMLElement}
+         * @returns {String}
          */
 
     }, {
-        key: "getTargetedColor",
-        value: function getTargetedColor(waveable) {
+        key: "getTargetColor",
+        value: function getTargetColor(waveable) {
             var target = window.document.createElement("div");
-            target.setAttribute("class", waveable.className + " targeted");
+            target.setAttribute("class", waveable.className + " target");
             target.style.display = "none";
             waveable.parentNode.insertBefore(target, waveable);
             var color = this.getColor(target);
             target.parentNode.removeChild(target);
             return color;
         }
+
+        /**
+         * Update
+         */
+
+    }, {
+        key: "update",
+        value: function update() {
+            var wave = window.document.querySelectorAll(".ui.wave");
+            for (var i = 0, l = wave.length; i < l; i++) {
+                var color = this.getColor(wave[i]);
+                var targetColor = this.getTargetColor(wave[i]);
+                /wave-left/.test(wave[i].className) ? new _left.Left(wave[i], color, targetColor) : /wave-right/.test(wave[i].className) ? new _right.Right(wave[i], color, targetColor) : new _pointer.Pointer(wave[i], color, targetColor);
+            }
+        }
     }]);
 
     return Waver;
 }();
 
-},{"./../view/CenterWave":11,"./../view/LeftWave":12,"./../view/RightWave":13}]},{},[8]);
+},{"./left.wave":11,"./pointer.wave":12,"./right.wave":14}]},{},[7]);
