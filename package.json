@@ -1,6 +1,6 @@
 {
   "name": "ui-design",
-  "version": "1.0.11",
+  "version": "2.1",
   "description": "Build mobile first component and interface ",
   "keywords": ["ui", "html", "css", "javascript"],
   "main": "index.html",
