@@ -1,31 +1,26 @@
 @import "$font";
 
 @mixin text () {
+    &.smaller {
+        font-size: .7em;
+    }
     &.bigger {
         font-size: 1.4em;
     }
-    &.bold {
-        font-weight: 900;
-    }
-    &.bolder {
-        font-weight: 600;
+    &.left {
+        text-align: left;
     }
     &.center {
         text-align: center;
     }
-    &.hyphens {
-        hyphens: auto;
-    }
-    &.ellipsis {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
     &.justify {
         text-align: justify;
     }
-    &.left {
-        text-align: left;
+    &.right {
+        text-align: right;
+    }
+    &.thin {
+        font-weight: 100;
     }
     &.light {
         font-weight: 200;
@@ -33,27 +28,29 @@
     &.lighter {
         font-weight: 300;
     }
-    &.monospace {
-        font-family: $font_monospace;
-    }
     &.normal {
         font-weight: 400;
     }
-    &.pointer {
-        cursor: pointer;
+    &.bolder {
+        font-weight: 500;
     }
-    &.right {
-        text-align: right;
+    &.bold {
+        font-weight: 600;
     }
-    &.smaller {
-        font-size: .7em;
+    &.black {
+        font-weight: 900;
     }
-    &.thin {
-        font-weight: 100;
+    &.roboto {
+        font-family: $font_roboto;
     }
-    &.txt-scroll {
-        white-space: nowrap;
-        overflow-x: auto;
+    &.segoe {
+        font-family: $font_segoe;
+    }
+    &.georgia {
+        font-family: $font_georgia;
+    }
+    &.monospace {
+        font-family: $font_monospace;
     }
     &.v-bottom {
         vertical-align: bottom;
@@ -63,5 +60,20 @@
     }
     &.v-top {
         vertical-align: top;
+    }
+    &.pointer {
+        cursor: pointer;
+    }
+    &.txt-scroll {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    &.hyphens {
+        hyphens: auto;
+    }
+    &.ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 }
