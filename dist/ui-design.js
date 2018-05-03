@@ -825,9 +825,9 @@ var Parallaxer = exports.Parallaxer = function () {
                 window.removeEventListener("scroll", _update);
                 window.removeEventListener("resize", _update);
                 callback = [];
-                var parallaxe = window.document.querySelectorAll(".ui.parallax");
-                for (var i = 0, l = parallaxe.length; i < l; i++) {
-                    /parallax-target/.test(parallaxe[i].className) ? callback.push(new _target.Target(parallaxe[i], callback).render) : callback.push(new _background.Background(parallaxe[i]).render);
+                var parallax = window.document.querySelectorAll(".ui.parallax");
+                for (var i = 0, l = parallax.length; i < l; i++) {
+                    /parallax-target/.test(parallax[i].className) ? callback.push(new _target.Target(parallax[i], callback).render) : callback.push(new _background.Background(parallax[i]).render);
                 }
             }
         }]);
@@ -853,18 +853,18 @@ var Target =
 /**
  * @constructor
  * 
- * @param {HTMLElement} parallaxe
+ * @param {HTMLElement} parallax
  */
-exports.Target = function Target(parallaxe, callback) {
+exports.Target = function Target(parallax, callback) {
     var _this = this;
 
     _classCallCheck(this, Target);
 
     var shape = void 0;
     this.render = function () {
-        shape = parallaxe.getBoundingClientRect();
+        shape = parallax.getBoundingClientRect();
         if (shape.top + shape.height * 1 / 3 < window.innerHeight * 7 / 8 && shape.top + shape.height * 2 / 3 > window.innerHeight * 1 / 8) {
-            parallaxe.className += " target";
+            parallax.className += " target";
             callback.splice(callback.indexOf(_this.render), 1);
         }
     };

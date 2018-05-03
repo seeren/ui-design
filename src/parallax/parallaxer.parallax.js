@@ -34,11 +34,11 @@ export let Parallaxer = (() => {
             window.removeEventListener("scroll", update);
             window.removeEventListener("resize", update);
             callback = [];
-            let parallaxe = window.document.querySelectorAll(".ui.parallax");
-            for (let i = 0, l = parallaxe.length; i < l; i++) {
-                /parallax-target/.test(parallaxe[i].className)
-              ? callback.push((new Target(parallaxe[i], callback)).render)
-              : callback.push((new Background(parallaxe[i])).render);
+            let parallax = window.document.querySelectorAll(".ui.parallax");
+            for (let i = 0, l = parallax.length; i < l; i++) {
+                /parallax-target/.test(parallax[i].className)
+              ? callback.push((new Target(parallax[i], callback)).render)
+              : callback.push((new Background(parallax[i])).render);
             }
         }
 
