@@ -40,6 +40,7 @@ export let Parallaxer = (() => {
               ? callback.push((new Target(parallax[i], callback)).render)
               : callback.push((new Background(parallax[i])).render);
             }
+            update();
         }
 
     }
