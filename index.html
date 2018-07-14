@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Open source library for developing with HTML, CSS and JavaScript" />
-    <meta name="keywords" content="ui, css, sass, js" />
+    <meta name="description" content="Material and Mobile First Helper" />
+    <meta name="keywords" content="ui, html, css, javascript, helper" />
     <meta name="theme-color" content="#3f51b5">
     <link rel="stylesheet" type="text/css" href="./dist/ui-design.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -14,7 +14,6 @@
 
 <body>
 
-    <!-- Header -->
     <header id="ui" class="ui card-6 col-xs-center col-sm-left col-v-min-6 col-v-min-sm-8 bg-indigo-500 grey-100">
         <span class="ui col-0 col-sm-1 col-xl-2 col-v-min-6 col-v-min-sm-8 v-center"></span>
         <div class="ui col-10 col-sm-7 col-md-6 col-xl-4 v-center">
@@ -23,11 +22,11 @@
                 ui-design
             </h1>
             <p class="ui bigger lighter hyphens col-12">
-                Material and mobile first helper
+                Material and Mobile First Helper
             </p>
             <p class="ui bigger lighter hyphens col-0 col-md-12">
-                Open source library for developing with HTML, SCSS, CSS and JavaScript.
-                Program components with classes, variables and mixins, use grid system, colors, elevations and other features.
+                Open source library for developing with HTML, SASS, CSS and JavaScript. Program components with classes, variables and mixins,
+                use grid system, colors, elevations and other features.
             </p>
         </div>
         <div class="ui bigger col-10 col-sm-3 col-md-4 col-xl-4 v-center center">
@@ -1555,44 +1554,28 @@
                     .ui.parallax {
                         background-image: url(./resources/images/parallax.png);
                     }
-                    .ui.parallax.parallax-target{
+
+                    .ui.parallax.parallax-target {
                         background-image: none;
                         color: #f44336;
                     }
-                    .ui.parallax.target{
+
+                    .ui.parallax.target {
                         color: #4caf50;
                     }
                 </style>
                 <!-- Scroll -->
-                <div class="ui col-6">
+                <div class="ui col-12">
                     <br />
                     <h6 class="ui">
                         Scroll
                     </h6>
                     <br />
-                    <span class="ui col-12 txt-scroll lighter monospace">ui parallax</span>
+                    <span class="ui col-12 txt-scroll lighter monospace">ui parallax parallax-scroll</span>
                     <div class="ui col-12 bg-grey-200 left">
                         <br />
                         <div class="ui col-12">
-                            <div class="ui col-12 col-v-4 card parallax">
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                    </div>
-                </div>
-                <!-- Negative -->
-                <div class="ui col-6">
-                    <br />
-                    <h6 class="ui">
-                        Negative
-                    </h6>
-                    <br />
-                    <span class="ui col-12 txt-scroll lighter monospace">ui parallax parallax-neg</span>
-                    <div class="ui col-12 bg-grey-200 left">
-                        <br />
-                        <div class="ui col-12">
-                            <div class="ui col-12 col-v-4 card parallax parallax-neg">
+                            <div class="ui col-12 col-v-4 card parallax parallax-scroll">
                             </div>
                         </div>
                         <br />
@@ -1606,11 +1589,11 @@
                         Fixed
                     </h6>
                     <br />
-                    <span class="ui col-12 txt-scroll lighter monospace">ui parallax parallax-fixed</span>
+                    <span class="ui col-12 txt-scroll lighter monospace">ui parallax</span>
                     <div class="ui col-12 bg-grey-200 left">
                         <br />
                         <div class="ui col-12">
-                            <div class="ui col-12 col-v-4 card parallax parallax-fixed">
+                            <div class="ui col-12 col-v-4 card parallax">
                             </div>
                         </div>
                         <br />
@@ -1628,7 +1611,7 @@
                     <div class="ui col-12 bg-grey-200 left">
                         <br />
                         <div class="ui col-12">
-                            <div class="ui col-12 col-v-4 card parallax parallax-fixed parallax-1">
+                            <div class="ui col-12 col-v-4 card parallax parallax-1">
                             </div>
                         </div>
                         <br />
@@ -1668,123 +1651,121 @@
 
     <!-- Text -->
     <section id="text" class="ui col-v-min-8 bg-grey-50">
-            <header class="ui card-1 col-12 bg-lime-500 grey-100 white">
-                <div class="ui col-10 col-xl-8 col-offset-1 col-offset-xl-2">
+        <header class="ui card-1 col-12 bg-lime-500 grey-100 white">
+            <div class="ui col-10 col-xl-8 col-offset-1 col-offset-xl-2">
+                <br />
+                <br />
+                <h5 class="ui normal">Text</h5>
+                <br />
+                <br />
+            </div>
+        </header>
+        <div class="ui col-12">
+            <br />
+            <br />
+            <br />
+            <div class="ui card-1 col-10 col-xl-8 col-offset-1 col-offset-xl-2 bg-grey-0">
+                <!-- Weight -->
+                <div class="ui col-12 col-md-6">
                     <br />
+                    <h6 class="ui">
+                        Weight
+                    </h6>
                     <br />
-                    <h5 class="ui normal">Text</h5>
+                    <span class="ui col-12 txt-scroll lighter monospace">ui thin|light|lighter|normal|bolder|bold|black</span>
+                    <div class="ui col-12 bg-grey-200 left">
+                        <br />
+                        <div class="ui col-12 center bold">
+                            <br /> bold
+                            <br />
+                            <br />
+                        </div>
                         <br />
                         <br />
+                    </div>
                 </div>
-            </header>
-            <div class="ui col-12">
-                <br />
-                <br />
-                <br />
-                <div class="ui card-1 col-10 col-xl-8 col-offset-1 col-offset-xl-2 bg-grey-0">
-                    <!-- Weight -->
-                    <div class="ui col-12 col-md-6">
+                <!-- Alignment -->
+                <div class="ui col-12 col-md-6">
+                    <br />
+                    <h6 class="ui">
+                        Alignment
+                    </h6>
+                    <br />
+                    <span class="ui col-12 txt-scroll lighter monospace">ui left|center|right|justify</span>
+                    <div class="ui col-12 bg-grey-200 left">
                         <br />
-                        <h6 class="ui">
-                            Weight
-                        </h6>
-                        <br />
-                        <span class="ui col-12 txt-scroll lighter monospace">ui thin|light|lighter|normal|bolder|bold|black</span>
-                        <div class="ui col-12 bg-grey-200 left">
-                            <br />
-                            <div class="ui col-12 center lighter">
-                                <br />
-                                lighter
-                                <br />
-                                <br />
-                            </div>
-                            <br />
-                            <br />
-                        </div>
-                    </div>
-                    <!-- Alignment -->
-                    <div class="ui col-12 col-md-6">
-                        <br />
-                        <h6 class="ui">
-                            Alignment
-                        </h6>
-                        <br />
-                        <span class="ui col-12 txt-scroll lighter monospace">ui left|center|right|justify</span>
-                        <div class="ui col-12 bg-grey-200 left">
-                            <br />
+                        <div class="ui col-12">
                             <div class="ui col-12">
-                                <div class="ui col-12">
-                                    <div class="ui col-12 center lighter">
-                                        <br />
-                                        center
-                                        <br />
-                                        <br />
-                                    </div>
+                                <div class="ui col-12 center">
+                                    <br /> center
+                                    <br />
+                                    <br />
                                 </div>
                             </div>
-                            <br />
-                            <br />
                         </div>
+                        <br />
+                        <br />
                     </div>
-                    <!-- Size -->
-                    <div class="ui col-12 col-md-6">
+                </div>
+                <!-- Size -->
+                <div class="ui col-12 col-md-6">
+                    <br />
+                    <h6 class="ui">
+                        Size
+                    </h6>
+                    <br />
+                    <span class="ui col-12 txt-scroll lighter monospace">ui smaller|bigger</span>
+                    <div class="ui col-12 bg-grey-200 left">
                         <br />
-                        <h6 class="ui">
-                            Size
-                        </h6>
-                        <br />
-                        <span class="ui col-12 txt-scroll lighter monospace">ui smaller|bigger</span>
-                        <div class="ui col-12 bg-grey-200 left">
-                            <br />
+                        <div class="ui col-12">
                             <div class="ui col-12">
-                                <div class="ui col-12">
-                                    <div class="ui col-12 center">
-                                        <br />
-                                        <a class="ui bigger lighter">bigger</a>
-                                        <br />
-                                        <br />
-                                    </div>
+                                <div class="ui col-12 center">
+                                    <br />
+                                    <a class="ui bigger">bigger</a>
+                                    <br />
+                                    <br />
                                 </div>
                             </div>
-                            <br />
-                            <br />
                         </div>
+                        <br />
+                        <br />
                     </div>
-                    <!-- Family -->
-                    <div class="ui col-12 col-md-6">
+                </div>
+                <!-- Family -->
+                <div class="ui col-12 col-md-6">
+                    <br />
+                    <h6 class="ui">
+                        Family
+                    </h6>
+                    <br />
+                    <span class="ui col-12 txt-scroll lighter monospace">ui roboto|segoe|georgia|monospace</span>
+                    <div class="ui col-12 bg-grey-200 left">
                         <br />
-                        <h6 class="ui">
-                            Family
-                        </h6>
-                        <br />
-                        <span class="ui col-12 txt-scroll lighter monospace">ui roboto|segoe|georgia|monospace</span>
-                        <div class="ui col-12 bg-grey-200 left">
-                            <br />
+                        <div class="ui col-12">
                             <div class="ui col-12">
-                                <div class="ui col-12">
-                                    <div class="ui col-12 center">
-                                        <br />
-                                        <a class="ui bigger lighter roboto">roboto</a>
-                                        <br />
-                                        <br />
-                                    </div>
+                                <div class="ui col-12 center">
+                                    <br />
+                                    <a class="ui bigger roboto">roboto</a>
+                                    <br />
+                                    <br />
                                 </div>
                             </div>
-                            <br />
-                            <br />
                         </div>
+                        <br />
+                        <br />
                     </div>
+                </div>
 
-                    <br />
-                    <br />
-                    <br />
-                </div>
-                <br />
                 <br />
                 <br />
                 <br />
             </div>
-        </section>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </section>
 
     <!-- Wave -->
     <section id="wave" class="ui col-v-min-8 bg-grey-50">
@@ -1793,8 +1774,8 @@
                 <br />
                 <br />
                 <h5 class="ui normal">Wave</h5>
-                    <br />
-                    <br />
+                <br />
+                <br />
             </div>
         </header>
         <div class="ui col-12">
@@ -1880,9 +1861,6 @@
         </div>
     </section>
 
-    <!-- <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script> -->
-    <!-- <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
-    <!-- <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css" /> -->
     <script type="text/javascript" src="./dist/ui-design.js"></script>
 
 </body>
