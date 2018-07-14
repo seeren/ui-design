@@ -8,13 +8,11 @@
     font-family: $font_roboto;
   }
   body {
-    height: 100%;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    position: absolute;
-    width: 100%;
   }
+  body,
   main,
   header,
   nav,
@@ -32,12 +30,5 @@
   } 
   p {
     line-height: 1.6em;
-  }
-  p,
-  hr {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
