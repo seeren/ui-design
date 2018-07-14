@@ -35,33 +35,15 @@ describe("Background", () => {
     });
 
     describe("render", () => {
-        it("set scroll background", () => {
-            parallax.render();
-            assert.equal(
-                `50% ${top / (window.innerHeight + shape.height) * 100}%`,
-                parallaxable.style.background
-            );
-        });
-        it("set negative background", () => {
-            parallaxable.className = "parallax-neg";
-            parallax.constructor(parallaxable);
+        it("set fixed background", () => {
             parallax.render();
             assert.equal(
                 `50% ${100 - (top / (window.innerHeight + shape.height) * 100)}%`,
                 parallaxable.style.background
             );
         });
-        it("set fixed background", () => {
-            parallaxable.className = "parallax-fixed";
-            parallax.constructor(parallaxable);
-            parallax.render();
-            assert.equal(
-                `50% ${150 - (top / (window.innerHeight + shape.height) * 100)}%`,
-                parallaxable.style.background
-            );
-        });
-        it("set fixed negative background", () => {
-            parallaxable.className = "parallax-fixed parallax-neg";
+        it("set scroll background", () => {
+            parallaxable.className = "parallax-scroll";
             parallax.constructor(parallaxable);
             parallax.render();
             assert.equal(
