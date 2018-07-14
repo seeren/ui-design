@@ -5,7 +5,7 @@
   </a>
 </p>
 <h4 align="center">
-  Build mobile first component and interface
+  Material and Mobile First Helper
 </h4>
 <p align="center">
   <a href="https://travis-ci.org/seeren/ui-design">
@@ -29,7 +29,7 @@
  </p >
 
 ## 🎉Features
-> Open source library for developing with HTML, CSS and JavaScript. Program components  with classes, variables and mixins, use grid system, colors, elevations and other features.
+> Open source library for developing with HTML, SASS, CSS and JavaScript. Program components  with classes, variables and mixins, use grid system, colors, elevations and other features.
 
 * [Button](https://seeren.github.io/ui-design/#button)
 * [Card](https://seeren.github.io/ui-design/#card)
@@ -42,23 +42,28 @@
 
 ## 📦 Installation
 
-`npm install ui-design`
+Install with [npm](https://www.npmjs.com/package/ui-design)
+```
+npm install ui-design
+```
+Add Stylesheet
 ```html
 <link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
 ```
+Add JavaScript
 ```html
 <script type="text/javascript" src="./node_modules/ui-dialog/dist/ui-design.js"></script>
 ```
 
 ## ⛏ Tests
-`npm test`
+Pass the tests
 ```
-./node_modules/.bin/mocha --require babel-register --recursive test/unit
+npm test
 ```
-`npm run coverage`
+Generate report
 ```
-./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit
+npm run coverage
 ```
 
 ## 🎫 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the [MIT](LICENSE) License
