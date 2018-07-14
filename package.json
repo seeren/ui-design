@@ -19,7 +19,7 @@
     "coverage": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive test/unit",
     "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "sync": "./node_modules/.bin/browser-sync start --server --files \"./dist/ui-design.*\"",
+    "sync": "./node_modules/.bin/browser-sync start --server --files ./dist/ui-design.* ./index.html",
     "test": "./node_modules/.bin/mocha --require babel-register --recursive test/unit"
   },
   "style": "www/dist/index.css",
