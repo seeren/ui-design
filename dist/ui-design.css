@@ -28,13 +28,11 @@ html {
   font-family: Roboto, Helvetica, Arial, sans-serif; }
 
 body {
-  height: 100%;
   margin: 0;
   overflow-x: hidden;
-  padding: 0;
-  position: absolute;
-  width: 100%; }
+  padding: 0; }
 
+body,
 main,
 header,
 nav,
@@ -51,13 +49,6 @@ a {
 
 p {
   line-height: 1.6em; }
-
-p,
-hr {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0; }
 
 .ui.red-50, .ui.target.target-red-50 {
   color: #ffebee; }
@@ -3051,13 +3042,14 @@ hr {
   .ui.col-offset-xl-12 {
     margin-left: 100%; } }
 
-.ui.parallax, .ui.parallax-fixed {
+.ui.parallax, .ui.parallax-scroll {
   transition: none;
   background-position: 50% 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .ui.parallax {
-  background-size: auto 150%; }
+  background-attachment: fixed; }
   .ui.parallax.parallax-0 {
     background-size: auto 100%; }
   .ui.parallax.parallax-1 {
@@ -3085,36 +3077,8 @@ hr {
   .ui.parallax.parallax-12 {
     background-size: auto 250%; }
 
-.ui.parallax-fixed {
-  background-size: auto 133%;
-  background-position: 50% 50%;
-  background-attachment: fixed; }
-  .ui.parallax-fixed.parallax-0 {
-    background-size: auto 100%; }
-  .ui.parallax-fixed.parallax-1 {
-    background-size: auto 108.33333%; }
-  .ui.parallax-fixed.parallax-2 {
-    background-size: auto 116.66667%; }
-  .ui.parallax-fixed.parallax-3 {
-    background-size: auto 125%; }
-  .ui.parallax-fixed.parallax-4 {
-    background-size: auto 133.33333%; }
-  .ui.parallax-fixed.parallax-5 {
-    background-size: auto 141.66667%; }
-  .ui.parallax-fixed.parallax-6 {
-    background-size: auto 150%; }
-  .ui.parallax-fixed.parallax-7 {
-    background-size: auto 158.33333%; }
-  .ui.parallax-fixed.parallax-8 {
-    background-size: auto 166.66667%; }
-  .ui.parallax-fixed.parallax-9 {
-    background-size: auto 175%; }
-  .ui.parallax-fixed.parallax-10 {
-    background-size: auto 183.33333%; }
-  .ui.parallax-fixed.parallax-11 {
-    background-size: auto 191.66667%; }
-  .ui.parallax-fixed.parallax-12 {
-    background-size: auto 200%; }
+.ui.parallax-scroll {
+  background-attachment: scroll; }
 
 .ui.smaller {
   font-size: .7em; }
@@ -3205,7 +3169,11 @@ hr {
   padding: .6em 1.2em;
   margin: .5em;
   text-align: center;
-  letter-spacing: .05em; }
+  letter-spacing: .05em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .ui.btn.btn-flat {
     box-shadow: none !important;
     box-shadow: 0px 0px 0px 0px transparent; }
@@ -3609,10 +3577,11 @@ hr {
       content: "☆"; }
   .ui.btn.btn-lg {
     font-size: 1.3rem; }
+  .ui.btn.btn-sm {
+    font-size: 0.8rem; }
   .ui.btn.disable, .ui.btn.disable:active, .ui.btn.disable:hover {
     cursor: default;
     opacity: .5;
-    cursor: default;
     opacity: .5; }
   .ui.btn:hover {
     background-color: #eeeeee; }

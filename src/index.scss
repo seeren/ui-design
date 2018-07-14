@@ -6,7 +6,6 @@
 @import "parallax/parallax";
 @import "text/text";
 @import "reset/reset";
-
 @include reset();
 .ui {
     @include color();

@@ -19,6 +19,6 @@ export let ui = (() => {
     return global.ui = {
         dialog: new Dialog,
         parallax: new Parallaxer,
-        wave:  new Waver
+        wave: new Waver
     };
 })();
