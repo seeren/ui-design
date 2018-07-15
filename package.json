@@ -53,6 +53,6 @@
   "files": [
     "src/",
     "test/",
-    "www/{dist}/"
+    "{dist}/"
   ]
 }
