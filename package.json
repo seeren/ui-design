@@ -1,7 +1,7 @@
 {
   "name": "ui-design",
   "description": "Mobile first component helper ",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "keywords": [
     "ui",
     "html",
@@ -22,7 +22,7 @@
     "sync": "./node_modules/.bin/browser-sync start --server --files ./dist/ui-design.* ./index.html",
     "test": "./node_modules/.bin/mocha --require babel-register --recursive test/unit"
   },
-  "style": "www/dist/index.css",
+  "style": "dist/index.css",
   "sass": "src/index.scss",
   "main": "src/index.js",
   "repository": {
@@ -49,10 +49,5 @@
   },
   "engines": {
     "node": ">=8"
-  },
-  "files": [
-    "src/",
-    "test/",
-    "{dist}/"
-  ]
+  }
 }
