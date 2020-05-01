@@ -1,14 +1,16 @@
 @import "$color";
 
-@mixin color () {
-    @each $name, $value in $color {
-        &.#{$name},
-        &.target.target-#{$name} {
+@mixin color() {
+    @each $key, $value in $color {
+        .#{$key},
+        .target.target-#{$key} {
             color: $value;
         }
-        &.bg-#{$name},
-        &.target.target-bg-#{$name} {
+        .bg-#{$key},
+        .target.target-bg-#{$key} {
             background-color: $value;
         }
     }
 }
+
+@include color();
