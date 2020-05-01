@@ -1,26 +1,31 @@
-@import "$card";
-@import "@card-transition";
+@import "./../color/$color.scss";
+@import "./$card";
 
-@mixin card () {
+@mixin card() {
     $card_selector: null;
-    &.card {
-        @include cardTransition();
-        border-radius: .1em;
+    .card {
+        border-radius: 0.1em;
         background-color: map-get($color, "grey-0");
     }
     @each $key, $value in $card {
         $selectors: "&.card-#{$key}";
         @if (not $card_selector) {
-          $card_selector: $selectors;
+            $card_selector: $selectors;
         } @else {
-          $card_selector: "#{$card_selector}, #{$selectors}";
+            $card_selector: "#{$card_selector}, #{$selectors}";
         }
         &.card-#{$key} {
             box-shadow: $value;
-            z-index: $key;
         }
     }
     #{$card_selector} {
         position: relative;
     }
+    .cover {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
+
+@include card();
