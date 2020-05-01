@@ -15,7 +15,7 @@
     "build": "webpack --mode production"
   },
   "style": "dist/index.css",
-  "sass": "src/index",
+  "sass": "src/index.scss",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "latest",

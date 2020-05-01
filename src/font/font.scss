@@ -71,7 +71,7 @@
     }
 }
 
-@mixin decoration {
+@mixin cursor {
     .pointer {
         cursor: pointer;
     }
@@ -85,7 +85,7 @@
 @include font();
 @include weight();
 @include cesure();
-@include decoration();
+@include cursor();
 
 @each $key, $value in $breakpoints {
     @media all and (min-width: #{$value}px) {

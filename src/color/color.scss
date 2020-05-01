@@ -3,6 +3,7 @@
 @mixin color() {
     @each $key, $value in $color {
         .#{$key},
+        .hover-#{$key}:hover,
         .hover-#{$key}:hover {
             color: $value;
         }
