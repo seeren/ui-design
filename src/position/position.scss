@@ -1,0 +1,49 @@
+@import "./../gride/$breakpoints.scss";
+
+@mixin z-index() {
+    @for $value from 1 to 10 {
+        .z-#{$value} {
+            z-index: $value;
+        }
+    }
+}
+
+@mixin overflow() {
+    @each $value in (auto, hidden, scroll) {
+        @each $subvalue in ("", -x, -y) {
+            .overflow#{$subvalue}-#{$value} {
+                overflow#{$subvalue}: $value;
+            }
+        }
+    }
+}
+
+@mixin position($breakpoint: "") {
+    @each $value in (static, relative, absolute, fixed) {
+        .#{$value}#{$breakpoint} {
+            position: $value;
+        }
+    }
+}
+
+@mixin sides($breakpoint: "") {
+    @each $value in (left, top, right, bottom) {
+        @for $n from 0 through 12 {
+            .#{$value}#{$breakpoint}-#{$n} {
+                #{$value}: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+            }
+        }
+    }
+}
+
+@each $key, $value in $breakpoints {
+    @media all and (min-width: #{$value}px) {
+        @include position(-#{$key});
+        @include sides(-#{$key});
+    }
+}
+
+@include position();
+@include sides();
+@include overflow();
+@include z-index();

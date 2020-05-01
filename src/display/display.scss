@@ -1,0 +1,22 @@
+@import "./../gride/$breakpoints.scss";
+
+@mixin display($breakpoint: "") {
+    @each $display in (block, inline, inline-block, none) {
+        .#{$display}#{$breakpoint} {
+            display: $display;
+            @if $display == inline-block {
+                &.fix#{$breakpoint} {
+                    margin-right: -0.25em;
+                }
+            }
+        }
+    }
+}
+
+@each $key, $value in $breakpoints {
+    @media all and (min-width: #{$value}px) {
+        @include display(-#{$key});
+    }
+}
+
+@include display();

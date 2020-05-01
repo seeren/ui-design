@@ -1,27 +1,56 @@
-@import "@percentage";
-@import "@vh";
-@import "$size";
-@import "$ncol";
-@import "col";
-@import "col-h";
-@import "col-v";
-@import "col-offset";
+@import "./$breakpoints.scss";
 
-@mixin gride () {
-  @include col-h();
-  @include col-v();
-  @include col-offset();
-  @each $key, $value in $size  {
-    @if ($value > 0) {
-      @media all and (min-width: #{$value}px) {
-        @include col-h(#{$key}-);
-        @include col-v(#{$key}-);
-        @include col-offset(#{$key}-);
-      }
-    } @else {
-        @include col-h(#{$key}-);
-        @include col-v(#{$key}-);
-        @include col-offset(#{$key}-);
+@mixin gride($breakpoint: "") {
+  @for $n from 0 through 12 {
+    .w#{$breakpoint}-#{$n} {
+      width: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .w-min#{$breakpoint}-#{$n} {
+      min-width: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .w-max#{$breakpoint}-#{$n} {
+      max-width: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .vw#{$breakpoint}-#{$n} {
+      width: #{(floor(100 / 12 * $n * 100) / 100)}vw;
+    }
+    .vw-min#{$breakpoint}-#{$n} {
+      min-width: #{(floor(100 / 12 * $n * 100) / 100)}vw;
+    }
+    .vw-max#{$breakpoint}-#{$n} {
+      max-width: #{(floor(100 / 12 * $n * 100) / 100)}vw;
+    }
+    .h#{$breakpoint}-#{$n} {
+      height: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .h-max#{$breakpoint}-#{$n} {
+      max-height: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .h-min#{$breakpoint}-#{$n} {
+      min-height: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .vh#{$breakpoint}-#{$n} {
+      height: #{(floor(100 / 12 * $n * 100) / 100)}vh;
+    }
+    .vh-min#{$breakpoint}-#{$n} {
+      min-height: #{(floor(100 / 12 * $n * 100) / 100)}vh;
+    }
+    .vh-max#{$breakpoint}-#{$n} {
+      max-height: #{(floor(100 / 12 * $n * 100) / 100)}vh;
     }
   }
+  .w#{$breakpoint}-auto {
+    width: auto;
+  }
+  .h#{$breakpoint}-auto {
+    height: auto;
+  }
 }
+
+@each $key, $value in $breakpoints {
+  @media all and (min-width: #{$value}px) {
+    @include gride(-#{$key});
+  }
+}
+
+@include gride();

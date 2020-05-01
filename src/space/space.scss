@@ -1,0 +1,53 @@
+@import "./../gride/$breakpoints.scss";
+
+@mixin space($breakpoint: "") {
+  @for $n from 0 through 12 {
+    .offset#{$breakpoint}-#{$n} {
+      margin-left: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .offset-r#{$breakpoint}-#{$n} {
+      margin-right: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .offset-t#{$breakpoint}-#{$n} {
+      margin-top: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .offset-b#{$breakpoint}-#{$n} {
+      margin-bottom: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .ml#{$breakpoint}-#{$n} {
+      margin-left: #{$n}em;
+    }
+    .mt#{$breakpoint}-#{$n} {
+      margin-top: #{$n}em;
+    }
+    .mr#{$breakpoint}-#{$n} {
+      margin-right: #{$n}em;
+    }
+    .mb#{$breakpoint}-#{$n} {
+      margin-bottom: #{$n}em;
+    }
+    .pl#{$breakpoint}-#{$n} {
+      padding-left: #{$n}em;
+    }
+    .pt#{$breakpoint}-#{$n} {
+      padding-top: #{$n}em;
+    }
+    .pr#{$breakpoint}-#{$n} {
+      padding-right: #{$n}em;
+    }
+    .pb#{$breakpoint}-#{$n} {
+      padding-bottom: #{$n}em;
+    }
+  }
+  .box#{$breakpoint} {
+    box-sizing: border-box;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @media all and (min-width: #{$value}px) {
+    @include space(-#{$key});
+  }
+}
+
+@include space();

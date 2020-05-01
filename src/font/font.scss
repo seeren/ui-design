@@ -1,0 +1,94 @@
+@import "./../gride/$breakpoints.scss";
+
+@mixin size($breakpoint: "") {
+    @for $n from 0 through 6 {
+        .font#{$breakpoint}-#{$n} {
+            font-size: #{$n}em;
+        }
+        .font#{$breakpoint}-#{$n}-25 {
+            font-size: #{$n + 0.25}em;
+        }
+        .font#{$breakpoint}-#{$n}-5 {
+            font-size: #{$n + 0.5}em;
+        }
+        .font#{$breakpoint}-#{$n}-75 {
+            font-size: #{$n + 0.75}em;
+        }
+    }
+}
+
+@mixin font {
+    .roboto {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+    }
+    .segoe {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .georgia {
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .monospace {
+        font-family: "Courier New", Courier, monospace, sans-serif;
+    }
+}
+
+@mixin weight {
+    @each $key,
+        $value
+            in (
+                thin: 100,
+                extra-light: 200,
+                light: 300,
+                normal: 400,
+                medium: 500,
+                semi-bold: 600,
+                bold: 700,
+                extra-bold: 800,
+                black: 900
+            )
+    {
+        font-#{$key} {
+            font-weight: $value;
+        }
+    }
+}
+
+@mixin cesure {
+    .hyphens {
+        hyphens: auto;
+    }
+    .word-break {
+        word-break: break-all;
+    }
+    .txt-scroll {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@mixin decoration {
+    .pointer {
+        cursor: pointer;
+    }
+
+    .initial {
+        cursor: initial;
+    }
+}
+
+@each $key, $value in $breakpoints {
+    @media all and (min-width: #{$value}px) {
+        @include size(-#{$key});
+    }
+}
+
+@include size();
+@include font();
+@include weight();
+@include cesure();
+@include decoration();

@@ -1,0 +1,27 @@
+@import "./../gride/$breakpoints.scss";
+
+@mixin align($breakpoint: "") {
+    @each $value in (left, center, right, justify) {
+        .#{$value}#{$breakpoint} {
+            text-align: $value;
+        }
+    }
+}
+
+@mixin v-align($breakpoint: "") {
+    @each $value in (middle, top, bottom) {
+        .v-#{$value}#{$breakpoint} {
+            vertical-align: $value;
+        }
+    }
+}
+
+@each $key, $value in $breakpoints {
+    @media all and (min-width: #{$value}px) {
+        @include align(-#{$key});
+        @include v-align(-#{$key});
+    }
+}
+
+@include align();
+@include v-align();

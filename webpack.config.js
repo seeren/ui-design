@@ -3,7 +3,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     entry: [
-        './src/index.js',
         './src/index.scss',
     ],
     output: {
@@ -12,11 +11,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-            },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
@@ -37,11 +31,8 @@ module.exports = {
     },
     watchOptions: {
         ignored: [
-            /\.nyc_output/,
-            /coverage/,
             /node_modules/,
             /resources/,
-            /test/,
         ],
     },
     plugins: [
