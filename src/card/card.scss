@@ -2,24 +2,12 @@
 @import "./$card";
 
 @mixin card() {
-    $card_selector: null;
-    .card {
-        border-radius: 0.1em;
-        background-color: map-get($color, "grey-0");
-    }
     @each $key, $value in $card {
-        $selectors: "&.card-#{$key}";
-        @if (not $card_selector) {
-            $card_selector: $selectors;
-        } @else {
-            $card_selector: "#{$card_selector}, #{$selectors}";
-        }
         &.card-#{$key} {
             box-shadow: $value;
+            border-radius: 0.1em;
+            background-color: map-get($color, "grey-0");
         }
-    }
-    #{$card_selector} {
-        position: relative;
     }
     .cover {
         background-repeat: no-repeat;

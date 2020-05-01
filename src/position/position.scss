@@ -36,14 +36,14 @@
     }
 }
 
+@include position();
+@include sides();
+@include overflow();
+@include z-index();
+
 @each $key, $value in $breakpoints {
     @media all and (min-width: #{$value}px) {
         @include position(-#{$key});
         @include sides(-#{$key});
     }
 }
-
-@include position();
-@include sides();
-@include overflow();
-@include z-index();

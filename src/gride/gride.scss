@@ -47,10 +47,11 @@
   }
 }
 
+@include gride();
+
 @each $key, $value in $breakpoints {
   @media all and (min-width: #{$value}px) {
     @include gride(-#{$key});
   }
 }
 
-@include gride();

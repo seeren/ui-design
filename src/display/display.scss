@@ -13,10 +13,11 @@
     }
 }
 
+@include display();
+
 @each $key, $value in $breakpoints {
     @media all and (min-width: #{$value}px) {
         @include display(-#{$key});
     }
 }
 
-@include display();

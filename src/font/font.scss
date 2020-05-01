@@ -47,7 +47,7 @@
                 black: 900
             )
     {
-        font-#{$key} {
+        .font-#{$key} {
             font-weight: $value;
         }
     }
@@ -81,14 +81,14 @@
     }
 }
 
-@each $key, $value in $breakpoints {
-    @media all and (min-width: #{$value}px) {
-        @include size(-#{$key});
-    }
-}
-
 @include size();
 @include font();
 @include weight();
 @include cesure();
 @include decoration();
+
+@each $key, $value in $breakpoints {
+    @media all and (min-width: #{$value}px) {
+        @include size(-#{$key});
+    }
+}

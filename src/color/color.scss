@@ -3,11 +3,11 @@
 @mixin color() {
     @each $key, $value in $color {
         .#{$key},
-        .target.target-#{$key} {
+        .hover-#{$key}:hover {
             color: $value;
         }
         .bg-#{$key},
-        .target.target-bg-#{$key} {
+        .bg-hover-#{$key}:hover {
             background-color: $value;
         }
     }

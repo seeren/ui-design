@@ -15,28 +15,34 @@
       margin-bottom: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
     }
     .ml#{$breakpoint}-#{$n} {
-      margin-left: #{$n}em;
+      margin-left: #{$n/2}em;
     }
     .mt#{$breakpoint}-#{$n} {
-      margin-top: #{$n}em;
+      margin-top: #{$n/2}em;
     }
     .mr#{$breakpoint}-#{$n} {
-      margin-right: #{$n}em;
+      margin-right: #{$n/2}em;
     }
     .mb#{$breakpoint}-#{$n} {
-      margin-bottom: #{$n}em;
+      margin-bottom: #{$n/2}em;
+    }
+    .m#{$breakpoint}-#{$n} {
+      margin: #{$n/2}em;
     }
     .pl#{$breakpoint}-#{$n} {
-      padding-left: #{$n}em;
+      padding-left: #{$n/2}em;
     }
     .pt#{$breakpoint}-#{$n} {
-      padding-top: #{$n}em;
+      padding-top: #{$n/2}em;
     }
     .pr#{$breakpoint}-#{$n} {
-      padding-right: #{$n}em;
+      padding-right: #{$n/2}em;
     }
     .pb#{$breakpoint}-#{$n} {
-      padding-bottom: #{$n}em;
+      padding-bottom: #{$n/2}em;
+    }
+    .p#{$breakpoint}-#{$n} {
+      padding: #{$n/2}em;
     }
   }
   .box#{$breakpoint} {
@@ -44,10 +50,10 @@
   }
 }
 
+@include space();
+
 @each $key, $value in $breakpoints {
   @media all and (min-width: #{$value}px) {
     @include space(-#{$key});
   }
 }
-
-@include space();

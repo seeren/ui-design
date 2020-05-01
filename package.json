@@ -8,7 +8,6 @@
     "css",
     "helper"
   ],
-  "homepage": "https://seeren.github.io/ui-design/",
   "author": "Cyril Ichti",
   "scripts": {
     "start": "npm run dev",
