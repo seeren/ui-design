@@ -1,11 +1,12 @@
 {
   "presets": [
-    "env"
+    "@babel/preset-env"
   ],
   "env": {
     "test": {
       "plugins": [
-        "istanbul"
+        "istanbul",
+        "transform-html-import-to-string"
       ]
     }
   }
