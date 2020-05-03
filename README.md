@@ -28,7 +28,7 @@
 npm install ui-design
 ```
 
-Helper for build components with fundamentals rules. Layout oriented the library provide [alignment](#align), [card](##card), [color](#color), [display](#display), [font](#font), [gride](#gride), [position](#position) and [spacing](#spacing) rules.
+Helper for build components with fundamentals rules. Layout oriented the library provide [alignment](#align), [border](#border), [card](##card), [color](#color), [display](#display), [font](#font), [gride](#gride), [position](#position) and [spacing](#spacing) rules.
 
 ___
 
@@ -76,6 +76,18 @@ Classes provided are exposed here.
 
 ```html
 <p class="v-middle">Middle</p>
+```
+
+<a id="border"></a>
+
+### **Border**
+
+* Width
+
+`border-width-[1-6]`
+
+```html
+<p class="border-width-6">Border width 2px</p>
 ```
 
 <a id="card"></a>
@@ -146,17 +158,6 @@ Classes provided are exposed here.
 <p class="border-hover-indigo-50">Border indigo hover</p>
 ```
 
-### **Border**
-
-
-* Width
-
-`border-width[1-6]`
-
-```html
-<p class="border-width-6">Border width 2px</p>
-```
-
 <a id="display"></a>
 
 ### **Display**
@@ -164,7 +165,7 @@ Classes provided are exposed here.
 `[block|inline|inline-block|none][-[sm|md|lg|xl]]`
 
 ```html
-<p class="none block-sm">None or block on small</p>
+<p class="none block-sm">None or block on small screen</p>
 ```
 
 `inline-block[-[sm|md|lg|xl]] fix[-[sm|md|lg|xl]]`
