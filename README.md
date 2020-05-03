@@ -302,6 +302,14 @@ Classes provided are exposed here.
 <p class="p-4 p-sm-12">Padding 1em or 3em on small screen</p>
 ```
 
+* Box
+
+`box[-[sm|md|lg|xl]]`
+
+```html
+<p class="box-sm">Border box on small screen</p>
+```
+
 ___
 
 ## 🎫 License
