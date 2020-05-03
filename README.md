@@ -130,6 +130,33 @@ Classes provided are exposed here.
 <p class="bg-hover-indigo-100">Background indigo hover</p>
 ```
 
+* Border
+
+`border-[color]`
+
+```html
+<p class="border-indigo-50">Border indigo</p>
+```
+
+* Border hover
+
+`border-hover[color]`
+
+```html
+<p class="border-hover-indigo-50">Border indigo hover</p>
+```
+
+### **Border**
+
+
+* Width
+
+`border-width[1-6]`
+
+```html
+<p class="border-width-6">Border width 2px</p>
+```
+
 <a id="display"></a>
 
 ### **Display**
