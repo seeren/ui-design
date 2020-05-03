@@ -298,7 +298,7 @@ Classes provided are exposed here.
 `[m|ml|mt|mr|mb][-[sm|md|lg|xl]]-[1-12]`
 
 ```html
-<p class="m-4 m-sm-12">Margin 1em or 3em on small screen</p>
+<p class="m-4 m-sm-8">Margin .5em or 1em on small screen</p>
 ```
 
 * Padding
@@ -306,7 +306,7 @@ Classes provided are exposed here.
 `[p|pl|pt|pr|pb][-[sm|md|lg|xl]]-[1-12]`
 
 ```html
-<p class="p-4 p-sm-12">Padding 1em or 3em on small screen</p>
+<p class="p-4 p-sm-8">Padding .5em or 1em on small screen</p>
 ```
 
 * Box
