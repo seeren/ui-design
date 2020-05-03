@@ -89,6 +89,13 @@ Classes provided are exposed here.
 ```html
 <p class="border-width-6">Border width 2px</p>
 ```
+* Style
+
+`border-solid`
+
+```html
+<p class="border-solid">Border solid</p>
+```
 
 <a id="card"></a>
 

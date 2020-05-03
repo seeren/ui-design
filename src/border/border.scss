@@ -1,6 +1,7 @@
 @import "./../color/$color";
 
 @mixin border() {
+    $selector: "";
     @each $key, $value in $color {
         .border-#{$key},
         .border-hover-#{$key}:hover {
@@ -11,6 +12,9 @@
         .border-width-#{$n} {
             border-width: #{$n/3}px;
         }
+    }
+    .border-solid {
+        border-style: solid;
     }
 }
 
