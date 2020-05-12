@@ -28,7 +28,7 @@
 npm install ui-design
 ```
 
-Helper for build components with fundamentals rules. Layout oriented the library provide [alignment](#align), [border](#border), [card](##card), [color](#color), [display](#display), [font](#font), [gride](#gride), [position](#position) and [spacing](#spacing) rules.
+Helper for build components with fundamentals rules. Layout oriented the library provide [alignment](#align), [card](##card), [color](#color), [display](#display), [font](#font), [gride](#gride), [position](#position) and [spacing](#spacing) rules.
 
 ___
 
@@ -64,38 +64,20 @@ Classes provided are exposed here.
 
 * Text
 
-`[left|center|right|justify]`
+`[left|center|right|justify][-[sm|md|lg|xl]]`
 
 ```html
-<p class="center">Center</p>
+<p class="center left-sm">Align center or left on small screen</p>
 ```
 
 * Vertical
 
-`v-[middle|top|bottom]`
+`v-[middle|top|bottom][-[sm|md|lg|xl]]`
 
 ```html
-<p class="v-middle">Middle</p>
+<p class="v-middle v-top-sm">Align middle or top on small screen</p>
 ```
 
-<a id="border"></a>
-
-### **Border**
-
-* Width
-
-`border-width-[1-6]`
-
-```html
-<p class="border-width-6">Border width 2px</p>
-```
-* Style
-
-`border-solid`
-
-```html
-<p class="border-solid">Border solid</p>
-```
 
 <a id="card"></a>
 
@@ -149,22 +131,6 @@ Classes provided are exposed here.
 <p class="bg-hover-indigo-100">Background indigo hover</p>
 ```
 
-* Border
-
-`border-[color]`
-
-```html
-<p class="border-indigo-50">Border indigo</p>
-```
-
-* Border hover
-
-`border-hover[color]`
-
-```html
-<p class="border-hover-indigo-50">Border indigo hover</p>
-```
-
 <a id="display"></a>
 
 ### **Display**
@@ -172,13 +138,13 @@ Classes provided are exposed here.
 `[block|inline|inline-block|none][-[sm|md|lg|xl]]`
 
 ```html
-<p class="none block-sm">None or block on small screen</p>
+<p class="none block-sm">Display none or block on small screen</p>
 ```
 
 `inline-block[-[sm|md|lg|xl]] fix[-[sm|md|lg|xl]]`
 
 ```html
-<p class="inline-block fix-sm">Inline block without space on small screen</p>
+<p class="inline-block fix-sm">Display inline-block and without space on small screen</p>
 ```
 
 <a id="font"></a>
@@ -190,7 +156,7 @@ Classes provided are exposed here.
 `font[-[sm|md|lg|xl]]-[1-6][-[25|5|75]]`
 
 ```html
-<p class="font-1 font-lg-2-25">Size 2.25 on large screen</p>
+<p class="font-1 font-sm-2-25">Font size 1 or 2.25 on small screen</p>
 ```
 
 * Family
@@ -231,7 +197,7 @@ Classes provided are exposed here.
 
 * Width
 
-`[w|w-auto|w-min|w-max|vw|vw-min|vw-max][-[sm|md|lg|xl]]`
+`[w|w-auto|w-min|w-max|vw|vw-min|vw-max][-[sm|md|lg|xl]][1-12]`
 
 ```html
 <p class="w-12 w-6-sm">Width 100% or 50% on small screen</p>
@@ -239,7 +205,7 @@ Classes provided are exposed here.
 
 * Height
 
-`[h|h-auto|h-min|h-max|vh|vh-min|vh-max][-[sm|md|lg|xl]]`
+`[h|h-auto|h-min|h-max|vh|vh-min|vh-max][-[sm|md|lg|xl]][1-12]`
 
 ```html
 <p class="h-12 h-6-sm">Height 100% or 50% on small screen</p>
