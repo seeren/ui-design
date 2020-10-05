@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://seeren.github.io/ui-design">
-    <img src="https://raw.githubusercontent.com/seeren/ui-design/master/resources/ui-design.png" alt="ui-design"/>
+    <img src="https://raw.githubusercontent.com/seeren/ui-design/master/resources/images/ui-design.png" alt="ui-design"/>
   </a>
 </p>
 <h4 align="center">
@@ -28,259 +28,294 @@
 npm install ui-design
 ```
 
-Helper for build components with fundamentals rules. Layout oriented the library provide [alignment](#align), [card](##card), [color](#color), [display](#display), [font](#font), [gride](#gride), [position](#position) and [spacing](#spacing) rules.
-
 ___
 
 ## Usage
 
-SCSS usage
+Import the library in SCSS, CSS or HTML.
+
+*scss*
 
 ```scss
 @import "~ui-design/src/index.scss";
 ```
 
-CSS usage
+*css*
 
 ```css
 @import "./node_modules/ui-design/dist/ui-design.css";
 ```
 
-HTML usage
+*html*
 
 ```html
 <link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
 ```
+___
+
+## Features
+
+Helper to build components with fundamentals rules.
+
+* [Alignment](#align)
+* [Card](##card)
+* [Color](#color)
+* [Display](#display)
+* [Font](#font)
+* [Gride](#gride)
+* [Position](#position)
+* [Spacing](#spacing)
 
 ___
 
-## Documentation
-
-Classes provided are exposed here.
-
 <a id="align"></a>
 
-### **Align**
+## 🔖  Align
 
-* Text
-
-`[left|center|right|justify][-[sm|md|lg|xl]]`
+* `left|center|right|justify[-[sm|md|lg|xl]]`
 
 ```html
-<p class="center left-sm">Align center or left on small screen</p>
+<p class="center left-sm">
+  Align center or left on small screen
+</p>
 ```
 
-* Vertical
-
-`v-[middle|top|bottom][-[sm|md|lg|xl]]`
+* `v-[middle|top|bottom][-[sm|md|lg|xl]]`
 
 ```html
-<p class="v-middle v-top-sm">Align middle or top on small screen</p>
+<p class="v-middle v-top-sm">
+  Align middle or top on small screen
+</p>
 ```
 
+___
 
 <a id="card"></a>
 
-### **Card**
+## 🔖 Card
 
 `card-[0-24]`
 
 ```html
-<p class="card-7">Card</p>
+<p class="card-7">
+  Card with box shadow 7
+</p>
 ```
+
+___
 
 <a id="color"></a>
 
-### **Color**
+## 🔖 Color
 
-* Font
-
-`[red||pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|amber|orange|deep-orange]-[50|100|200|300|400|500|600|700|800|900|a100|a200|a400|a700]`
+* `red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|amber|orange|deep-orange-[50|100|200|300|400|500|600|700|800|900|a100|a200|a400|a700]`
 
 ```html
-<p class="indigo-50">Indigo</p>
+<p class="indigo-50">
+  Color indigo 50
+</p>
 ```
 
-`[brown|grey|blue-grey]-[50|100|200|300|400|500|600|700|800|900]`
+* `brown|grey|blue-grey-[50|100|200|300|400|500|600|700|800|900]`
 
 ```html
-<p class="grey-50">Grey</p>
+<p class="grey-50">
+  Color grey 50
+</p>
 ```
 
-* Font hover
-
-`hover-[color]`
+* `hover-[color]`
 
 ```html
-<p class="hover-indigo-100">Indigo hover</p>
+<p class="hover-indigo-50">
+  Color indigo 50 on hover
+</p>
 ```
 
-* Background
-
-`bg-[color]`
+* `bg-[color]`
 
 ```html
-<p class="bg-indigo-50">Background indigo</p>
+<p class="bg-indigo-50">
+  Background indigo 50
+</p>
 ```
 
-* Background hover
-
-`bg-hover-[color]`
+* `bg-hover-[color]`
 
 ```html
-<p class="bg-hover-indigo-100">Background indigo hover</p>
+<p class="bg-hover-indigo-50">
+  Background indigo 50 on hover
+</p>
 ```
+
+___
 
 <a id="display"></a>
 
-### **Display**
+## 🔖 Display
 
-`[block|inline|inline-block|none][-[sm|md|lg|xl]]`
+* `block|inline|inline-block|none[-[sm|md|lg|xl]]`
 
 ```html
 <p class="none block-sm">Display none or block on small screen</p>
 ```
 
-`inline-block[-[sm|md|lg|xl]] fix[-[sm|md|lg|xl]]`
+* `inline-block[-[sm|md|lg|xl]] fix[-[sm|md|lg|xl]]`
 
 ```html
-<p class="inline-block fix-sm">Display inline-block and without space on small screen</p>
+<p class="inline-block-sm">Display inline-block on small screen</p>
 ```
+
+* `fix[-[sm|md|lg|xl]]`
+
+```html
+<p class="inline-block-sm fix-sm">
+  Display inline-block without trailing space on small screen
+</p>
+```
+
+___
 
 <a id="font"></a>
 
-### **Font**
+## 🔖 Font
 
-* Size
-
-`font[-[sm|md|lg|xl]]-[1-6][-[25|5|75]]`
+* `font[-[sm|md|lg|xl]]-[1-6][-[25|5|75]]`
 
 ```html
-<p class="font-1 font-sm-2-25">Font size 1 or 2.25 on small screen</p>
+<p class="font-1 font-sm-2-25">
+  Font size 1 or 2.25 rem on small screen
+</p>
 ```
 
-* Family
-
-`[roboto|segoe|georgia|monospace]`
+* `[roboto|segoe|georgia|monospace]`
 
 ```html
-<p class="segoe">Family segoe</p>
+<p class="segoe">
+  Font family segoe
+</p>
 ```
 
-* Weight
-
-`font-[thin|extra-light|light|normal|medium|semi-bold|bold|extra-bold|black]`
+* `font-[thin|extra-light|light|normal|medium|semi-bold|bold|extra-bold|black]`
 
 ```html
-<p class="font-thin">Weight thin</p>
+<p class="font-thin">
+  Font weight thin
+</p>
 ```
 
-* Cesure
-
-`[hyphens|word-break|txt-scroll|ellipsis]`
+* `hyphens|word-break|txt-scroll|ellipsis`
 
 ```html
-<p class="hyphens">Cesure hyphens</p>
+<p class="hyphens">
+  Font cesure hyphens
+</p>
 ```
 
-* Cursor
-
-`[pointer|initial]`
+* `pointer|initial`
 
 ```html
-<p class="pointer">Cursor pointer</p>
+<p class="pointer">
+  Cursor pointer
+</p>
 ```
+
+___
 
 <a id="gride"></a>
 
-### **Gride**
+## 🔖 Gride
 
-* Width
-
-`[w|w-auto|w-min|w-max|vw|vw-min|vw-max][-[sm|md|lg|xl]][1-12]`
+* `w|w-auto|w-min|w-max|vw|vw-min|vw-max[-[sm|md|lg|xl]][1-12]`
 
 ```html
-<p class="w-12 w-6-sm">Width 100% or 50% on small screen</p>
+<p class="w-12 w-6-sm">
+  Width 100% or 50% on small screen
+</p>
 ```
 
-* Height
-
-`[h|h-auto|h-min|h-max|vh|vh-min|vh-max][-[sm|md|lg|xl]][1-12]`
+* `h|h-auto|h-min|h-max|vh|vh-min|vh-max[-[sm|md|lg|xl]][1-12]`
 
 ```html
-<p class="h-12 h-6-sm">Height 100% or 50% on small screen</p>
+<p class="h-12 h-6-sm">
+  Height 100% or 50% on small screen
+</p>
 ```
+
+___
 
 <a id="position"></a>
 
-### **Position**
+## 🔖 Position
 
-* Z-index
-
-`z-[1-10]`
+* `z-[1-10]`
 
 ```html
-<p class="z-9">Z index 9</p>
+<p class="z-9">
+  Z index 9
+</p>
 ```
 
-* Overflow
-
-`overflow[-[x|y]]-[auto|hidden|scroll]`
+* `overflow[-[x|y]]-[auto|hidden|scroll]`
 
 ```html
-<p class="overflow-x-hidden">Overflow x hidden</p>
+<p class="overflow-x-hidden">
+  Overflow x hidden
+</p>
 ```
 
-* Position
-
-`[static|relative|absolute|fixed][-[sm|md|lg|xl]]`
+* `static|relative|absolute|fixed[-[sm|md|lg|xl]]`
 
 ```html
-<p class="absolute relative-sm">Position absolute or relative on small screen x hidden</p>
+<p class="absolute relative-sm">
+  Position absolute or relative on small screen
+</p>
 ```
 
-* Sides
-
-`[left|top|right|bottom][-[sm|md|lg|xl]]-[1-12]`
+* `left|top|right|bottom[-[sm|md|lg|xl]]-[1-12]`
 
 ```html
-<p class="left-6 left-sm-12">Left 50% or 100% on small screen</p>
+<p class="left-0 left-sm-6">
+  Left 0% or 50% on small screen
+</p>
 ```
+
+___
 
 <a id="spacing"></a>
 
-### **Spacing**
+## 🔖 Spacing
 
-* Offset
-
-`offset[-[r|t|b]][-[sm|md|lg|xl]]-[1-12]`
+* `offset[-[r|t|b]][-[sm|md|lg|xl]]-[1-12]`
 
 ```html
-<p class="offset-6 offset-sm-12">Offset left 50% or 100% on small screen</p>
+<p class="offset-6 offset-sm-12">
+  Offset left 50% or 100% on small screen
+</p>
 ```
 
-* Margin
-
-`[m|ml|mt|mr|mb][-[sm|md|lg|xl]]-[1-12]`
+* `m|ml|mt|mr|mb[-[sm|md|lg|xl]]-[1-12]`
 
 ```html
-<p class="m-4 m-sm-8">Margin .5em or 1em on small screen</p>
+<p class="m-4 m-sm-8">
+  Margin .5em or 1em on small screen
+</p>
 ```
 
-* Padding
-
-`[p|pl|pt|pr|pb][-[sm|md|lg|xl]]-[1-12]`
+* `p|pl|pt|pr|pb[-[sm|md|lg|xl]]-[1-12]`
 
 ```html
-<p class="p-4 p-sm-8">Padding .5em or 1em on small screen</p>
+<p class="p-4 p-sm-8">
+  Padding .5em or 1em on small screen
+</p>
 ```
 
-* Box
-
-`box[-[sm|md|lg|xl]]`
+* `box[-[sm|md|lg|xl]]`
 
 ```html
-<p class="box-sm">Border box on small screen</p>
+<p class="box-sm">
+  Border box on small screen
+</p>
 ```
 
 ___
