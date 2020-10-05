@@ -4,9 +4,11 @@
     <img src="https://raw.githubusercontent.com/seeren/ui-design/master/resources/images/ui-design.png" alt="ui-design"/>
   </a>
 </p>
-<h4 align="center">
+
+<h3 align="center">
   Material and Mobile First Helper
-</h4>
+</h3>
+
 <p align="center">
   <a href="https://www.npmjs.com/package/ui-design">
     <img src="https://img.shields.io/npm/dt/ui-design.svg">
@@ -28,12 +30,6 @@
 npm install ui-design
 ```
 
-___
-
-## Usage
-
-Import the library in SCSS, CSS or HTML.
-
 *scss*
 
 ```scss
@@ -49,7 +45,7 @@ Import the library in SCSS, CSS or HTML.
 *html*
 
 ```html
-<link rel="stylesheet" type="text/css" href="./node_modules/ui-design/dist/ui-design.css" />
+<link rel="stylesheet" href="./node_modules/ui-design/dist/ui-design.css">
 ```
 ___
 
@@ -154,7 +150,7 @@ ___
 
 ## 🔖 Display
 
-* `block|inline|inline-block|none[-[sm|md|lg|xl]]`
+* `flex|block|inline|inline-block|none[-[sm|md|lg|xl]]`
 
 ```html
 <p class="none block-sm">Display none or block on small screen</p>
