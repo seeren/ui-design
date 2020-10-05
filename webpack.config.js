@@ -43,9 +43,6 @@ module.exports = {
             files: ['index.html'],
             server: {
                 baseDir: './',
-                middleware: (req, res, next) => (-1 === req.url.indexOf('.') && '/' !== req.url
-                    ? res.end(res.writeHead(302, { Location: '/' }))
-                    : next()),
             },
         }),
     ],
