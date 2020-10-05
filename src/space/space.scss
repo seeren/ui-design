@@ -15,34 +15,34 @@
       margin-bottom: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
     }
     .ml#{$breakpoint}-#{$n} {
-      margin-left: #{$n/8}em;
+      margin-left: #{$n/4}rem;
     }
     .mt#{$breakpoint}-#{$n} {
-      margin-top: #{$n/8}em;
+      margin-top: #{$n/4}rem;
     }
     .mr#{$breakpoint}-#{$n} {
-      margin-right: #{$n/8}em;
+      margin-right: #{$n/4}rem;
     }
     .mb#{$breakpoint}-#{$n} {
-      margin-bottom: #{$n/8}em;
+      margin-bottom: #{$n/4}rem;
     }
     .m#{$breakpoint}-#{$n} {
-      margin: #{$n/8}em;
+      margin: #{$n/4}rem;
     }
     .pl#{$breakpoint}-#{$n} {
-      padding-left: #{$n/8}em;
+      padding-left: #{$n/4}rem;
     }
     .pt#{$breakpoint}-#{$n} {
-      padding-top: #{$n/8}em;
+      padding-top: #{$n/4}rem;
     }
     .pr#{$breakpoint}-#{$n} {
-      padding-right: #{$n/8}em;
+      padding-right: #{$n/4}rem;
     }
     .pb#{$breakpoint}-#{$n} {
-      padding-bottom: #{$n/8}em;
+      padding-bottom: #{$n/4}rem;
     }
     .p#{$breakpoint}-#{$n} {
-      padding: #{$n/8}em;
+      padding: #{$n/4}rem;
     }
   }
   .box#{$breakpoint} {
