@@ -1,5 +1,5 @@
-/.nyc_output/
-/.vscode/
-/coverage/
+/dist/ui-design.js
 /node_modules/
+/resources/psd/
+/index.html
 /package-lock.json
