@@ -1,7 +1,7 @@
 @import "./../gride/$breakpoints.scss";
 
 @mixin display($breakpoint: "") {
-    @each $display in (block, inline, inline-block, none) {
+    @each $display in (block, inline, inline-block, none, flex) {
         .#{$display}#{$breakpoint} {
             display: $display;
             @if $display == inline-block {
