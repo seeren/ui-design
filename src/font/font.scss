@@ -3,16 +3,16 @@
 @mixin size($breakpoint: "") {
     @for $n from 0 through 6 {
         .font#{$breakpoint}-#{$n} {
-            font-size: #{$n}em;
+            font-size: #{$n}rem;
         }
         .font#{$breakpoint}-#{$n}-25 {
-            font-size: #{$n + 0.25}em;
+            font-size: #{$n + 0.25}rem;
         }
         .font#{$breakpoint}-#{$n}-5 {
-            font-size: #{$n + 0.5}em;
+            font-size: #{$n + 0.5}rem;
         }
         .font#{$breakpoint}-#{$n}-75 {
-            font-size: #{$n + 0.75}em;
+            font-size: #{$n + 0.75}rem;
         }
     }
 }
