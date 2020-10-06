@@ -16,12 +16,31 @@
     }
 }
 
+@mixin fx-align($breakpoint: "") {
+    .flex-column#{$breakpoint} {
+        flex-direction: column;
+    }
+    .flex-row#{$breakpoint} {
+        flex-direction: row;
+    }
+    @each $value in (start, center, end) {
+        @each $subvalue in (start, center, end) {
+            .flex-#{$value}-#{$subvalue}#{$breakpoint} {
+                justify-content: $value;
+                align-items: $subvalue;
+            }
+        }
+    }
+}
+
 @include align();
 @include v-align();
+@include fx-align;
 
 @each $key, $value in $breakpoints {
     @media all and (min-width: #{$value}px) {
         @include align(-#{$key});
         @include v-align(-#{$key});
+        @include fx-align(-#{$key});
     }
 }

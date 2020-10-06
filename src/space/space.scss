@@ -1,6 +1,24 @@
 @import "./../gride/$breakpoints.scss";
 
 @mixin space($breakpoint: "") {
+  .noshrink#{$breakpoint} {
+    flex-shrink: 1;
+  }
+  .shrink#{$breakpoint} {
+    flex-shrink: 0;
+  }
+  .nowrap#{$breakpoint} {
+    flex-wrap: nowrap;
+  }
+  .wrap#{$breakpoint} {
+    flex-wrap: wrap;
+  }
+  .nogrow#{$breakpoint} {
+    flex-grow: 0;
+  }
+  .grow#{$breakpoint} {
+    flex-grow: 1;
+  }
   @for $n from 0 through 12 {
     .offset#{$breakpoint}-#{$n} {
       margin-left: percentage(floor(100 / 12 * $n * 100) / 100 / 100);

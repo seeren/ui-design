@@ -5,6 +5,9 @@
     .w#{$breakpoint}-#{$n} {
       width: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
     }
+    .flex-w#{$breakpoint}-#{$n} {
+      flex-basis: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
     .w-min#{$breakpoint}-#{$n} {
       min-width: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
     }
@@ -13,6 +16,9 @@
     }
     .vw#{$breakpoint}-#{$n} {
       width: #{(floor(100 / 12 * $n * 100) / 100)}vw;
+    }
+    .flex-vw#{$breakpoint}-#{$n} {
+      flex-basis: #{(floor(100 / 12 * $n * 100) / 100)}vw;
     }
     .vw-min#{$breakpoint}-#{$n} {
       min-width: #{(floor(100 / 12 * $n * 100) / 100)}vw;
@@ -28,6 +34,9 @@
     }
     .h-min#{$breakpoint}-#{$n} {
       min-height: percentage(floor(100 / 12 * $n * 100) / 100 / 100);
+    }
+    .flex-vh#{$breakpoint}-#{$n} {
+      flex-basis: #{(floor(100 / 12 * $n * 100) / 100)}vh;
     }
     .vh#{$breakpoint}-#{$n} {
       height: #{(floor(100 / 12 * $n * 100) / 100)}vh;
