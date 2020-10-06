@@ -74,7 +74,7 @@ ___
 
 ## 🔖  Align
 
-* `flex-[start|center|end]-[start|center|end]`
+* `flex-[start|center|end]-[start|center|end][-[sm|md|lg|xl]]`
 
 ```html
 <p class="flex-center-center">
