@@ -5,6 +5,8 @@
   </a>
 </p>
 
+___
+
 <h3 align="center">
   Material and Mobile First Helper
 </h3>
@@ -23,6 +25,12 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg">
   </a>
 </p >
+
+<p align="center">
+This helper set is useful to build layout or canvas presentation, it do not include pre build component and provide fundamental css rules.
+</p>
+
+___
 
 ## Installation
 
@@ -51,8 +59,6 @@ ___
 
 ## Features
 
-Helper to build components with fundamentals rules.
-
 * [Alignment](#align)
 * [Card](##card)
 * [Color](#color)
@@ -67,6 +73,14 @@ ___
 <a id="align"></a>
 
 ## 🔖  Align
+
+* `flex-[start|center|end]-[start|center|end]`
+
+```html
+<p class="flex-center-center">
+  Align center horizontally and vertically
+</p>
+```
 
 * `left|center|right|justify[-[sm|md|lg|xl]]`
 
@@ -222,7 +236,7 @@ ___
 
 ## 🔖 Gride
 
-* `w|w-auto|w-min|w-max|vw|vw-min|vw-max[-[sm|md|lg|xl]][1-12]`
+* `w|flex-w|w-auto|w-min|w-max|vw|flex-vw|vw-min|vw-max[-[sm|md|lg|xl]][1-12]`
 
 ```html
 <p class="w-12 w-6-sm">
@@ -230,7 +244,7 @@ ___
 </p>
 ```
 
-* `h|h-auto|h-min|h-max|vh|vh-min|vh-max[-[sm|md|lg|xl]][1-12]`
+* `h|h-auto|h-min|h-max|vh|flex-vh|vh-min|vh-max[-[sm|md|lg|xl]][1-12]`
 
 ```html
 <p class="h-12 h-6-sm">
@@ -281,6 +295,30 @@ ___
 <a id="spacing"></a>
 
 ## 🔖 Spacing
+
+* `wrap|nowrap[-[sm|md|lg|xl]]`
+
+```html
+<p class="flex wrap nowrap-sm">
+  Flex wrap or no wrap on small screen
+</p>
+```
+
+* `grow|nogrow[-[sm|md|lg|xl]]`
+
+```html
+<p class="flex grow nogrow-sm">
+  Flex grow or no grow on small screen
+</p>
+```
+
+* `shrink|noshrink[-[sm|md|lg|xl]]`
+
+```html
+<p class="flex shrink noshrink-sm">
+  Flex shrink or no shrink on small screen
+</p>
+```
 
 * `offset[-[r|t|b]][-[sm|md|lg|xl]]-[1-12]`
 
