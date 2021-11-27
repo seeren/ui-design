@@ -31,8 +31,8 @@ module.exports = {
     },
     watchOptions: {
         ignored: [
-            /node_modules/,
-            /resources/,
+            'node_modules',
+            'resources',
         ],
     },
     plugins: [
