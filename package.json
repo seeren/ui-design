@@ -1,9 +1,8 @@
 {
   "name": "ui-design",
   "description": "Mobile first component helper",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "keywords": [
-    "ui",
     "html",
     "css",
     "helper"
@@ -14,7 +13,7 @@
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
-  "style": "dist/index.css",
+  "style": "dist/ui-design.css",
   "sass": "src/index.scss",
   "license": "MIT",
   "devDependencies": {
