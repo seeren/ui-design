@@ -1,11 +1,10 @@
-
 <p align="center">
   <a href="https://seeren.github.io/ui-design">
     <img src="./resources/ui-design.png" alt="ui-design"/>
   </a>
 </p>
 
-___
+* * *
 
 <h3 align="center">
   Material and Mobile First Helper
@@ -15,8 +14,8 @@ ___
   <a href="https://www.npmjs.com/package/ui-design">
     <img src="https://img.shields.io/npm/dt/ui-design.svg">
   </a>
-  <a href="https://www.codacy.com/app/seeren/ui-design?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=seeren/ui-design&amp;utm_campaign=Badge_Grade">
-    <img src="https://api.codacy.com/project/badge/Grade/e933f03e70a34c7bbd45a31f521f3b02">
+  <a href="https://www.codacy.com/gh/seeren/ui-design/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=seeren/ui-design&amp;utm_campaign=Badge_Grade">
+    <img src="https://app.codacy.com/project/badge/Grade/368ee5921b2343ae8c0ab44713f637a1"/>
   </a>
   <a href="https://www.npmjs.com/package/ui-design">
     <img src="https://img.shields.io/npm/v/ui-design.svg">
@@ -30,7 +29,7 @@ ___
 This helper set is useful to build layout or canvas presentation, it do not include pre build component and provide fundamental css rules.
 </p>
 
-___
+* * *
 
 ## Installation
 
@@ -38,43 +37,44 @@ ___
 npm install ui-design
 ```
 
-*scss*
+_scss_
 
 ```scss
 @import "~ui-design/src/index.scss";
 ```
 
-*css*
+_css_
 
 ```css
 @import "./node_modules/ui-design/dist/ui-design.css";
 ```
 
-*html*
+_html_
 
 ```html
 <link rel="stylesheet" href="./node_modules/ui-design/dist/ui-design.css">
 ```
-___
+
+* * *
 
 ## Features
 
-* [Alignment](#align)
-* [Card](##card)
-* [Color](#color)
-* [Display](#display)
-* [Font](#font)
-* [Gride](#gride)
-* [Position](#position)
-* [Spacing](#spacing)
+-   [Alignment](#align)
+-   [Card](##card)
+-   [Color](#color)
+-   [Display](#display)
+-   [Font](#font)
+-   [Gride](#gride)
+-   [Position](#position)
+-   [Spacing](#spacing)
 
-___
+* * *
 
 <a id="align"></a>
 
 ## 🔖  Align
 
-* `flex-[start|center|end]-[start|center|end][-[sm|md|lg|xl]]`
+-   `flex-[start|center|end]-[start|center|end][-[sm|md|lg|xl]]`
 
 ```html
 <p class="flex-center-center">
@@ -82,7 +82,7 @@ ___
 </p>
 ```
 
-* `left|center|right|justify[-[sm|md|lg|xl]]`
+-   `left|center|right|justify[-[sm|md|lg|xl]]`
 
 ```html
 <p class="center left-sm">
@@ -90,7 +90,7 @@ ___
 </p>
 ```
 
-* `v-[middle|top|bottom][-[sm|md|lg|xl]]`
+-   `v-[middle|top|bottom][-[sm|md|lg|xl]]`
 
 ```html
 <p class="v-middle v-top-sm">
@@ -98,7 +98,7 @@ ___
 </p>
 ```
 
-___
+* * *
 
 <a id="card"></a>
 
@@ -112,13 +112,13 @@ ___
 </p>
 ```
 
-___
+* * *
 
 <a id="color"></a>
 
 ## 🔖 Color
 
-* `red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|amber|orange|deep-orange-[50|100|200|300|400|500|600|700|800|900|a100|a200|a400|a700]`
+-   `red|pink|purple|deep-purple|indigo|blue|light-blue|cyan|teal|green|light-green|lime|yellow|amber|orange|deep-orange-[50|100|200|300|400|500|600|700|800|900|a100|a200|a400|a700]`
 
 ```html
 <p class="indigo-50">
@@ -126,7 +126,7 @@ ___
 </p>
 ```
 
-* `brown|grey|blue-grey-[50|100|200|300|400|500|600|700|800|900]`
+-   `brown|grey|blue-grey-[50|100|200|300|400|500|600|700|800|900]`
 
 ```html
 <p class="grey-50">
@@ -134,7 +134,7 @@ ___
 </p>
 ```
 
-* `hover-[color]`
+-   `hover-[color]`
 
 ```html
 <p class="hover-indigo-50">
@@ -142,7 +142,7 @@ ___
 </p>
 ```
 
-* `bg-[color]`
+-   `bg-[color]`
 
 ```html
 <p class="bg-indigo-50">
@@ -150,7 +150,7 @@ ___
 </p>
 ```
 
-* `bg-hover-[color]`
+-   `bg-hover-[color]`
 
 ```html
 <p class="bg-hover-indigo-50">
@@ -158,31 +158,31 @@ ___
 </p>
 ```
 
-___
+* * *
 
 <a id="display"></a>
 
 ## 🔖 Display
 
-* `flex|block|inline|inline-block|none[-[sm|md|lg|xl]]`
+-   `flex|block|inline|inline-block|none[-[sm|md|lg|xl]]`
 
 ```html
 <p class="none block-sm">Display none or block on small screen</p>
 ```
 
-* `inline-block[-[sm|md|lg|xl]] fix[-[sm|md|lg|xl]]`
+-   `inline-block[-[sm|md|lg|xl]] fix[-[sm|md|lg|xl]]`
 
 ```html
 <p class="inline-block-sm">Display inline-block on small screen</p>
 ```
 
-___
+* * *
 
 <a id="font"></a>
 
 ## 🔖 Font
 
-* `font[-[sm|md|lg|xl]]-[1-6][-[25|5|75]]`
+-   `font[-[sm|md|lg|xl]]-[1-6][-[25|5|75]]`
 
 ```html
 <p class="font-1 font-sm-2-25">
@@ -190,7 +190,7 @@ ___
 </p>
 ```
 
-* `[roboto|segoe|georgia|monospace]`
+-   `[roboto|segoe|georgia|monospace]`
 
 ```html
 <p class="segoe">
@@ -198,7 +198,7 @@ ___
 </p>
 ```
 
-* `font-[thin|extra-light|light|normal|medium|semi-bold|bold|extra-bold|black]`
+-   `font-[thin|extra-light|light|normal|medium|semi-bold|bold|extra-bold|black]`
 
 ```html
 <p class="font-thin">
@@ -206,7 +206,7 @@ ___
 </p>
 ```
 
-* `hyphens|word-break|txt-scroll|ellipsis`
+-   `hyphens|word-break|txt-scroll|ellipsis`
 
 ```html
 <p class="hyphens">
@@ -214,7 +214,7 @@ ___
 </p>
 ```
 
-* `pointer|initial`
+-   `pointer|initial`
 
 ```html
 <p class="pointer">
@@ -222,13 +222,13 @@ ___
 </p>
 ```
 
-___
+* * *
 
 <a id="gride"></a>
 
 ## 🔖 Gride
 
-* `w|flex-w|w-auto|w-min|w-max|vw|flex-vw|vw-min|vw-max[-[sm|md|lg|xl]][1-12]`
+-   `w|flex-w|w-auto|w-min|w-max|vw|flex-vw|vw-min|vw-max[-[sm|md|lg|xl]][1-12]`
 
 ```html
 <p class="w-12 w-6-sm">
@@ -236,7 +236,7 @@ ___
 </p>
 ```
 
-* `h|h-auto|h-min|h-max|vh|flex-vh|vh-min|vh-max[-[sm|md|lg|xl]][1-12]`
+-   `h|h-auto|h-min|h-max|vh|flex-vh|vh-min|vh-max[-[sm|md|lg|xl]][1-12]`
 
 ```html
 <p class="h-12 h-6-sm">
@@ -244,13 +244,13 @@ ___
 </p>
 ```
 
-___
+* * *
 
 <a id="position"></a>
 
 ## 🔖 Position
 
-* `z-[1-10]`
+-   `z-[1-10]`
 
 ```html
 <p class="z-9">
@@ -258,7 +258,7 @@ ___
 </p>
 ```
 
-* `overflow[-[x|y]]-[auto|hidden|scroll]`
+-   `overflow[-[x|y]]-[auto|hidden|scroll]`
 
 ```html
 <p class="overflow-x-hidden">
@@ -266,7 +266,7 @@ ___
 </p>
 ```
 
-* `static|relative|absolute|fixed[-[sm|md|lg|xl]]`
+-   `static|relative|absolute|fixed[-[sm|md|lg|xl]]`
 
 ```html
 <p class="absolute relative-sm">
@@ -274,7 +274,7 @@ ___
 </p>
 ```
 
-* `left|top|right|bottom[-[sm|md|lg|xl]]-[1-12]`
+-   `left|top|right|bottom[-[sm|md|lg|xl]]-[1-12]`
 
 ```html
 <p class="left-0 left-sm-6">
@@ -282,13 +282,13 @@ ___
 </p>
 ```
 
-___
+* * *
 
 <a id="spacing"></a>
 
 ## 🔖 Spacing
 
-* `wrap|nowrap[-[sm|md|lg|xl]]`
+-   `wrap|nowrap[-[sm|md|lg|xl]]`
 
 ```html
 <p class="flex wrap nowrap-sm">
@@ -296,7 +296,7 @@ ___
 </p>
 ```
 
-* `grow|nogrow[-[sm|md|lg|xl]]`
+-   `grow|nogrow[-[sm|md|lg|xl]]`
 
 ```html
 <p class="flex grow nogrow-sm">
@@ -304,7 +304,7 @@ ___
 </p>
 ```
 
-* `shrink|noshrink[-[sm|md|lg|xl]]`
+-   `shrink|noshrink[-[sm|md|lg|xl]]`
 
 ```html
 <p class="flex shrink noshrink-sm">
@@ -312,7 +312,7 @@ ___
 </p>
 ```
 
-* `offset[-[r|t|b]][-[sm|md|lg|xl]]-[1-12]`
+-   `offset[-[r|t|b]][-[sm|md|lg|xl]]-[1-12]`
 
 ```html
 <p class="offset-6 offset-sm-12">
@@ -320,7 +320,7 @@ ___
 </p>
 ```
 
-* `m|ml|mt|mr|mb[-[sm|md|lg|xl]]-[1-12]`
+-   `m|ml|mt|mr|mb[-[sm|md|lg|xl]]-[1-12]`
 
 ```html
 <p class="m-4 m-sm-8">
@@ -328,7 +328,7 @@ ___
 </p>
 ```
 
-* `p|pl|pt|pr|pb[-[sm|md|lg|xl]]-[1-12]`
+-   `p|pl|pt|pr|pb[-[sm|md|lg|xl]]-[1-12]`
 
 ```html
 <p class="p-4 p-sm-8">
@@ -336,7 +336,7 @@ ___
 </p>
 ```
 
-* `box[-[sm|md|lg|xl]]`
+-   `box[-[sm|md|lg|xl]]`
 
 ```html
 <p class="box-sm">
@@ -344,11 +344,8 @@ ___
 </p>
 ```
 
-___
+* * *
 
 ## 🎫 License
+
 This project is licensed under the [MIT](LICENSE) License
-
-
-
-
