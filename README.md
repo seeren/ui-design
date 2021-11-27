@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://seeren.github.io/ui-design">
-    <img src="https://raw.githubusercontent.com/seeren/ui-design/master/resources/images/ui-design.png" alt="ui-design"/>
+    <img src="./resources/ui-design.png" alt="ui-design"/>
   </a>
 </p>
 
@@ -174,14 +174,6 @@ ___
 
 ```html
 <p class="inline-block-sm">Display inline-block on small screen</p>
-```
-
-* `fix[-[sm|md|lg|xl]]`
-
-```html
-<p class="inline-block-sm fix-sm">
-  Display inline-block without trailing space on small screen
-</p>
 ```
 
 ___
